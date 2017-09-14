@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="lms.mapper.LmsCustomerMapper" >
+  <resultMap id="BaseResultMap" type="lms.model.LmsCustomer" >
+    <id column="ID" property="id" jdbcType="DECIMAL" />
+    <result column="NAME" property="name" jdbcType="VARCHAR" />
+    <result column="IDENTITY_ID" property="identityId" jdbcType="VARCHAR" />
+    <result column="WORK_UNIT" property="workUnit" jdbcType="VARCHAR" />
+    <result column="PHONE_EXT" property="phoneExt" jdbcType="VARCHAR" />
+    <result column="MOBILE_PHONE" property="mobilePhone" jdbcType="VARCHAR" />
+    <result column="ADDRESS" property="address" jdbcType="VARCHAR" />
+    <result column="POST_CODE" property="postCode" jdbcType="DECIMAL" />
+    <result column="MAIL" property="mail" jdbcType="VARCHAR" />
+    <result column="STATUS" property="status" jdbcType="DECIMAL" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    ID, NAME, IDENTITY_ID, WORK_UNIT, PHONE_EXT, MOBILE_PHONE, ADDRESS, POST_CODE, MAIL, 
+    STATUS
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="lms.model.LmsCustomerExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from LMS_CUSTOMER
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from LMS_CUSTOMER
+    where ID = #{id,jdbcType=DECIMAL}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from LMS_CUSTOMER
+    where ID = #{id,jdbcType=DECIMAL}
+  </delete>
+  <delete id="deleteByExample" parameterType="lms.model.LmsCustomerExample" >
+    delete from LMS_CUSTOMER
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="lms.model.LmsCustomer" >
+    insert into LMS_CUSTOMER (ID, NAME, IDENTITY_ID, 
+      WORK_UNIT, PHONE_EXT, MOBILE_PHONE, 
+      ADDRESS, POST_CODE, MAIL, 
+      STATUS)
+    values (#{id,jdbcType=DECIMAL}, #{name,jdbcType=VARCHAR}, #{identityId,jdbcType=VARCHAR}, 
+      #{workUnit,jdbcType=VARCHAR}, #{phoneExt,jdbcType=VARCHAR}, #{mobilePhone,jdbcType=VARCHAR}, 
+      #{address,jdbcType=VARCHAR}, #{postCode,jdbcType=DECIMAL}, #{mail,jdbcType=VARCHAR}, 
+      #{status,jdbcType=DECIMAL})
+  </insert>
+  <insert id="insertSelective" parameterType="lms.model.LmsCustomer" >
+    insert into LMS_CUSTOMER
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        ID,
+      </if>
+      <if test="name != null" >
+        NAME,
+      </if>
+      <if test="identityId != null" >
+        IDENTITY_ID,
+      </if>
+      <if test="workUnit != null" >
+        WORK_UNIT,
+      </if>
+      <if test="phoneExt != null" >
+        PHONE_EXT,
+      </if>
+      <if test="mobilePhone != null" >
+        MOBILE_PHONE,
+      </if>
+      <if test="address != null" >
+        ADDRESS,
+      </if>
+      <if test="postCode != null" >
+        POST_CODE,
+      </if>
+      <if test="mail != null" >
+        MAIL,
+      </if>
+      <if test="status != null" >
+        STATUS,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=DECIMAL},
+      </if>
+      <if test="name != null" >
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="identityId != null" >
+        #{identityId,jdbcType=VARCHAR},
+      </if>
+      <if test="workUnit != null" >
+        #{workUnit,jdbcType=VARCHAR},
+      </if>
+      <if test="phoneExt != null" >
+        #{phoneExt,jdbcType=VARCHAR},
+      </if>
+      <if test="mobilePhone != null" >
+        #{mobilePhone,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null" >
+        #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="postCode != null" >
+        #{postCode,jdbcType=DECIMAL},
+      </if>
+      <if test="mail != null" >
+        #{mail,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="lms.model.LmsCustomerExample" resultType="java.lang.Integer" >
+    select count(*) from LMS_CUSTOMER
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update LMS_CUSTOMER
+    <set >
+      <if test="record.id != null" >
+        ID = #{record.id,jdbcType=DECIMAL},
+      </if>
+      <if test="record.name != null" >
+        NAME = #{record.name,jdbcType=VARCHAR},
+      </if>
+      <if test="record.identityId != null" >
+        IDENTITY_ID = #{record.identityId,jdbcType=VARCHAR},
+      </if>
+      <if test="record.workUnit != null" >
+        WORK_UNIT = #{record.workUnit,jdbcType=VARCHAR},
+      </if>
+      <if test="record.phoneExt != null" >
+        PHONE_EXT = #{record.phoneExt,jdbcType=VARCHAR},
+      </if>
+      <if test="record.mobilePhone != null" >
+        MOBILE_PHONE = #{record.mobilePhone,jdbcType=VARCHAR},
+      </if>
+      <if test="record.address != null" >
+        ADDRESS = #{record.address,jdbcType=VARCHAR},
+      </if>
+      <if test="record.postCode != null" >
+        POST_CODE = #{record.postCode,jdbcType=DECIMAL},
+      </if>
+      <if test="record.mail != null" >
+        MAIL = #{record.mail,jdbcType=VARCHAR},
+      </if>
+      <if test="record.status != null" >
+        STATUS = #{record.status,jdbcType=DECIMAL},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update LMS_CUSTOMER
+    set ID = #{record.id,jdbcType=DECIMAL},
+      NAME = #{record.name,jdbcType=VARCHAR},
+      IDENTITY_ID = #{record.identityId,jdbcType=VARCHAR},
+      WORK_UNIT = #{record.workUnit,jdbcType=VARCHAR},
+      PHONE_EXT = #{record.phoneExt,jdbcType=VARCHAR},
+      MOBILE_PHONE = #{record.mobilePhone,jdbcType=VARCHAR},
+      ADDRESS = #{record.address,jdbcType=VARCHAR},
+      POST_CODE = #{record.postCode,jdbcType=DECIMAL},
+      MAIL = #{record.mail,jdbcType=VARCHAR},
+      STATUS = #{record.status,jdbcType=DECIMAL}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="lms.model.LmsCustomer" >
+    update LMS_CUSTOMER
+    <set >
+      <if test="name != null" >
+        NAME = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="identityId != null" >
+        IDENTITY_ID = #{identityId,jdbcType=VARCHAR},
+      </if>
+      <if test="workUnit != null" >
+        WORK_UNIT = #{workUnit,jdbcType=VARCHAR},
+      </if>
+      <if test="phoneExt != null" >
+        PHONE_EXT = #{phoneExt,jdbcType=VARCHAR},
+      </if>
+      <if test="mobilePhone != null" >
+        MOBILE_PHONE = #{mobilePhone,jdbcType=VARCHAR},
+      </if>
+      <if test="address != null" >
+        ADDRESS = #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="postCode != null" >
+        POST_CODE = #{postCode,jdbcType=DECIMAL},
+      </if>
+      <if test="mail != null" >
+        MAIL = #{mail,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null" >
+        STATUS = #{status,jdbcType=DECIMAL},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=DECIMAL}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="lms.model.LmsCustomer" >
+    update LMS_CUSTOMER
+    set NAME = #{name,jdbcType=VARCHAR},
+      IDENTITY_ID = #{identityId,jdbcType=VARCHAR},
+      WORK_UNIT = #{workUnit,jdbcType=VARCHAR},
+      PHONE_EXT = #{phoneExt,jdbcType=VARCHAR},
+      MOBILE_PHONE = #{mobilePhone,jdbcType=VARCHAR},
+      ADDRESS = #{address,jdbcType=VARCHAR},
+      POST_CODE = #{postCode,jdbcType=DECIMAL},
+      MAIL = #{mail,jdbcType=VARCHAR},
+      STATUS = #{status,jdbcType=DECIMAL}
+    where ID = #{id,jdbcType=DECIMAL}
+  </update>
+</mapper>

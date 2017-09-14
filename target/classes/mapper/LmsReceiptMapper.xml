@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="lms.mapper.LmsReceiptMapper" >
+  <resultMap id="BaseResultMap" type="lms.model.LmsReceipt" >
+    <id column="id" property="id" jdbcType="DECIMAL" />
+    <result column="total_money" property="totalMoney" jdbcType="DECIMAL" />
+    <result column="gain_date" property="gainDate" jdbcType="DATE" />
+    <result column="miss_date" property="missDate" jdbcType="DATE" />
+    <result column="gain_man" property="gainMan" jdbcType="VARCHAR" />
+    <result column="miss_man" property="missMan" jdbcType="VARCHAR" />
+    <result column="order_number" property="orderNumber" jdbcType="DECIMAL" />
+    <result column="state" property="state" jdbcType="DECIMAL" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, total_money, gain_date, miss_date, gain_man, miss_man, order_number, state
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="lms.model.LmsReceiptExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from LMS_RECEIPT
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.math.BigDecimal" >
+    select 
+    <include refid="Base_Column_List" />
+    from LMS_RECEIPT
+    where id = #{id,jdbcType=DECIMAL}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.math.BigDecimal" >
+    delete from LMS_RECEIPT
+    where id = #{id,jdbcType=DECIMAL}
+  </delete>
+  <delete id="deleteByExample" parameterType="lms.model.LmsReceiptExample" >
+    delete from LMS_RECEIPT
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="lms.model.LmsReceipt" >
+    insert into LMS_RECEIPT (id, total_money, gain_date, 
+      miss_date, gain_man, miss_man, 
+      order_number, state)
+    values (#{id,jdbcType=DECIMAL}, #{totalMoney,jdbcType=DECIMAL}, #{gainDate,jdbcType=DATE}, 
+      #{missDate,jdbcType=DATE}, #{gainMan,jdbcType=VARCHAR}, #{missMan,jdbcType=VARCHAR}, 
+      #{orderNumber,jdbcType=DECIMAL}, #{state,jdbcType=DECIMAL})
+  </insert>
+  <insert id="insertSelective" parameterType="lms.model.LmsReceipt" >
+    insert into LMS_RECEIPT
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="totalMoney != null" >
+        total_money,
+      </if>
+      <if test="gainDate != null" >
+        gain_date,
+      </if>
+      <if test="missDate != null" >
+        miss_date,
+      </if>
+      <if test="gainMan != null" >
+        gain_man,
+      </if>
+      <if test="missMan != null" >
+        miss_man,
+      </if>
+      <if test="orderNumber != null" >
+        order_number,
+      </if>
+      <if test="state != null" >
+        state,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=DECIMAL},
+      </if>
+      <if test="totalMoney != null" >
+        #{totalMoney,jdbcType=DECIMAL},
+      </if>
+      <if test="gainDate != null" >
+        #{gainDate,jdbcType=DATE},
+      </if>
+      <if test="missDate != null" >
+        #{missDate,jdbcType=DATE},
+      </if>
+      <if test="gainMan != null" >
+        #{gainMan,jdbcType=VARCHAR},
+      </if>
+      <if test="missMan != null" >
+        #{missMan,jdbcType=VARCHAR},
+      </if>
+      <if test="orderNumber != null" >
+        #{orderNumber,jdbcType=DECIMAL},
+      </if>
+      <if test="state != null" >
+        #{state,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="lms.model.LmsReceiptExample" resultType="java.lang.Integer" >
+    select count(*) from LMS_RECEIPT
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update LMS_RECEIPT
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=DECIMAL},
+      </if>
+      <if test="record.totalMoney != null" >
+        total_money = #{record.totalMoney,jdbcType=DECIMAL},
+      </if>
+      <if test="record.gainDate != null" >
+        gain_date = #{record.gainDate,jdbcType=DATE},
+      </if>
+      <if test="record.missDate != null" >
+        miss_date = #{record.missDate,jdbcType=DATE},
+      </if>
+      <if test="record.gainMan != null" >
+        gain_man = #{record.gainMan,jdbcType=VARCHAR},
+      </if>
+      <if test="record.missMan != null" >
+        miss_man = #{record.missMan,jdbcType=VARCHAR},
+      </if>
+      <if test="record.orderNumber != null" >
+        order_number = #{record.orderNumber,jdbcType=DECIMAL},
+      </if>
+      <if test="record.state != null" >
+        state = #{record.state,jdbcType=DECIMAL},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update LMS_RECEIPT
+    set id = #{record.id,jdbcType=DECIMAL},
+      total_money = #{record.totalMoney,jdbcType=DECIMAL},
+      gain_date = #{record.gainDate,jdbcType=DATE},
+      miss_date = #{record.missDate,jdbcType=DATE},
+      gain_man = #{record.gainMan,jdbcType=VARCHAR},
+      miss_man = #{record.missMan,jdbcType=VARCHAR},
+      order_number = #{record.orderNumber,jdbcType=DECIMAL},
+      state = #{record.state,jdbcType=DECIMAL}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="lms.model.LmsReceipt" >
+    update LMS_RECEIPT
+    <set >
+      <if test="totalMoney != null" >
+        total_money = #{totalMoney,jdbcType=DECIMAL},
+      </if>
+      <if test="gainDate != null" >
+        gain_date = #{gainDate,jdbcType=DATE},
+      </if>
+      <if test="missDate != null" >
+        miss_date = #{missDate,jdbcType=DATE},
+      </if>
+      <if test="gainMan != null" >
+        gain_man = #{gainMan,jdbcType=VARCHAR},
+      </if>
+      <if test="missMan != null" >
+        miss_man = #{missMan,jdbcType=VARCHAR},
+      </if>
+      <if test="orderNumber != null" >
+        order_number = #{orderNumber,jdbcType=DECIMAL},
+      </if>
+      <if test="state != null" >
+        state = #{state,jdbcType=DECIMAL},
+      </if>
+    </set>
+    where id = #{id,jdbcType=DECIMAL}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="lms.model.LmsReceipt" >
+    update LMS_RECEIPT
+    set total_money = #{totalMoney,jdbcType=DECIMAL},
+      gain_date = #{gainDate,jdbcType=DATE},
+      miss_date = #{missDate,jdbcType=DATE},
+      gain_man = #{gainMan,jdbcType=VARCHAR},
+      miss_man = #{missMan,jdbcType=VARCHAR},
+      order_number = #{orderNumber,jdbcType=DECIMAL},
+      state = #{state,jdbcType=DECIMAL}
+    where id = #{id,jdbcType=DECIMAL}
+  </update>
+</mapper>

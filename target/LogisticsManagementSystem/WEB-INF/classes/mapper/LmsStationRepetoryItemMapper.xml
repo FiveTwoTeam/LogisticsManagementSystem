@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="lms.mapper.LmsStationRepetoryItemMapper" >
+  <resultMap id="BaseResultMap" type="lms.model.LmsStationRepetoryItem" >
+    <id column="id" property="id" jdbcType="DECIMAL" />
+    <result column="count" property="count" jdbcType="DECIMAL" />
+    <result column="max" property="max" jdbcType="DECIMAL" />
+    <result column="guard" property="guard" jdbcType="DECIMAL" />
+    <result column="status" property="status" jdbcType="DECIMAL" />
+    <result column="LMS_Product_id" property="lmsProductId" jdbcType="DECIMAL" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, count, max, guard, status, LMS_Product_id
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="lms.model.LmsStationRepetoryItemExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from LMS_STATION_REPETORY_ITEM
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from LMS_STATION_REPETORY_ITEM
+    where id = #{id,jdbcType=DECIMAL}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from LMS_STATION_REPETORY_ITEM
+    where id = #{id,jdbcType=DECIMAL}
+  </delete>
+  <delete id="deleteByExample" parameterType="lms.model.LmsStationRepetoryItemExample" >
+    delete from LMS_STATION_REPETORY_ITEM
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="lms.model.LmsStationRepetoryItem" >
+    insert into LMS_STATION_REPETORY_ITEM (id, count, max, 
+      guard, status, LMS_Product_id
+      )
+    values (#{id,jdbcType=DECIMAL}, #{count,jdbcType=DECIMAL}, #{max,jdbcType=DECIMAL}, 
+      #{guard,jdbcType=DECIMAL}, #{status,jdbcType=DECIMAL}, #{lmsProductId,jdbcType=DECIMAL}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="lms.model.LmsStationRepetoryItem" >
+    insert into LMS_STATION_REPETORY_ITEM
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="count != null" >
+        count,
+      </if>
+      <if test="max != null" >
+        max,
+      </if>
+      <if test="guard != null" >
+        guard,
+      </if>
+      <if test="status != null" >
+        status,
+      </if>
+      <if test="lmsProductId != null" >
+        LMS_Product_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=DECIMAL},
+      </if>
+      <if test="count != null" >
+        #{count,jdbcType=DECIMAL},
+      </if>
+      <if test="max != null" >
+        #{max,jdbcType=DECIMAL},
+      </if>
+      <if test="guard != null" >
+        #{guard,jdbcType=DECIMAL},
+      </if>
+      <if test="status != null" >
+        #{status,jdbcType=DECIMAL},
+      </if>
+      <if test="lmsProductId != null" >
+        #{lmsProductId,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="lms.model.LmsStationRepetoryItemExample" resultType="java.lang.Integer" >
+    select count(*) from LMS_STATION_REPETORY_ITEM
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update LMS_STATION_REPETORY_ITEM
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=DECIMAL},
+      </if>
+      <if test="record.count != null" >
+        count = #{record.count,jdbcType=DECIMAL},
+      </if>
+      <if test="record.max != null" >
+        max = #{record.max,jdbcType=DECIMAL},
+      </if>
+      <if test="record.guard != null" >
+        guard = #{record.guard,jdbcType=DECIMAL},
+      </if>
+      <if test="record.status != null" >
+        status = #{record.status,jdbcType=DECIMAL},
+      </if>
+      <if test="record.lmsProductId != null" >
+        LMS_Product_id = #{record.lmsProductId,jdbcType=DECIMAL},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update LMS_STATION_REPETORY_ITEM
+    set id = #{record.id,jdbcType=DECIMAL},
+      count = #{record.count,jdbcType=DECIMAL},
+      max = #{record.max,jdbcType=DECIMAL},
+      guard = #{record.guard,jdbcType=DECIMAL},
+      status = #{record.status,jdbcType=DECIMAL},
+      LMS_Product_id = #{record.lmsProductId,jdbcType=DECIMAL}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="lms.model.LmsStationRepetoryItem" >
+    update LMS_STATION_REPETORY_ITEM
+    <set >
+      <if test="count != null" >
+        count = #{count,jdbcType=DECIMAL},
+      </if>
+      <if test="max != null" >
+        max = #{max,jdbcType=DECIMAL},
+      </if>
+      <if test="guard != null" >
+        guard = #{guard,jdbcType=DECIMAL},
+      </if>
+      <if test="status != null" >
+        status = #{status,jdbcType=DECIMAL},
+      </if>
+      <if test="lmsProductId != null" >
+        LMS_Product_id = #{lmsProductId,jdbcType=DECIMAL},
+      </if>
+    </set>
+    where id = #{id,jdbcType=DECIMAL}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="lms.model.LmsStationRepetoryItem" >
+    update LMS_STATION_REPETORY_ITEM
+    set count = #{count,jdbcType=DECIMAL},
+      max = #{max,jdbcType=DECIMAL},
+      guard = #{guard,jdbcType=DECIMAL},
+      status = #{status,jdbcType=DECIMAL},
+      LMS_Product_id = #{lmsProductId,jdbcType=DECIMAL}
+    where id = #{id,jdbcType=DECIMAL}
+  </update>
+</mapper>

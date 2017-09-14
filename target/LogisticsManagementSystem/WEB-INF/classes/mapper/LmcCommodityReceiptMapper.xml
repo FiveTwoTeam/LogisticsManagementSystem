@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="lms.mapper.LmcCommodityReceiptMapper" >
+  <resultMap id="BaseResultMap" type="lms.model.LmcCommodityReceipt" >
+    <id column="ID" property="id" jdbcType="DECIMAL" />
+    <result column="TASK_NUMBER" property="taskNumber" jdbcType="DECIMAL" />
+    <result column="CUNTOMER_ID" property="cuntomerId" jdbcType="DECIMAL" />
+    <result column="ADDRESS" property="address" jdbcType="VARCHAR" />
+    <result column="DATETIME" property="datetime" jdbcType="DATE" />
+    <result column="COMMAND" property="command" jdbcType="VARCHAR" />
+    <result column="IF_RECEIPT" property="ifReceipt" jdbcType="DECIMAL" />
+    <result column="STATION_ID" property="stationId" jdbcType="DECIMAL" />
+    <result column="TOTAL_PRICE" property="totalPrice" jdbcType="DECIMAL" />
+    <result column="TYPE" property="type" jdbcType="DECIMAL" />
+    <result column="DESCRIPTION" property="description" jdbcType="VARCHAR" />
+    <result column="FEEDBACK" property="feedback" jdbcType="VARCHAR" />
+    <result column="SIGNATURE" property="signature" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    ID, TASK_NUMBER, CUNTOMER_ID, ADDRESS, DATETIME, COMMAND, IF_RECEIPT, STATION_ID, 
+    TOTAL_PRICE, TYPE, DESCRIPTION, FEEDBACK, SIGNATURE
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="lms.model.LmcCommodityReceiptExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from LMC_COMMODITY_RECEIPT
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.math.BigDecimal" >
+    select 
+    <include refid="Base_Column_List" />
+    from LMC_COMMODITY_RECEIPT
+    where ID = #{id,jdbcType=DECIMAL}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.math.BigDecimal" >
+    delete from LMC_COMMODITY_RECEIPT
+    where ID = #{id,jdbcType=DECIMAL}
+  </delete>
+  <delete id="deleteByExample" parameterType="lms.model.LmcCommodityReceiptExample" >
+    delete from LMC_COMMODITY_RECEIPT
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="lms.model.LmcCommodityReceipt" >
+    insert into LMC_COMMODITY_RECEIPT (ID, TASK_NUMBER, CUNTOMER_ID, 
+      ADDRESS, DATETIME, COMMAND, 
+      IF_RECEIPT, STATION_ID, TOTAL_PRICE, 
+      TYPE, DESCRIPTION, FEEDBACK, 
+      SIGNATURE)
+    values (#{id,jdbcType=DECIMAL}, #{taskNumber,jdbcType=DECIMAL}, #{cuntomerId,jdbcType=DECIMAL}, 
+      #{address,jdbcType=VARCHAR}, #{datetime,jdbcType=DATE}, #{command,jdbcType=VARCHAR}, 
+      #{ifReceipt,jdbcType=DECIMAL}, #{stationId,jdbcType=DECIMAL}, #{totalPrice,jdbcType=DECIMAL}, 
+      #{type,jdbcType=DECIMAL}, #{description,jdbcType=VARCHAR}, #{feedback,jdbcType=VARCHAR}, 
+      #{signature,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="lms.model.LmcCommodityReceipt" >
+    insert into LMC_COMMODITY_RECEIPT
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        ID,
+      </if>
+      <if test="taskNumber != null" >
+        TASK_NUMBER,
+      </if>
+      <if test="cuntomerId != null" >
+        CUNTOMER_ID,
+      </if>
+      <if test="address != null" >
+        ADDRESS,
+      </if>
+      <if test="datetime != null" >
+        DATETIME,
+      </if>
+      <if test="command != null" >
+        COMMAND,
+      </if>
+      <if test="ifReceipt != null" >
+        IF_RECEIPT,
+      </if>
+      <if test="stationId != null" >
+        STATION_ID,
+      </if>
+      <if test="totalPrice != null" >
+        TOTAL_PRICE,
+      </if>
+      <if test="type != null" >
+        TYPE,
+      </if>
+      <if test="description != null" >
+        DESCRIPTION,
+      </if>
+      <if test="feedback != null" >
+        FEEDBACK,
+      </if>
+      <if test="signature != null" >
+        SIGNATURE,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=DECIMAL},
+      </if>
+      <if test="taskNumber != null" >
+        #{taskNumber,jdbcType=DECIMAL},
+      </if>
+      <if test="cuntomerId != null" >
+        #{cuntomerId,jdbcType=DECIMAL},
+      </if>
+      <if test="address != null" >
+        #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="datetime != null" >
+        #{datetime,jdbcType=DATE},
+      </if>
+      <if test="command != null" >
+        #{command,jdbcType=VARCHAR},
+      </if>
+      <if test="ifReceipt != null" >
+        #{ifReceipt,jdbcType=DECIMAL},
+      </if>
+      <if test="stationId != null" >
+        #{stationId,jdbcType=DECIMAL},
+      </if>
+      <if test="totalPrice != null" >
+        #{totalPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="type != null" >
+        #{type,jdbcType=DECIMAL},
+      </if>
+      <if test="description != null" >
+        #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="feedback != null" >
+        #{feedback,jdbcType=VARCHAR},
+      </if>
+      <if test="signature != null" >
+        #{signature,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="lms.model.LmcCommodityReceiptExample" resultType="java.lang.Integer" >
+    select count(*) from LMC_COMMODITY_RECEIPT
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update LMC_COMMODITY_RECEIPT
+    <set >
+      <if test="record.id != null" >
+        ID = #{record.id,jdbcType=DECIMAL},
+      </if>
+      <if test="record.taskNumber != null" >
+        TASK_NUMBER = #{record.taskNumber,jdbcType=DECIMAL},
+      </if>
+      <if test="record.cuntomerId != null" >
+        CUNTOMER_ID = #{record.cuntomerId,jdbcType=DECIMAL},
+      </if>
+      <if test="record.address != null" >
+        ADDRESS = #{record.address,jdbcType=VARCHAR},
+      </if>
+      <if test="record.datetime != null" >
+        DATETIME = #{record.datetime,jdbcType=DATE},
+      </if>
+      <if test="record.command != null" >
+        COMMAND = #{record.command,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ifReceipt != null" >
+        IF_RECEIPT = #{record.ifReceipt,jdbcType=DECIMAL},
+      </if>
+      <if test="record.stationId != null" >
+        STATION_ID = #{record.stationId,jdbcType=DECIMAL},
+      </if>
+      <if test="record.totalPrice != null" >
+        TOTAL_PRICE = #{record.totalPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="record.type != null" >
+        TYPE = #{record.type,jdbcType=DECIMAL},
+      </if>
+      <if test="record.description != null" >
+        DESCRIPTION = #{record.description,jdbcType=VARCHAR},
+      </if>
+      <if test="record.feedback != null" >
+        FEEDBACK = #{record.feedback,jdbcType=VARCHAR},
+      </if>
+      <if test="record.signature != null" >
+        SIGNATURE = #{record.signature,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update LMC_COMMODITY_RECEIPT
+    set ID = #{record.id,jdbcType=DECIMAL},
+      TASK_NUMBER = #{record.taskNumber,jdbcType=DECIMAL},
+      CUNTOMER_ID = #{record.cuntomerId,jdbcType=DECIMAL},
+      ADDRESS = #{record.address,jdbcType=VARCHAR},
+      DATETIME = #{record.datetime,jdbcType=DATE},
+      COMMAND = #{record.command,jdbcType=VARCHAR},
+      IF_RECEIPT = #{record.ifReceipt,jdbcType=DECIMAL},
+      STATION_ID = #{record.stationId,jdbcType=DECIMAL},
+      TOTAL_PRICE = #{record.totalPrice,jdbcType=DECIMAL},
+      TYPE = #{record.type,jdbcType=DECIMAL},
+      DESCRIPTION = #{record.description,jdbcType=VARCHAR},
+      FEEDBACK = #{record.feedback,jdbcType=VARCHAR},
+      SIGNATURE = #{record.signature,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="lms.model.LmcCommodityReceipt" >
+    update LMC_COMMODITY_RECEIPT
+    <set >
+      <if test="taskNumber != null" >
+        TASK_NUMBER = #{taskNumber,jdbcType=DECIMAL},
+      </if>
+      <if test="cuntomerId != null" >
+        CUNTOMER_ID = #{cuntomerId,jdbcType=DECIMAL},
+      </if>
+      <if test="address != null" >
+        ADDRESS = #{address,jdbcType=VARCHAR},
+      </if>
+      <if test="datetime != null" >
+        DATETIME = #{datetime,jdbcType=DATE},
+      </if>
+      <if test="command != null" >
+        COMMAND = #{command,jdbcType=VARCHAR},
+      </if>
+      <if test="ifReceipt != null" >
+        IF_RECEIPT = #{ifReceipt,jdbcType=DECIMAL},
+      </if>
+      <if test="stationId != null" >
+        STATION_ID = #{stationId,jdbcType=DECIMAL},
+      </if>
+      <if test="totalPrice != null" >
+        TOTAL_PRICE = #{totalPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="type != null" >
+        TYPE = #{type,jdbcType=DECIMAL},
+      </if>
+      <if test="description != null" >
+        DESCRIPTION = #{description,jdbcType=VARCHAR},
+      </if>
+      <if test="feedback != null" >
+        FEEDBACK = #{feedback,jdbcType=VARCHAR},
+      </if>
+      <if test="signature != null" >
+        SIGNATURE = #{signature,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where ID = #{id,jdbcType=DECIMAL}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="lms.model.LmcCommodityReceipt" >
+    update LMC_COMMODITY_RECEIPT
+    set TASK_NUMBER = #{taskNumber,jdbcType=DECIMAL},
+      CUNTOMER_ID = #{cuntomerId,jdbcType=DECIMAL},
+      ADDRESS = #{address,jdbcType=VARCHAR},
+      DATETIME = #{datetime,jdbcType=DATE},
+      COMMAND = #{command,jdbcType=VARCHAR},
+      IF_RECEIPT = #{ifReceipt,jdbcType=DECIMAL},
+      STATION_ID = #{stationId,jdbcType=DECIMAL},
+      TOTAL_PRICE = #{totalPrice,jdbcType=DECIMAL},
+      TYPE = #{type,jdbcType=DECIMAL},
+      DESCRIPTION = #{description,jdbcType=VARCHAR},
+      FEEDBACK = #{feedback,jdbcType=VARCHAR},
+      SIGNATURE = #{signature,jdbcType=VARCHAR}
+    where ID = #{id,jdbcType=DECIMAL}
+  </update>
+</mapper>
