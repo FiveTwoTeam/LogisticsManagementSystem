@@ -17,7 +17,7 @@
 		<!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
 		<jdbcConnection driverClass="oracle.jdbc.driver.OracleDriver"
 						connectionURL="jdbc:oracle:thin:@localhost:1521:orcl" userId="scott"
-						password="1">
+						password="tiger">
 		</jdbcConnection>
 		<!-- <jdbcConnection driverClass="oracle.jdbc.OracleDriver"
 			connectionURL="jdbc:oracle:thin:@127.0.0.1:1521:yycg" 
@@ -54,34 +54,34 @@
 		</javaClientGenerator>
 		<!-- 指定数据库表 -->
 		<!--<table tableName="admin"/>-->
-		<table tableName="LMS_ADMIN"/>
-		<table tableName="LMC_COMMODITY_RECEIPT"/>
-		<table tableName="LMS_CenterProduct_Export"/>
-		<table tableName="LMS_CenterProduct_Export_Item"/>
-		<table tableName="LMS_COMMODITY_RECEIPT_ITEM"/>
-		<table tableName="LMS_CUSTOMER"/>
-		<table tableName="LMS_DELIVERY_STAFF"/>
-		<table tableName="LMS_FIRST_CATEGORY"/>
-		<table tableName="LMS_Order"/>
-		<table tableName="LMS_Order_Back"/>
-		<table tableName="LMS_Order_Item"/>
-		<table tableName="LMS_Order_Product_Back"/>
-		<table tableName="LMS_Order_Product_Exchange"/>
-		<table tableName="LMS_Product"/>
-		<table tableName="LMS_Product_Export"/>
-		<table tableName="LMS_Product_Export_Item"/>
-		<table tableName="LMS_Product_Import"/>
-		<table tableName="LMS_Product_Import_Item"/>
-		<table tableName="LMS_Receipt"/>
-		<table tableName="LMS_Repertory"/>
-		<table tableName="LMS_Repertory_Info"/>
-		<table tableName="LMS_Second_Category"/>
-		<table tableName="LMS_Station"/>
-		<table tableName="LMS_Station_Repetory"/>
-		<table tableName="LMS_Station_Repetory_Item"/>
-		<table tableName="LMS_Supplier"/>
-		<table tableName="LMS_Task"/>
-
+		<!--<table tableName="LMS_ADMIN"/>-->
+		<!--<table tableName="LMC_COMMODITY_RECEIPT"/>-->
+		<!--<table tableName="LMS_CenterProduct_Export"/>-->
+		<!--<table tableName="LMS_CenterProduct_Export_Item"/>-->
+		<!--<table tableName="LMS_COMMODITY_RECEIPT_ITEM"/>-->
+		<!--<table tableName="LMS_CUSTOMER"/>-->
+		<!--<table tableName="LMS_DELIVERY_STAFF"/>-->
+		<!--<table tableName="LMS_FIRST_CATEGORY"/>-->
+		<!--<table tableName="LMS_Order"/>-->
+		<!--<table tableName="LMS_Order_Back"/>-->
+		<!--<table tableName="LMS_Order_Item"/>-->
+		<!--<table tableName="LMS_Order_Product_Back"/>-->
+		<!--<table tableName="LMS_Order_Product_Exchange"/>-->
+		<!--<table tableName="LMS_Product"/>-->
+		<!--<table tableName="LMS_Product_Export"/>-->
+		<!--<table tableName="LMS_Product_Export_Item"/>-->
+		<!--<table tableName="LMS_Product_Import"/>-->
+		<!--<table tableName="LMS_Product_Import_Item"/>-->
+		<!--<table tableName="LMS_Receipt"/>-->
+		<!--<table tableName="LMS_Repertory"/>-->
+		<!--<table tableName="LMS_Repertory_Info"/>-->
+		<!--<table tableName="LMS_Second_Category"/>-->
+		<!--<table tableName="LMS_Station"/>-->
+		<!--<table tableName="LMS_Station_Repetory"/>-->
+		<!--<table tableName="LMS_Station_Repetory_Item"/>-->
+		<!--<table tableName="LMS_Supplier"/>-->
+		<!--<table tableName="LMS_Task"/>-->
+		<table tableName="LMS_STATION_REPETORY_ITEM"/>
 		<!-- 有些表的字段需要指定java类型
 		 <table schema="" tableName="">
 			<columnOverride column="" javaType="" />
