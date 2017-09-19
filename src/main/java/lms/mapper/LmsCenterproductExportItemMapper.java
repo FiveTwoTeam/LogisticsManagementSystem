@@ -28,4 +28,9 @@ public interface LmsCenterproductExportItemMapper {
     int updateByPrimaryKeySelective(LmsCenterproductExportItem record);
 
     int updateByPrimaryKey(LmsCenterproductExportItem record);
+
+    List<LmsCenterproductExportItem> findProductExportResultMap();
+
+    List<LmsCenterproductExportItem> findProductResultMap();
+
 }

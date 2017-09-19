@@ -32,4 +32,18 @@ public class AdminServiceImpl implements AdminService {
         List<LmsAdmin> list = lmsAdminMapper.selectByExample(example);
         return list;
     }
+
+    public LmsAdmin login(String username, String password) {
+        LmsAdminExample example = new LmsAdminExample();
+
+        LmsAdminExample.Criteria criteria =example.createCriteria();
+        criteria.andUsernameEqualTo("admin");
+        criteria.andPasswordEqualTo(password);
+
+        List<LmsAdmin> list = lmsAdminMapper.selectByExample(example);
+        if(list != null && list.size() > 0)
+            return list.get(0);
+
+        return null;
+    }
 }

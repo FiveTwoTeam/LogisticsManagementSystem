@@ -463,6 +463,66 @@ public class LmsStationRepetoryItemExample {
             addCriterion("LMS_Product_id not between", value1, value2, "lmsProductId");
             return (Criteria) this;
         }
+
+        public Criteria andLmsStationRepertoryIdIsNull() {
+            addCriterion("LMS_Station_Repertory_id is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andLmsStationRepertoryIdIsNotNull() {
+            addCriterion("LMS_Station_Repertory_id is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andLmsStationRepertoryIdEqualTo(Long value) {
+            addCriterion("LMS_Station_Repertory_id =", value, "lmsStationRepertoryId");
+            return (Criteria) this;
+        }
+
+        public Criteria andLmsStationRepertoryIdNotEqualTo(Long value) {
+            addCriterion("LMS_Station_Repertory_id <>", value, "lmsStationRepertoryId");
+            return (Criteria) this;
+        }
+
+        public Criteria andLmsStationRepertoryIdGreaterThan(Long value) {
+            addCriterion("LMS_Station_Repertory_id >", value, "lmsStationRepertoryId");
+            return (Criteria) this;
+        }
+
+        public Criteria andLmsStationRepertoryIdGreaterThanOrEqualTo(Long value) {
+            addCriterion("LMS_Station_Repertory_id >=", value, "lmsStationRepertoryId");
+            return (Criteria) this;
+        }
+
+        public Criteria andLmsStationRepertoryIdLessThan(Long value) {
+            addCriterion("LMS_Station_Repertory_id <", value, "lmsStationRepertoryId");
+            return (Criteria) this;
+        }
+
+        public Criteria andLmsStationRepertoryIdLessThanOrEqualTo(Long value) {
+            addCriterion("LMS_Station_Repertory_id <=", value, "lmsStationRepertoryId");
+            return (Criteria) this;
+        }
+
+        public Criteria andLmsStationRepertoryIdIn(List<Long> values) {
+            addCriterion("LMS_Station_Repertory_id in", values, "lmsStationRepertoryId");
+            return (Criteria) this;
+        }
+
+        public Criteria andLmsStationRepertoryIdNotIn(List<Long> values) {
+            addCriterion("LMS_Station_Repertory_id not in", values, "lmsStationRepertoryId");
+            return (Criteria) this;
+        }
+
+        public Criteria andLmsStationRepertoryIdBetween(Long value1, Long value2) {
+            addCriterion("LMS_Station_Repertory_id between", value1, value2, "lmsStationRepertoryId");
+            return (Criteria) this;
+        }
+
+        public Criteria andLmsStationRepertoryIdNotBetween(Long value1, Long value2) {
+            addCriterion("LMS_Station_Repertory_id not between", value1, value2, "lmsStationRepertoryId");
+            return (Criteria) this;
+        }
     }
 
     public static class Criteria extends GeneratedCriteria {

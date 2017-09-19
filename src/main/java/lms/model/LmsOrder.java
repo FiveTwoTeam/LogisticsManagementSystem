@@ -2,6 +2,7 @@ package lms.model;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 public class LmsOrder {
     private BigDecimal id;
@@ -29,6 +30,26 @@ public class LmsOrder {
     private Date datetime;
 
     private BigDecimal lmsAdminId;
+
+    private LmsCustomer customer;
+
+    private LmsAdmin admin;
+
+    public LmsCustomer getCustomer() {
+        return customer;
+    }
+
+    public void setCustomer(LmsCustomer customer) {
+        this.customer = customer;
+    }
+
+    public LmsAdmin getAdmin() {
+        return admin;
+    }
+
+    public void setAdmin(LmsAdmin admin) {
+        this.admin = admin;
+    }
 
     public BigDecimal getId() {
         return id;
@@ -132,5 +153,26 @@ public class LmsOrder {
 
     public void setLmsAdminId(BigDecimal lmsAdminId) {
         this.lmsAdminId = lmsAdminId;
+    }
+
+    @Override
+    public String toString() {
+        return "LmsOrder{" +
+                "id=" + id +
+                ", totalPrice=" + totalPrice +
+                ", orderNumber=" + orderNumber +
+                ", description='" + description + '\'' +
+                ", type=" + type +
+                ", address='" + address + '\'' +
+                ", lmsCustomerId=" + lmsCustomerId +
+                ", payer='" + payer + '\'' +
+                ", payerAddress='" + payerAddress + '\'' +
+                ", payerPhone=" + payerPhone +
+                ", payerPostCode=" + payerPostCode +
+                ", datetime=" + datetime +
+                ", lmsAdminId=" + lmsAdminId +
+                ", customer=" + customer +
+                ", admin=" + admin +
+                '}';
     }
 }

@@ -1,6 +1,7 @@
 package lms.model;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 public class LmsCenterproductExportItem {
     private BigDecimal id;
@@ -12,6 +13,10 @@ public class LmsCenterproductExportItem {
     private BigDecimal lmsProductExportId;
 
     private BigDecimal lmsProductId;
+
+    private List<LmsProductExport> productExportList;
+
+    private List<LmsProduct> productList;
 
     public BigDecimal getId() {
         return id;
@@ -51,5 +56,35 @@ public class LmsCenterproductExportItem {
 
     public void setLmsProductId(BigDecimal lmsProductId) {
         this.lmsProductId = lmsProductId;
+    }
+
+
+    public List<LmsProductExport> getProductExportList() {
+        return productExportList;
+    }
+
+    public void setProductExportList(List<LmsProductExport> productExportList) {
+        this.productExportList = productExportList;
+    }
+
+    @Override
+    public String toString() {
+        return "LmsCenterproductExportItem{" +
+                "id=" + id +
+                ", count=" + count +
+                ", description='" + description + '\'' +
+                ", lmsProductExportId=" + lmsProductExportId +
+                ", lmsProductId=" + lmsProductId +
+                ", productExportList=" + productExportList +
+                ", productList=" + productList +
+                '}';
+    }
+
+    public List<LmsProduct> getProductList() {
+        return productList;
+    }
+
+    public void setProductList(List<LmsProduct> productList) {
+        this.productList = productList;
     }
 }

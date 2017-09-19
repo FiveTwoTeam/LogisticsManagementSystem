@@ -112,4 +112,21 @@ public class LmsSupplier {
     public void setDescription(String description) {
         this.description = description == null ? null : description.trim();
     }
+
+    @Override
+    public String toString() {
+        return "LmsSupplier{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", contactMan='" + contactMan + '\'' +
+                ", phone=" + phone +
+                ", bank='" + bank + '\'' +
+                ", bankAccount=" + bankAccount +
+                ", fax='" + fax + '\'' +
+                ", postCode=" + postCode +
+                ", legalMan='" + legalMan + '\'' +
+                ", description='" + description + '\'' +
+                '}';
+    }
 }

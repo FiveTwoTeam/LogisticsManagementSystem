@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.util.List;
 import lms.model.LmsCenterproductExport;
 import lms.model.LmsCenterproductExportExample;
+import lms.model.LmsSupplier;
 import org.apache.ibatis.annotations.Param;
 
 public interface LmsCenterproductExportMapper {
@@ -28,4 +29,6 @@ public interface LmsCenterproductExportMapper {
     int updateByPrimaryKeySelective(LmsCenterproductExport record);
 
     int updateByPrimaryKey(LmsCenterproductExport record);
+
+    List<LmsCenterproductExport> findSupplierResultMap();
 }

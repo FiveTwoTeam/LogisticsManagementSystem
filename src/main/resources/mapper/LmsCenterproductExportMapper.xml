@@ -193,4 +193,31 @@
       LMS_Supplier_id = #{lmsSupplierId,jdbcType=DECIMAL}
     where id = #{id,jdbcType=DECIMAL}
   </update>
+
+
+
+  <!--对Lms_Supplier的映射-->
+  <resultMap id="centerProductExportAndSupplierResultMap" type="lms.model.LmsCenterproductExport" extends="BaseResultMap" >
+    <collection property="lmsSuppliers" ofType="lms.model.LmsSupplier">
+      <id column="id" property="id" jdbcType="DECIMAL" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+      <result column="address" property="address" jdbcType="VARCHAR" />
+      <result column="contact_man" property="contactMan" jdbcType="VARCHAR" />
+      <result column="phone" property="phone" jdbcType="DECIMAL" />
+      <result column="bank" property="bank" jdbcType="VARCHAR" />
+      <result column="bank_account" property="bankAccount" jdbcType="DECIMAL" />
+      <result column="fax" property="fax" jdbcType="VARCHAR" />
+      <result column="post_code" property="postCode" jdbcType="DECIMAL" />
+      <result column="legal_man" property="legalMan" jdbcType="VARCHAR" />
+      <result column="description" property="description" jdbcType="VARCHAR" />
+    </collection>
+  </resultMap>
+
+  <!--查询-->
+  <select id="findSupplierResultMap" resultMap="centerProductExportAndSupplierResultMap">
+    select
+    LMS_CENTERPRODUCT_EXPORT.*,LMS_SUPPLIER.*
+    from LMS_CENTERPRODUCT_EXPORT,  LMS_SUPPLIER
+    where LMS_CENTERPRODUCT_EXPORT."LMS_Supplier_id" = LMS_SUPPLIER."id"
+  </select>
 </mapper>

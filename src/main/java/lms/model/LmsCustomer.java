@@ -100,4 +100,20 @@ public class LmsCustomer {
     public void setStatus(Long status) {
         this.status = status;
     }
+
+    @Override
+    public String toString() {
+        return "LmsCustomer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", identityId='" + identityId + '\'' +
+                ", workUnit='" + workUnit + '\'' +
+                ", phoneExt='" + phoneExt + '\'' +
+                ", mobilePhone='" + mobilePhone + '\'' +
+                ", address='" + address + '\'' +
+                ", postCode=" + postCode +
+                ", mail='" + mail + '\'' +
+                ", status=" + status +
+                '}';
+    }
 }

@@ -27,4 +27,6 @@ public interface LmsDeliveryStaffMapper {
     int updateByPrimaryKeySelective(LmsDeliveryStaff record);
 
     int updateByPrimaryKey(LmsDeliveryStaff record);
+
+    List<LmsDeliveryStaff> findStationResultMap();
 }

@@ -225,4 +225,60 @@
       PRODUCT_ID = #{productId,jdbcType=DECIMAL}
     where ID = #{id,jdbcType=DECIMAL}
   </update>
+
+
+  <!--对LmsProduct的映射-->
+  <resultMap id="productResultMap" type="lms.model.LmsCommodityReceiptItem" extends="BaseResultMap" >
+    <collection property="productList" ofType="lms.model.LmsProduct">
+      <id column="id" property="id" jdbcType="DECIMAL" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+      <result column="price" property="price" jdbcType="DECIMAL" />
+      <result column="unit" property="unit" jdbcType="VARCHAR" />
+      <result column="LMS_Second_Category_id" property="lmsSecondCategoryId" jdbcType="DECIMAL" />
+      <result column="discount" property="discount" jdbcType="DECIMAL" />
+      <result column="cost" property="cost" jdbcType="DECIMAL" />
+      <result column="size" property="size" jdbcType="VARCHAR" />
+      <result column="LMS_Supplier_id" property="lmsSupplierId" jdbcType="DECIMAL" />
+      <result column="quality_period" property="qualityPeriod" jdbcType="VARCHAR" />
+      <result column="if_back" property="ifBack" jdbcType="DECIMAL" />
+      <result column="if_exchange" property="ifExchange" jdbcType="DECIMAL" />
+      <result column="description" property="description" jdbcType="VARCHAR" />
+    </collection>
+  </resultMap>
+  <!--查询-->
+  <select id="findProductResultMap" resultMap="productResultMap">
+    select
+    LMS_COMMODITY_RECEIPT_ITEM.*,LMS_PRODUCT.*
+    from LMS_COMMODITY_RECEIPT_ITEM,  LMS_PRODUCT
+    where LMS_COMMODITY_RECEIPT_ITEM."PRODUCT_ID" = LMS_PRODUCT."id"
+  </select>
+
+
+
+  <!--对LmsCommodityReceipt的映射-->
+  <resultMap id="commodityReceiptMap" type="lms.model.LmsCommodityReceiptItem" extends="BaseResultMap" >
+    <collection property="productList" ofType="lms.model.LmsCommodityReceipt">
+      <id column="ID" property="id" jdbcType="DECIMAL" />
+      <result column="TASK_NUMBER" property="taskNumber" jdbcType="DECIMAL" />
+      <result column="CUNTOMER_ID" property="cuntomerId" jdbcType="DECIMAL" />
+      <result column="ADDRESS" property="address" jdbcType="VARCHAR" />
+      <result column="DATETIME" property="datetime" jdbcType="DATE" />
+      <result column="COMMAND" property="command" jdbcType="VARCHAR" />
+      <result column="IF_RECEIPT" property="ifReceipt" jdbcType="DECIMAL" />
+      <result column="STATION_ID" property="stationId" jdbcType="DECIMAL" />
+      <result column="TOTAL_PRICE" property="totalPrice" jdbcType="DECIMAL" />
+      <result column="TYPE" property="type" jdbcType="DECIMAL" />
+      <result column="DESCRIPTION" property="description" jdbcType="VARCHAR" />
+      <result column="FEEDBACK" property="feedback" jdbcType="VARCHAR" />
+      <result column="SIGNATURE" property="signature" jdbcType="VARCHAR" />
+    </collection>
+  </resultMap>
+  <!--查询-->
+  <select id="findCommodityReceiptMap" resultMap="commodityReceiptMap">
+    select
+    LMS_COMMODITY_RECEIPT_ITEM.*,LMS_COMMODITY_RECEIPT.*
+    from LMS_COMMODITY_RECEIPT_ITEM,  LMS_COMMODITY_RECEIPT
+    where LMS_COMMODITY_RECEIPT_ITEM."COMMODITY_RECEIPT_ID" = LMS_COMMODITY_RECEIPT."ID"
+  </select>
+
 </mapper>

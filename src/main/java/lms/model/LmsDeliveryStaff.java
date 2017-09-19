@@ -1,6 +1,7 @@
 package lms.model;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 public class LmsDeliveryStaff {
     private Long id;
@@ -10,6 +11,16 @@ public class LmsDeliveryStaff {
     private BigDecimal phone;
 
     private Long stationId;
+
+    private List<LmsStation> stationList;
+
+    public List<LmsStation> getStationList() {
+        return stationList;
+    }
+
+    public void setStationList(List<LmsStation> stationList) {
+        this.stationList = stationList;
+    }
 
     public Long getId() {
         return id;
@@ -41,5 +52,16 @@ public class LmsDeliveryStaff {
 
     public void setStationId(Long stationId) {
         this.stationId = stationId;
+    }
+
+    @Override
+    public String toString() {
+        return "LmsDeliveryStaff{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", phone=" + phone +
+                ", stationId=" + stationId +
+                ", stationList=" + stationList +
+                '}';
     }
 }

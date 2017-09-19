@@ -193,4 +193,24 @@
       STATION_ID = #{stationId,jdbcType=DECIMAL}
     where ID = #{id,jdbcType=DECIMAL}
   </update>
+
+
+
+  <!--对LmsStation的映射-->
+  <resultMap id="stationMap" type="lms.model.LmsDeliveryStaff" extends="BaseResultMap" >
+    <collection property="stationList" ofType="lms.model.LmsStation">
+      <id column="id" property="id" jdbcType="DECIMAL" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+      <result column="address" property="address" jdbcType="VARCHAR" />
+      <result column="phone" property="phone" jdbcType="DECIMAL" />
+      <result column="LMS_Admin_id" property="lmsAdminId" jdbcType="DECIMAL" />
+    </collection>
+  </resultMap>
+  <!--查询-->
+  <select id="findStationResultMap" resultMap="stationMap">
+    select
+    LMS_DELIVERY_STAFF.*,Lms_Station.*
+    from LMS_DELIVERY_STAFF, Lms_Station
+    where LMS_DELIVERY_STAFF.station_Id = Lms_Station."id"
+  </select>
 </mapper>

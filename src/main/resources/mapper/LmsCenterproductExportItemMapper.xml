@@ -208,4 +208,54 @@
       LMS_Product_id = #{lmsProductId,jdbcType=DECIMAL}
     where id = #{id,jdbcType=DECIMAL}
   </update>
+
+
+
+
+  <!--对LmsProductExport的映射-->
+  <resultMap id="productExportResultMap" type="lms.model.LmsCenterproductExportItem" extends="BaseResultMap" >
+    <collection property="productExportList" ofType="lms.model.LmsProductExport">
+      <id column="id" property="id" jdbcType="DECIMAL" />
+      <result column="transport" property="transport" jdbcType="VARCHAR" />
+      <result column="description" property="description" jdbcType="VARCHAR" />
+      <result column="total_count" property="totalCount" jdbcType="DECIMAL" />
+      <result column="total_price" property="totalPrice" jdbcType="DECIMAL" />
+      <result column="datetime" property="datetime" jdbcType="DATE" />
+    </collection>
+  </resultMap>
+  <!--查询-->
+  <select id="findProductExportResultMap" resultMap="productExportResultMap">
+    select
+    LMS_CENTERPRODUCT_EXPORT_ITEM.*,LMS_PRODUCT_EXPORT.*
+    from LMS_CENTERPRODUCT_EXPORT_ITEM,  LMS_PRODUCT_EXPORT
+    where LMS_CENTERPRODUCT_EXPORT_ITEM."LMS_Product_Export_id" = LMS_PRODUCT_EXPORT."id"
+  </select>
+
+
+  <!--对LmsProduct的映射-->
+  <resultMap id="productResultMap" type="lms.model.LmsCenterproductExportItem" extends="BaseResultMap" >
+    <collection property="productList" ofType="lms.model.LmsProduct">
+      <id column="id" property="id" jdbcType="DECIMAL" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+      <result column="price" property="price" jdbcType="DECIMAL" />
+      <result column="unit" property="unit" jdbcType="VARCHAR" />
+      <result column="LMS_Second_Category_id" property="lmsSecondCategoryId" jdbcType="DECIMAL" />
+      <result column="discount" property="discount" jdbcType="DECIMAL" />
+      <result column="cost" property="cost" jdbcType="DECIMAL" />
+      <result column="size" property="size" jdbcType="VARCHAR" />
+      <result column="LMS_Supplier_id" property="lmsSupplierId" jdbcType="DECIMAL" />
+      <result column="quality_period" property="qualityPeriod" jdbcType="VARCHAR" />
+      <result column="if_back" property="ifBack" jdbcType="DECIMAL" />
+      <result column="if_exchange" property="ifExchange" jdbcType="DECIMAL" />
+      <result column="description" property="description" jdbcType="VARCHAR" />
+    </collection>
+  </resultMap>
+  <!--查询-->
+  <select id="findProductResultMap" resultMap="productResultMap">
+    select
+    LMS_CENTERPRODUCT_EXPORT_ITEM.*,LMS_PRODUCT.*
+    from LMS_CENTERPRODUCT_EXPORT_ITEM,  LMS_PRODUCT
+    where LMS_CENTERPRODUCT_EXPORT_ITEM."LMS_Product_id" = LMS_PRODUCT."id"
+  </select>
+
 </mapper>

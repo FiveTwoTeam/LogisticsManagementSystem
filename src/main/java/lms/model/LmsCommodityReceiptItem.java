@@ -1,5 +1,7 @@
 package lms.model;
 
+import java.util.List;
+
 public class LmsCommodityReceiptItem {
     private Long id;
 
@@ -12,6 +14,10 @@ public class LmsCommodityReceiptItem {
     private Long commodityReceiptId;
 
     private Long productId;
+
+    private List<LmsCommodityReceipt> commodityReceiptList;
+
+    private List<LmsProduct> productList;
 
     public Long getId() {
         return id;
@@ -59,5 +65,35 @@ public class LmsCommodityReceiptItem {
 
     public void setProductId(Long productId) {
         this.productId = productId;
+    }
+
+    public List<LmsCommodityReceipt> getCommodityReceiptList() {
+        return commodityReceiptList;
+    }
+
+    public void setCommodityReceiptList(List<LmsCommodityReceipt> commodityReceiptList) {
+        this.commodityReceiptList = commodityReceiptList;
+    }
+
+    public List<LmsProduct> getProductList() {
+        return productList;
+    }
+
+    public void setProductList(List<LmsProduct> productList) {
+        this.productList = productList;
+    }
+
+    @Override
+    public String toString() {
+        return "LmsCommodityReceiptItem{" +
+                "id=" + id +
+                ", count=" + count +
+                ", price=" + price +
+                ", subprice=" + subprice +
+                ", commodityReceiptId=" + commodityReceiptId +
+                ", productId=" + productId +
+                ", commodityReceiptList=" + commodityReceiptList +
+                ", productList=" + productList +
+                '}';
     }
 }

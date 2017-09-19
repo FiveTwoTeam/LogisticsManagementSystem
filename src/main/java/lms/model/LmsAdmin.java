@@ -62,4 +62,16 @@ public class LmsAdmin {
     public void setRight(Long right) {
         this.right = right;
     }
+
+    @Override
+    public String toString() {
+        return "LmsAdmin{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", mail='" + mail + '\'' +
+                ", phone=" + phone +
+                ", right=" + right +
+                '}';
+    }
 }

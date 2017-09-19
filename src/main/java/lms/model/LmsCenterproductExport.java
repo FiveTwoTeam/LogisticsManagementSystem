@@ -2,6 +2,7 @@ package lms.model;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 public class LmsCenterproductExport {
     private BigDecimal id;
@@ -11,6 +12,8 @@ public class LmsCenterproductExport {
     private Date datetime;
 
     private Long lmsSupplierId;
+
+    private List<LmsSupplier> lmsSuppliers;
 
     public BigDecimal getId() {
         return id;
@@ -42,5 +45,24 @@ public class LmsCenterproductExport {
 
     public void setLmsSupplierId(Long lmsSupplierId) {
         this.lmsSupplierId = lmsSupplierId;
+    }
+
+    public List<LmsSupplier> getLmsSuppliers() {
+        return lmsSuppliers;
+    }
+
+    public void setLmsSuppliers(List<LmsSupplier> lmsSuppliers) {
+        this.lmsSuppliers = lmsSuppliers;
+    }
+
+    @Override
+    public String toString() {
+        return "LmsCenterproductExport{" +
+                "id=" + id +
+                ", exportNo=" + exportNo +
+                ", datetime=" + datetime +
+                ", lmsSupplierId=" + lmsSupplierId +
+                ", lmsSuppliers=" + lmsSuppliers +
+                '}';
     }
 }

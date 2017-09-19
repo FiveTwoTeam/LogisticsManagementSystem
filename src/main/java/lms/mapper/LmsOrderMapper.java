@@ -19,4 +19,6 @@ public interface LmsOrderMapper {
     int updateByExampleSelective(@Param("record") LmsOrder record, @Param("example") LmsOrderExample example);
 
     int updateByExample(@Param("record") LmsOrder record, @Param("example") LmsOrderExample example);
+
+    List<LmsOrder> findCustomerAndAdminMap();
 }
