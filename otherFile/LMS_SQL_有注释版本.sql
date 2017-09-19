@@ -104,7 +104,7 @@ CREATE TABLE LMS_Order (
 "total_price" NUMBER(9,2) NULL ,			--总价
 "order_number" NUMBER NULL ,				--订单号码
 "description" VARCHAR2(255 BYTE) NULL ,		--描述
-"type" NUMBER NULL ,						--订单类型
+"type" NUMBER NULL ,						--订单类型(0新订 1异地收费 2退订 3换货 4退货)--
 "address" VARCHAR2(100 BYTE) NULL ,			--收货人地址
 "LMS_Customer_id" NUMBER NULL ,				--客户ID
 "payer" VARCHAR2(45 BYTE) NULL ,			--付款人
@@ -181,7 +181,7 @@ CREATE TABLE LMS_Product (
 "LMS_Second_Category_id" NUMBER NULL , 		--二级分类ID
 "discount" NUMBER(5,2) NULL , 				--折扣
 "cost" NUMBER(10,2) NULL , 					--成本
-"size" VARCHAR2(45 BYTE) NULL ,				 --数量
+"size" VARCHAR2(45 BYTE) NULL ,				 --型号
 "LMS_Supplier_id" NUMBER NULL ,				--供应商ID
 "quality_period" VARCHAR2(45 BYTE) NULL ,	--质量
 "if_back" NUMBER NULL , 					--是否退货
@@ -317,7 +317,7 @@ CREATE TABLE LMS_Order_Item (
 "count" NUMBER NULL ,							--数量
 "price" NUMBER(7,2) NULL ,						--单价
 "discount" NUMBER(3,2) NULL ,					--折扣
-"subprice" NUMBER(9,2) NULL ,					--现价
+"subprice" NUMBER(9,2) NULL ,					--小计
 "product_description" VARCHAR2(200 BYTE) NULL 	--商品描述
 );
 COMMENT ON COLUMN LMS_Order_Item."id" IS '订单项目表ID';
@@ -326,7 +326,7 @@ COMMENT ON COLUMN LMS_Order_Item."LMS_Product_id" IS '商品ID';
 COMMENT ON COLUMN LMS_Order_Item."count" IS '数量';
 COMMENT ON COLUMN LMS_Order_Item."price" IS '单价';
 COMMENT ON COLUMN LMS_Order_Item."discount" IS '折扣';
-COMMENT ON COLUMN LMS_Order_Item."subprice" IS '现价';
+COMMENT ON COLUMN LMS_Order_Item."subprice" IS '小计';
 COMMENT ON COLUMN LMS_Order_Item."product_description" IS '商品信息描述';
 
 
