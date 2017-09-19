@@ -228,7 +228,7 @@
 
 
   <!--对LmsProduct的映射-->
-  <resultMap id="productResultMap" type="lms.model.LmsCommodityReceiptItem" extends="BaseResultMap" >
+  <resultMap id="ProductAndReceiptMap" type="lms.model.LmsCommodityReceiptItem" extends="BaseResultMap" >
     <collection property="productList" ofType="lms.model.LmsProduct">
       <id column="id" property="id" jdbcType="DECIMAL" />
       <result column="name" property="name" jdbcType="VARCHAR" />
@@ -244,20 +244,8 @@
       <result column="if_exchange" property="ifExchange" jdbcType="DECIMAL" />
       <result column="description" property="description" jdbcType="VARCHAR" />
     </collection>
-  </resultMap>
-  <!--查询-->
-  <select id="findProductResultMap" resultMap="productResultMap">
-    select
-    LMS_COMMODITY_RECEIPT_ITEM.*,LMS_PRODUCT.*
-    from LMS_COMMODITY_RECEIPT_ITEM,  LMS_PRODUCT
-    where LMS_COMMODITY_RECEIPT_ITEM."PRODUCT_ID" = LMS_PRODUCT."id"
-  </select>
 
-
-
-  <!--对LmsCommodityReceipt的映射-->
-  <resultMap id="commodityReceiptMap" type="lms.model.LmsCommodityReceiptItem" extends="BaseResultMap" >
-    <collection property="productList" ofType="lms.model.LmsCommodityReceipt">
+    <collection property="commodityReceiptList" ofType="lms.model.LmsCommodityReceipt">
       <id column="ID" property="id" jdbcType="DECIMAL" />
       <result column="TASK_NUMBER" property="taskNumber" jdbcType="DECIMAL" />
       <result column="CUNTOMER_ID" property="cuntomerId" jdbcType="DECIMAL" />
@@ -274,11 +262,15 @@
     </collection>
   </resultMap>
   <!--查询-->
-  <select id="findCommodityReceiptMap" resultMap="commodityReceiptMap">
+  <select id="findProductAndReceiptMap" resultMap="ProductAndReceiptMap">
     select
-    LMS_COMMODITY_RECEIPT_ITEM.*,LMS_COMMODITY_RECEIPT.*
-    from LMS_COMMODITY_RECEIPT_ITEM,  LMS_COMMODITY_RECEIPT
-    where LMS_COMMODITY_RECEIPT_ITEM."COMMODITY_RECEIPT_ID" = LMS_COMMODITY_RECEIPT."ID"
+    LMS_COMMODITY_RECEIPT_ITEM.*,LMS_PRODUCT.*,LMS_COMMODITY_RECEIPT.*
+    from LMS_COMMODITY_RECEIPT_ITEM,  LMS_PRODUCT, LMS_COMMODITY_RECEIPT
+    where LMS_COMMODITY_RECEIPT_ITEM."PRODUCT_ID" = LMS_PRODUCT."id"
+		and LMS_COMMODITY_RECEIPT_ITEM."COMMODITY_RECEIPT_ID" = LMS_COMMODITY_RECEIPT."ID"
   </select>
+
+
+
 
 </mapper>

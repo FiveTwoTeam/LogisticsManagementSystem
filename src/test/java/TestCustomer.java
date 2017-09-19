@@ -82,20 +82,12 @@ public class TestCustomer {
     LmsCommodityReceiptItemMapper commodityReceiptItemMapper;
     @Test
     public void findLmsCommodityReceiptItemMapper(){
-        List<LmsCommodityReceiptItem>  list=commodityReceiptItemMapper.findCommodityReceiptMap();
+        List<LmsCommodityReceiptItem>  list=commodityReceiptItemMapper.findProductAndReceiptMap();
         System.out.println(list);
         for (LmsCommodityReceiptItem list1:
                 list) {
             System.out.println(list1.toString());
             System.out.println(list1.getCommodityReceiptList().get(0).toString());
-        }
-
-        System.out.println("---------------------");
-        List<LmsCommodityReceiptItem>  list2=commodityReceiptItemMapper.findProductResultMap();
-        System.out.println(list);
-        for (LmsCommodityReceiptItem list1:
-                list) {
-            System.out.println(list1.toString());
             System.out.println(list1.getProductList().get(0).toString());
         }
     }
