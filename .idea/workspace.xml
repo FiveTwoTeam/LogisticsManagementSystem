@@ -7,7 +7,148 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65374a5e-d037-45ec-bf98-b0290a12408c" name="Default" comment="" />
+    <list default="true" id="65374a5e-d037-45ec-bf98-b0290a12408c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/TestCustomer.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/ItemsMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmcCommodityReceiptMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsStationRepetoryMapper.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/lms/model/ItemCustom.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/lms/model/Items.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/lms/model/ItemsExample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmcCommodityReceipt.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmcCommodityReceiptExample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsStationRepetory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsStationRepetoryExample.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/lms/service/ItemService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/lms/service/impl/ItemServiceImpl.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/lms/web/ItemController.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/mapper/ItemsMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmcCommodityReceiptMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsStationRepetoryMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/mapper/ItemsMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/mapper/LmcCommodityReceiptMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/ItemCustom.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/Items.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/ItemsExample$Criteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/ItemsExample$Criterion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/ItemsExample$GeneratedCriteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/ItemsExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/LmcCommodityReceipt.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/LmcCommodityReceiptExample$Criteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/LmcCommodityReceiptExample$Criterion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/LmcCommodityReceiptExample$GeneratedCriteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/LmcCommodityReceiptExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/service/ItemService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/service/impl/ItemServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/web/ItemController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/mapper/ItemsMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/lms/mapper/ItemsMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/lms/mapper/LmcCommodityReceiptMapper.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/lms/model/ItemCustom.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/lms/model/Items.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/lms/model/ItemsExample$Criteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/lms/model/ItemsExample$Criterion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/lms/model/ItemsExample$GeneratedCriteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/lms/model/ItemsExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/lms/model/LmcCommodityReceipt.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/lms/model/LmcCommodityReceiptExample$Criteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/lms/model/LmcCommodityReceiptExample$Criterion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/lms/model/LmcCommodityReceiptExample$GeneratedCriteria.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/lms/model/LmcCommodityReceiptExample.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/lms/service/ItemService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/lms/service/impl/ItemServiceImpl.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/lms/web/ItemController.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mapper/ItemsMapper.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mapper/LmcCommodityReceiptMapper.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem.war" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/mapper/LmsCenterproductExportItemMapper.class" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/mapper/LmsCenterproductExportItemMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/mapper/LmsCenterproductExportMapper.class" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/mapper/LmsCenterproductExportMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/mapper/LmsCommodityReceiptItemMapper.class" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/mapper/LmsCommodityReceiptItemMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/mapper/LmsDeliveryStaffMapper.class" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/mapper/LmsDeliveryStaffMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/mapper/LmsOrderMapper.class" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/mapper/LmsOrderMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/LmsAdmin.class" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/LmsAdmin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/LmsCenterproductExport.class" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/LmsCenterproductExport.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/LmsCenterproductExportItem.class" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/LmsCenterproductExportItem.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/LmsCommodityReceiptItem.class" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/LmsCommodityReceiptItem.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/LmsCustomer.class" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/LmsCustomer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/LmsDeliveryStaff.class" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/LmsDeliveryStaff.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/LmsFirstCategory.class" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/LmsFirstCategory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/LmsOrder.class" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/LmsOrder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/LmsSupplier.class" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/LmsSupplier.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/QueryExample.class" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/lms/model/QueryExample.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lms/mapper/LmsCenterproductExportItemMapper.class" afterPath="$PROJECT_DIR$/target/classes/lms/mapper/LmsCenterproductExportItemMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lms/mapper/LmsCenterproductExportMapper.class" afterPath="$PROJECT_DIR$/target/classes/lms/mapper/LmsCenterproductExportMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lms/mapper/LmsCommodityReceiptItemMapper.class" afterPath="$PROJECT_DIR$/target/classes/lms/mapper/LmsCommodityReceiptItemMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lms/mapper/LmsDeliveryStaffMapper.class" afterPath="$PROJECT_DIR$/target/classes/lms/mapper/LmsDeliveryStaffMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lms/mapper/LmsOrderMapper.class" afterPath="$PROJECT_DIR$/target/classes/lms/mapper/LmsOrderMapper.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lms/model/LmsAdmin.class" afterPath="$PROJECT_DIR$/target/classes/lms/model/LmsAdmin.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lms/model/LmsCenterproductExport.class" afterPath="$PROJECT_DIR$/target/classes/lms/model/LmsCenterproductExport.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lms/model/LmsCenterproductExportItem.class" afterPath="$PROJECT_DIR$/target/classes/lms/model/LmsCenterproductExportItem.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lms/model/LmsCommodityReceiptItem.class" afterPath="$PROJECT_DIR$/target/classes/lms/model/LmsCommodityReceiptItem.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lms/model/LmsCustomer.class" afterPath="$PROJECT_DIR$/target/classes/lms/model/LmsCustomer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lms/model/LmsDeliveryStaff.class" afterPath="$PROJECT_DIR$/target/classes/lms/model/LmsDeliveryStaff.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lms/model/LmsFirstCategory.class" afterPath="$PROJECT_DIR$/target/classes/lms/model/LmsFirstCategory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lms/model/LmsOrder.class" afterPath="$PROJECT_DIR$/target/classes/lms/model/LmsOrder.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lms/model/LmsStationRepetory.class" afterPath="$PROJECT_DIR$/target/classes/lms/model/LmsStationRepetory.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lms/model/LmsStationRepetoryExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/lms/model/LmsStationRepetoryExample$Criteria.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lms/model/LmsStationRepetoryExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/lms/model/LmsStationRepetoryExample$Criterion.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lms/model/LmsStationRepetoryExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/lms/model/LmsStationRepetoryExample$GeneratedCriteria.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lms/model/LmsStationRepetoryItem.class" afterPath="$PROJECT_DIR$/target/classes/lms/model/LmsStationRepetoryItem.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lms/model/LmsStationRepetoryItemExample$Criteria.class" afterPath="$PROJECT_DIR$/target/classes/lms/model/LmsStationRepetoryItemExample$Criteria.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lms/model/LmsStationRepetoryItemExample$Criterion.class" afterPath="$PROJECT_DIR$/target/classes/lms/model/LmsStationRepetoryItemExample$Criterion.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lms/model/LmsStationRepetoryItemExample$GeneratedCriteria.class" afterPath="$PROJECT_DIR$/target/classes/lms/model/LmsStationRepetoryItemExample$GeneratedCriteria.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lms/model/LmsSupplier.class" afterPath="$PROJECT_DIR$/target/classes/lms/model/LmsSupplier.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/lms/model/QueryExample.class" afterPath="$PROJECT_DIR$/target/classes/lms/model/QueryExample.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LogisticsManagementSystem.iml" afterPath="$PROJECT_DIR$/LogisticsManagementSystem.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generatorConfig.xml" afterPath="$PROJECT_DIR$/generatorConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsCenterproductExportItemMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsCenterproductExportItemMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsCenterproductExportMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsCenterproductExportMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsCommodityReceiptItemMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsCommodityReceiptItemMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsDeliveryStaffMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsDeliveryStaffMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsAdmin.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsAdmin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsCenterproductExport.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsCenterproductExport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsCenterproductExportItem.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsCenterproductExportItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsCommodityReceiptItem.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsCommodityReceiptItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsCustomer.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsCustomer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsDeliveryStaff.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsDeliveryStaff.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsFirstCategory.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsFirstCategory.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsOrder.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsOrder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsStationRepetoryItem.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsStationRepetoryItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsStationRepetoryItemExample.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsStationRepetoryItemExample.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsSupplier.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsSupplier.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/QueryExample.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/QueryExample.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsCenterproductExportItemMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsCenterproductExportItemMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsCenterproductExportMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsCenterproductExportMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsCommodityReceiptItemMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsCommodityReceiptItemMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsDeliveryStaffMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsDeliveryStaffMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsOrderMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsOrderMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsStationRepetoryItemMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsStationRepetoryItemMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/META-INF/MANIFEST.MF" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/jdbc.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/mapper/LmcCommodityReceiptMapper.xml" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/mapper/LmcCommodityReceiptMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/mapper/LmsCenterproductExportItemMapper.xml" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/mapper/LmsCenterproductExportItemMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/mapper/LmsCenterproductExportMapper.xml" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/mapper/LmsCenterproductExportMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/mapper/LmsCommodityReceiptItemMapper.xml" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/mapper/LmsCommodityReceiptItemMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/mapper/LmsDeliveryStaffMapper.xml" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/mapper/LmsDeliveryStaffMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/mapper/LmsOrderMapper.xml" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/classes/mapper/LmsOrderMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/LogisticsManagementSystem/jsp/list.jsp" afterPath="$PROJECT_DIR$/target/LogisticsManagementSystem/jsp/list.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/LmsCenterproductExportItemMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/LmsCenterproductExportItemMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/LmsCenterproductExportMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/LmsCenterproductExportMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/LmsCommodityReceiptItemMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/LmsCommodityReceiptItemMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/LmsDeliveryStaffMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/LmsDeliveryStaffMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/LmsOrderMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/LmsOrderMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/LmsStationRepetoryItemMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/LmsStationRepetoryItemMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/LmsStationRepetoryMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/LmsStationRepetoryMapper.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,12 +157,47 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="@localhost" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="SCOTT" type="e3449647:DbNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="TestCustomer.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestCustomer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -31,13 +207,20 @@
       <find>jxc</find>
       <find>cn</find>
       <find>lms.Items</find>
+      <find>key</find>
+      <find>BaseResultMap</find>
+      <find>Base_Column_List</find>
     </findStrings>
     <replaceStrings>
       <replace>lms.model.Items</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="WARN_ABOUT_CRLF" value="false" />
+    <option name="WARN_ABOUT_DETACHED_HEAD" value="false" />
+    <option name="FORCE_PUSH_ALLOWED" value="false" />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -48,8 +231,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/LogisticsManagementSystem.iml" />
-        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
-        <option value="$PROJECT_DIR$/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml" />
         <option value="$PROJECT_DIR$/src/main/java/lms/model/ItemsExample.java" />
@@ -63,10 +244,40 @@
         <option value="$PROJECT_DIR$/src/main/java/lms/service/impl/ItemServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/lms/model/QueryExample.java" />
-        <option value="$PROJECT_DIR$/src/main/java/lms/service/AdminService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/Number.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/model/LmsAdmin.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/lms/web/AdminController.java" />
         <option value="$PROJECT_DIR$/src/main/java/lms/service/impl/AdminServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/service/AdminService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/web/AdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/mapper/LmcCommodityReceiptMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/model/LmcCommodityReceipt.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/model/LmsCenterproductExport.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/LmsCenterproductExportMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/mapper/LmsCenterproductExportMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/model/LmsSupplier.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/model/LmsCenterproductExportItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/mapper/LmsCenterproductExportItemMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/LmsCenterproductExportItemMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/mapper/LmsCommodityReceiptItemMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/model/LmsDeliveryStaff.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/mapper/LmsDeliveryStaffMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/LmsDeliveryStaffMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/model/LmsFirstCategory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/model/LmsCustomer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/model/LmsOrder.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/LmcCommodityReceiptMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/LmsOrderMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/mapper/LmsCommodityReceiptMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/model/LmsCommodityReceipt.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/LmsCommodityReceiptMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/model/LmsCommodityReceiptItem.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/LmsCommodityReceiptItemMapper.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/TestCustomer.java" />
+        <option value="$PROJECT_DIR$/generatorConfig.xml" />
       </list>
     </option>
   </component>
@@ -84,8 +295,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="531" />
-    <option name="y" value="71" />
+    <option name="x" value="355" />
+    <option name="y" value="188" />
     <option name="width" value="1118" />
     <option name="height" value="658" />
   </component>
@@ -132,7 +343,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,13 +359,59 @@
               <item name="LogisticsManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="LogisticsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LogisticsManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LogisticsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LogisticsManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LogisticsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LogisticsManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LogisticsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LogisticsManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LogisticsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LogisticsManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LogisticsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LogisticsManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LogisticsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LogisticsManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -168,21 +428,23 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.23942208" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Oracle" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\项目\LogisticsManagementSystem\src\test\resource" />
+      <recent name="F:\项目\LogisticsManagementSystem\src\main\webapp\images" />
+      <recent name="F:\项目\LogisticsManagementSystem\src\main\webapp\jsp" />
+      <recent name="F:\项目\LogisticsManagementSystem\src\main\webapp\css" />
+      <recent name="F:\项目\LogisticsManagementSystem\src\main\java\lms\model" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\东软\9-19\LogisticsManagementSystem\src\main\java\lms\mapper" />
       <recent name="F:\项目\LogisticsManagementSystem\src\main\webapp\jsp" />
       <recent name="F:\项目\LogisticsManagementSystem\src\main\resources\mapper" />
       <recent name="F:\项目\LogisticsManagementSystem\src\main\webapp" />
       <recent name="G:\MyEclipseWorkspaces\LogisticsManagementSystem" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\项目\LogisticsManagementSystem\src\main\java\lms\model" />
-      <recent name="F:\项目\LogisticsManagementSystem\src\main\java\lms\web" />
-      <recent name="F:\项目\LogisticsManagementSystem\src\main\java\lms\mapper" />
-      <recent name="F:\项目\LogisticsManagementSystem\src\main\java\lms\service" />
-      <recent name="F:\项目\LogisticsManagementSystem\src\main\webapp\WEB-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -197,11 +459,111 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Unnamed">
+  <component name="RunManager" selected="JUnit.TestCustomer.findLmsOrderMapper">
+    <configuration name="TestCustomer.findLmcCommodityReceipt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="LogisticsManagementSystem" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCustomer" />
+      <option name="METHOD_NAME" value="findLmcCommodityReceipt" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestCustomer.findLmsCommodityReceipt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="LogisticsManagementSystem" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCustomer" />
+      <option name="METHOD_NAME" value="findLmsCommodityReceipt" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestCustomer.findLmsCommodityReceiptItemMapper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="LogisticsManagementSystem" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCustomer" />
+      <option name="METHOD_NAME" value="findLmsCommodityReceiptItemMapper" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestCustomer.findLmsDeliveryStaffMapper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="LogisticsManagementSystem" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCustomer" />
+      <option name="METHOD_NAME" value="findLmsDeliveryStaffMapper" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestCustomer.findLmsOrderMapper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="LogisticsManagementSystem" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCustomer" />
+      <option name="METHOD_NAME" value="findLmsOrderMapper" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.81" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="HOT_SWAP_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
       <deployment>
         <artifact name="LogisticsManagementSystem:war exploded">
           <settings>
@@ -428,6 +790,23 @@
       <properties />
       <listeners />
     </configuration>
+    <list size="6">
+      <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestCustomer.findLmsCommodityReceiptItemMapper" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestCustomer.findLmsDeliveryStaffMapper" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestCustomer.findLmsOrderMapper" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestCustomer.findLmcCommodityReceipt" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.TestCustomer.findLmsCommodityReceipt" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestCustomer.findLmsOrderMapper" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestCustomer.findLmsCommodityReceipt" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestCustomer.findLmcCommodityReceipt" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestCustomer.findLmsDeliveryStaffMapper" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestCustomer.findLmsCommodityReceiptItemMapper" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -443,14 +822,58 @@
       <workItem from="1505229381556" duration="2005000" />
       <workItem from="1505270345361" duration="14458000" />
       <workItem from="1505350145639" duration="2882000" />
+      <workItem from="1505353896761" duration="366000" />
+      <workItem from="1505367382164" duration="2254000" />
+      <workItem from="1505370057702" duration="4989000" />
+      <workItem from="1505436687187" duration="670000" />
+      <workItem from="1505456743804" duration="591000" />
+      <workItem from="1505655838323" duration="6376000" />
+      <workItem from="1505694302433" duration="12463000" />
+      <workItem from="1505718056349" duration="5416000" />
+      <workItem from="1505725333569" duration="1581000" />
+      <workItem from="1505750120441" duration="600000" />
+      <workItem from="1505781617972" duration="2083000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TestCustomer_findLmcCommodityReceipt - 2017.09.19 at 08h 52m 31s.xml">
+      <configuration name="TestCustomer.findLmcCommodityReceipt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCustomer_findLmcCommodityReceipt - 2017.09.19 at 08h 53m 12s.xml">
+      <configuration name="TestCustomer.findLmcCommodityReceipt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCustomer_findLmcCommodityReceipt - 2017.09.19 at 08h 55m 20s.xml">
+      <configuration name="TestCustomer.findLmcCommodityReceipt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCustomer_findLmcCommodityReceipt - 2017.09.19 at 08h 56m 40s.xml">
+      <configuration name="TestCustomer.findLmcCommodityReceipt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCustomer_findLmcCommodityReceipt - 2017.09.19 at 08h 57m 00s.xml">
+      <configuration name="TestCustomer.findLmcCommodityReceipt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCustomer_findLmsCommodityReceipt - 2017.09.19 at 08h 58m 30s.xml">
+      <configuration name="TestCustomer.findLmsCommodityReceipt" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCustomer_findLmsOrderMapper - 2017.09.19 at 08h 58m 44s.xml">
+      <configuration name="TestCustomer.findLmsOrderMapper" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCustomer_findLmsOrderMapper - 2017.09.19 at 09h 07m 10s.xml">
+      <configuration name="TestCustomer.findLmsOrderMapper" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCustomer_findLmsOrderMapper - 2017.09.19 at 09h 10m 11s.xml">
+      <configuration name="TestCustomer.findLmsOrderMapper" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCustomer_fun - 2017.09.18 at 15h 09m 47s.xml">
+      <configuration name="TestCustomer.fun" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20798000" />
+    <option name="totallyTimeSpent" value="58187000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="916" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
@@ -458,23 +881,24 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2013889" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32503113" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31755915" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23352855" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24305555" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -482,41 +906,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290441" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24011713" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -525,181 +915,255 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/lms/service/impl/ItemServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1176">
+          <caret line="56" column="82" lean-forward="false" selection-start-line="56" selection-start-column="82" selection-end-line="56" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="34" column="10" lean-forward="false" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lms/mapper/ItemsMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsStationMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="77" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="8" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/service/AdminService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/mapper/LmsAdminMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-183">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmcCommodityReceiptExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-735">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsSupplierMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="95" column="21" lean-forward="false" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/mapper/LmsCenterproductExportMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsProductMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="77" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="16" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsProductExportMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="89" column="27" lean-forward="false" selection-start-line="89" selection-start-column="9" selection-end-line="89" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/mapper/LmsCenterproductExportItemMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="33" column="57" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsCenterproductExportMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="198" column="2" lean-forward="false" selection-start-line="198" selection-start-column="2" selection-end-line="221" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsCenterproductExportItemMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1155">
+          <caret line="14" column="61" lean-forward="true" selection-start-line="14" selection-start-column="61" selection-end-line="14" selection-end-column="61" />
+          <folding>
+            <marker date="1505717300000" expanded="true" signature="3661:3786" ph="select from LMS_CENTERPRODUCT_EXPORT_ITEM" />
+            <marker date="1505717300000" expanded="true" signature="3876:3955" ph="delete from " />
+            <marker date="1505717300000" expanded="true" signature="4065:4106" ph="delete from " />
+            <marker date="1505717300000" expanded="true" signature="4293:4582" ph="insert into LMS_CENTERPRODUCT_EXPORT_ITEM... " />
+            <marker date="1505717300000" expanded="true" signature="5802:5852" ph="select count... LMS_CENTERPRODUCT_EXPORT_ITEM" />
+            <marker date="1505717300000" expanded="true" signature="6839:7167" ph="update LMS_C... " />
+            <marker date="1505717300000" expanded="true" signature="7385:7916" ph="update LMS_C... " />
+            <marker date="1505717300000" expanded="true" signature="8022:8318" ph="update LMS_C... " />
+            <marker date="1505717300000" expanded="true" signature="9128:9341" ph="select LMS_C... LMS_CENTERPRODUCT_EXPORT_ITEM" />
+            <marker date="1505717300000" expanded="true" signature="10634:10819" ph="select LMS_C... LMS_CENTERPRODUCT_EXPORT_ITEM" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsCenterproductExportItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsCenterproductExport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsCenterproductExportItemExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-420">
+          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/mapper/LmsCommodityReceiptItemMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="32" column="58" lean-forward="false" selection-start-line="32" selection-start-column="58" selection-end-line="32" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/mapper/LmsDeliveryStaffMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="30" column="37" lean-forward="true" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsDeliveryStaff.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="29" />
+          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsDeliveryStaffMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="209" column="59" lean-forward="true" selection-start-line="209" selection-start-column="59" selection-end-line="209" selection-end-column="59" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lms/web/ItemController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsCustomer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        <state relative-caret-position="187">
+          <caret line="104" column="18" lean-forward="false" selection-start-line="104" selection-start-column="18" selection-end-line="104" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsFirstCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-483">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/QueryExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsCustomerMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="67" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="13" selection-end-column="67" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lms/service/ItemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ItemsMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="70" column="38" lean-forward="false" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1239">
-          <caret line="59" column="29" lean-forward="false" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3066">
-          <caret line="146" column="36" lean-forward="false" selection-start-line="146" selection-start-column="36" selection-end-line="146" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="9" lean-forward="false" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="35" lean-forward="false" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="48" lean-forward="true" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
-          <folding>
-            <element signature="e#693#704#0" expanded="false" />
-            <element signature="e#747#755#0" expanded="false" />
-            <element signature="e#795#804#0" expanded="false" />
-            <element signature="e#848#861#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generatorConfig.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsAdminMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
-          <caret line="3" column="66" lean-forward="false" selection-start-line="3" selection-start-column="66" selection-end-line="3" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1701">
-          <caret line="81" column="17" lean-forward="false" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="9" lean-forward="true" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="987">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <caret line="3" column="56" lean-forward="false" selection-start-line="3" selection-start-column="48" selection-end-line="3" selection-end-column="56" />
           <folding>
-            <element signature="e#693#704#0" expanded="false" />
-            <element signature="e#747#755#0" expanded="false" />
-            <element signature="e#795#804#0" expanded="false" />
-            <element signature="e#848#861#0" expanded="false" />
+            <marker date="1505279610000" expanded="true" signature="3581:3686" ph="select from LMS_ADMIN" />
+            <marker date="1505279610000" expanded="true" signature="3770:3829" ph="delete from " />
+            <marker date="1505279610000" expanded="true" signature="3921:3942" ph="delete from " />
+            <marker date="1505279610000" expanded="true" signature="4111:4367" ph="insert into LMS_ADMIN... " />
+            <marker date="1505279610000" expanded="true" signature="5582:5612" ph="select count... LMS_ADMIN" />
+            <marker date="1505279610000" expanded="true" signature="6613:6922" ph="update LMS_A... " />
+            <marker date="1505279610000" expanded="true" signature="7122:7653" ph="update LMS_A... " />
+            <marker date="1505279610000" expanded="true" signature="7741:8011" ph="update LMS_A... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-service.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsOrderBack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="840">
-          <caret line="40" column="52" lean-forward="true" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LogisticsManagementSystem.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsStationRepetoryItemExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9911">
+        <state relative-caret-position="84">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsFirstCategoryMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsOrderItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsSupplier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="25" column="26" lean-forward="false" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/437a7caf-60bc-4402-825a-977620bd0c6d/console.sql" />
+    <entry file="das://table:/95d55f06/b81d6ac8-10f6-41af-b0b9-bd335c7e009b/SCOTT.LMS_CUSTOMER" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/b81d6ac8-10f6-41af-b0b9-bd335c7e009b/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -707,7 +1171,154 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsAdminExample.java">
+    <entry file="das://table:/d1bcd508/b81d6ac8-10f6-41af-b0b9-bd335c7e009b/SCOTT.LMS_PRODUCT">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsOrderMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="774">
+          <caret line="304" column="9" lean-forward="false" selection-start-line="304" selection-start-column="9" selection-end-line="304" selection-end-column="9" />
+          <folding>
+            <marker date="1505723064000" expanded="true" signature="4247:4268" ph="delete from " />
+            <marker date="1505723064000" expanded="true" signature="4437:5078" ph="insert into LMS_ORDER... " />
+            <marker date="1505723064000" expanded="true" signature="7476:7506" ph="select count... LMS_ORDER" />
+            <marker date="1505723064000" expanded="true" signature="9375:10125" ph="update LMS_O... " />
+            <marker date="1505723064000" expanded="true" signature="11750:11948" ph="select LMS_O... LMS_ORDER" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/mapper/LmcCommodityReceiptMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="31" column="4" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/mapper/LmsCommodityReceiptMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmcCommodityReceipt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="35" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmcCommodityReceiptMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="378" column="11" lean-forward="false" selection-start-line="348" selection-start-column="2" selection-end-line="378" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsCommodityReceiptMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="683">
+          <caret line="369" column="11" lean-forward="false" selection-start-line="369" selection-start-column="11" selection-end-line="369" selection-end-column="11" />
+          <folding>
+            <marker date="1505782317168" expanded="true" signature="4266:4383" ph="select from LMS_COMMODITY_RECEIPT" />
+            <marker date="1505782317168" expanded="true" signature="4473:4544" ph="delete from " />
+            <marker date="1505782317168" expanded="true" signature="4647:4680" ph="delete from " />
+            <marker date="1505782317168" expanded="true" signature="4860:5484" ph="insert into LMS_COMMODITY_RECEIPT... " />
+            <marker date="1505782317168" expanded="true" signature="7863:7905" ph="select count... LMS_COMMODITY_RECEIPT" />
+            <marker date="1505782317168" expanded="true" signature="9745:10478" ph="update LMS_C... " />
+            <marker date="1505782317168" expanded="true" signature="10689:11961" ph="update LMS_C... " />
+            <marker date="1505782317168" expanded="true" signature="12060:12705" ph="update LMS_C... " />
+            <marker date="1505782317168" expanded="true" signature="14168:14412" ph="select LMS_C... LMS_COMMODITY_RECEIPT" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsCommodityReceipt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="158" column="18" lean-forward="false" selection-start-line="158" selection-start-column="18" selection-end-line="158" selection-end-column="18" />
+          <folding>
+            <element signature="e#629#630#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#753#754#0" expanded="true" />
+            <element signature="e#798#799#0" expanded="true" />
+            <element signature="e#829#830#0" expanded="true" />
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsCommodityReceiptItemMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="269" column="19" lean-forward="true" selection-start-line="269" selection-start-column="19" selection-end-line="269" selection-end-column="19" />
+          <folding>
+            <marker date="1505782616905" expanded="true" signature="3694:3816" ph="select from LMS_COMMODITY_RECEIPT_ITEM" />
+            <marker date="1505782616905" expanded="true" signature="3900:3976" ph="delete from " />
+            <marker date="1505782616905" expanded="true" signature="4083:4121" ph="delete from " />
+            <marker date="1505782616905" expanded="true" signature="4305:4625" ph="insert into LMS_COMMODITY_RECEIPT_ITEM... " />
+            <marker date="1505782616905" expanded="true" signature="5950:5997" ph="select count... LMS_COMMODITY_RECEIPT_ITEM" />
+            <marker date="1505782616905" expanded="true" signature="7063:7422" ph="update LMS_C... " />
+            <marker date="1505782616905" expanded="true" signature="7637:8233" ph="update LMS_C... " />
+            <marker date="1505782616905" expanded="true" signature="8336:8656" ph="update LMS_C... " />
+            <marker date="1505782616905" expanded="true" signature="9946:10118" ph="select LMS_C... LMS_COMMODITY_RECEIPT_ITEM" />
+            <marker date="1505782616905" expanded="true" signature="11432:11644" ph="select LMS_C... LMS_COMMODITY_RECEIPT_ITEM" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsCommodityReceiptItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="74" column="28" lean-forward="false" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/mapper/LmsStationRepetoryItemMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsStationRepetoryExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
@@ -715,74 +1326,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="63" column="44" lean-forward="false" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/Items.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/ItemsExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-433">
-          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="10" column="55" lean-forward="false" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="55" />
-          <folding>
-            <element signature="e#693#704#0" expanded="false" />
-            <element signature="e#747#755#0" expanded="false" />
-            <element signature="e#795#804#0" expanded="false" />
-            <element signature="e#848#861#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring/spring-web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="32" column="25" lean-forward="false" selection-start-line="32" selection-start-column="25" selection-end-line="32" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/ItemCustom.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsStationRepetoryItem.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
@@ -790,131 +1334,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsStationRepetory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestCustomer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="20" column="19" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lms/mapper/ItemsMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/ItemsMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1470">
-          <caret line="70" column="38" lean-forward="false" selection-start-line="70" selection-start-column="38" selection-end-line="70" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_141/src.zip!/javax/annotation/Resources.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="40" column="18" lean-forward="false" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lms/service/ItemService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lms/web/ItemController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="34" column="9" lean-forward="false" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsAdmin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="22" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lms/service/impl/ItemServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/QueryExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="30" lean-forward="true" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding>
-            <element signature="e#82#83#0" expanded="true" />
-            <element signature="e#113#114#0" expanded="true" />
-            <element signature="e#163#164#0" expanded="true" />
-            <element signature="e#203#204#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="53" column="38" lean-forward="true" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lms/web/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lms/service/AdminService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lms/service/impl/AdminServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="34" column="10" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -972,11 +1406,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring|LogisticsManagementSystem</last-edited>
+          <last-edited>LogisticsManagementSystem</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
