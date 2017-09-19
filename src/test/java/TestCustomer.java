@@ -123,6 +123,38 @@ public class TestCustomer {
              list) {
             System.out.println(list1.toString());
         }
+    }
+
+
+    @Autowired
+    LmsOrderBackMapper orderBackMapper;
+    @Test
+    public void findLmsOrderBackMapper(){
+
+        List<LmsOrderBack>  list=orderBackMapper.findOrderDetailMap();
+        System.out.println(list);
+        for (LmsOrderBack list1:
+                list) {
+            System.out.println(list1.toString());
+            System.out.println("-------");
+            System.out.println(list1.getLmsorder().toString());
+        }
+
+    }
+
+    @Autowired
+    LmsOrderItemMapper orderItemMapper;
+    @Test
+    public void findLmsOrderItemMapper(){
+
+        List<LmsOrderItem>  list=orderItemMapper.findorderAndProductMap();
+        System.out.println(list);
+        for (LmsOrderItem list1:
+                list) {
+            System.out.println(list1.toString());
+            System.out.println("-------");
+            System.out.println(list1.getProductList().get(0).toString());
+        }
 
     }
 }
