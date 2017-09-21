@@ -21,22 +21,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
             </ul>
             <div class="layui-tab-content site-demo site-demo-body">
                 <div class="layui-tab-item layui-show">
-                    <iframe frameborder="0" src="./welcome.html" class="x-iframe"></iframe>
+                    <iframe frameborder="0" src="${ basePath }/jsp/welcome.jsp" class="x-iframe"></iframe>
                 </div>
             </div>
         </div>
             <div class="site-mobile-shade">
             </div>
         </div>
-       <jsp:include page="bottom.jsp"/>
-       <%-- <script>
-        var _hmt = _hmt || [];
-        (function() {
-          var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";
-          var s = document.getElementsByTagName("script")[0];
-          s.parentNode.insertBefore(hm, s);
-        })();
-        </script>--%>
     </body>
 </html>

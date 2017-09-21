@@ -11,86 +11,20 @@
         <ul class="layui-nav layui-nav-tree site-demo-nav" lay-filter="side">
             <li class="layui-nav-item">
                 <a class="javascript:;" href="javascript:;">
-                    <i class="layui-icon" style="top: 3px;">&#xe62d;</i><cite>商品管理</cite>
+                    <i class="layui-icon" style="top: 3px;">&#xe62d;</i><cite>客服</cite>
                 </a>
                 <dl class="layui-nav-child">
                     <dd class="">
                     <dd class="">
-                        <a href="javascript:;" _href="./product_list.html">
-                            <cite>商品列表</cite>
+                        <a href="javascript:;" _href="${ basePath }/query">
+                            <cite>客户管理</cite>
                         </a>
                     </dd>
                     </dd>
                     <dd class="">
                     <dd class="">
                         <a href="javascript:;" _href="./category.html">
-                            <cite>商品分类</cite>
-                        </a>
-                    </dd>
-                    </dd>
-                    <dd class="">
-                    <dd class="">
-                        <a href="javascript:;" _href="./centerProduct_list.html">
-                            <cite>中心库房商品</cite>
-                        </a>
-                    </dd>
-                    </dd>
-                </dl>
-            </li>
-            <li class="layui-nav-item">
-                <a class="javascript:;" href="javascript:;">
-                    <i class="layui-icon" style="top: 3px;">&#xe642;</i><cite>订单管理</cite>
-                </a>
-                <dl class="layui-nav-child">
-                    <dd class="">
-                    <dd class="">
-                        <a href="javascript:;" _href="./order_list.html">
-                            <cite>订单列表</cite>
-                        </a>
-                    </dd>
-                    </dd>
-                </dl>
-                <dl class="layui-nav-child">
-                    <dd class="">
-                    <dd class="">
-                        <a href="javascript:;" _href="./order_back.html">
-                            <cite>退订</cite>
-                        </a>
-                    </dd>
-                    </dd>
-                </dl>
-                <dl class="layui-nav-child">
-                    <dd class="">
-                    <dd class="">
-                        <a href="javascript:;" _href="./order_exchange.html">
-                            <cite>换货</cite>
-                        </a>
-                    </dd>
-                    </dd>
-                </dl>
-                <dl class="layui-nav-child">
-                    <dd class="">
-                    <dd class="">
-                        <a href="javascript:;" _href="./receipt_list.html">
-                            <cite>回执信息</cite>
-                        </a>
-                    </dd>
-                    </dd>
-                </dl>
-                <dl class="layui-nav-child">
-                    <dd class="">
-                    <dd class="">
-                        <a href="javascript:;" _href="./task_list.html">
-                            <cite>任务单</cite>
-                        </a>
-                    </dd>
-                    </dd>
-                </dl>
-                <dl class="layui-nav-child">
-                    <dd class="">
-                    <dd class="">
-                        <a href="javascript:;" _href="./commodityReceipt_list.html">
-                            <cite>商品收据</cite>
+                            <cite>订单管理</cite>
                         </a>
                     </dd>
                     </dd>
@@ -220,6 +154,16 @@
             </li>
         </ul>
     </div>
-
+    <script src="./lib/layui/layui.js" charset="utf-8"></script>
+    <script src="./js/x-admin.js"></script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 </div>
 

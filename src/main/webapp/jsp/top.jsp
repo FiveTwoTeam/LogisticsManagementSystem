@@ -8,17 +8,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <div class="layui-header header header-demo">
     <div class="layui-main">
-        <a class="logo" href="./index.jsp">
+        <a class="logo" href="${ basePath }/index.jsp">
             LMS
         </a>
         <ul class="layui-nav" lay-filter="">
-            <li class="layui-nav-item"><img src="./images/logo.png" class="layui-circle" style="border: 2px solid #A9B7B7;" width="35px" alt=""></li>
+            <li class="layui-nav-item"><img src="${ basePath }/images/logo.png" class="layui-circle" style="border: 2px solid #A9B7B7;" width="35px" alt=""></li>
             <li class="layui-nav-item">
                 <a href="javascript:;">admin</a>
                 <dl class="layui-nav-child"> <!-- 二级菜单 -->
                     <dd><a href="">个人信息</a></dd>
                     <dd><a href="">切换帐号</a></dd>
-                    <dd><a href="./login.html">退出</a></dd>
+                    <dd><a href="${ basePath }/login.html">退出</a></dd>
                 </dl>
             </li>
             <li class="layui-nav-item x-index"><a href="/">前台首页</a></li>
