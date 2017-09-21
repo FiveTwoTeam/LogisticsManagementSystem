@@ -104,7 +104,7 @@ CREATE TABLE LMS_Order (
 "total_price" NUMBER(9,2) NULL ,			--总价
 "order_number" NUMBER NULL ,				--订单号码
 "description" VARCHAR2(255 BYTE) NULL ,		--描述
-"type" NUMBER NULL ,						--订单类型(0新订 1异地收费 2退订 3换货 4退货)--
+"type" NUMBER NULL ,						--订单类型(0缺货 1可分配 2退订 3换货 4退货 5已分配)--
 "address" VARCHAR2(100 BYTE) NULL ,			--收货人地址
 "LMS_Customer_id" NUMBER NULL ,				--客户ID
 "payer" VARCHAR2(45 BYTE) NULL ,			--付款人
