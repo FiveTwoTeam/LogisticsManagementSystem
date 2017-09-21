@@ -240,4 +240,41 @@
       LMS_Station_Repertory_id = #{lmsStationRepertoryId,jdbcType=DECIMAL}
     where id = #{id,jdbcType=DECIMAL}
   </update>
+
+
+  <resultMap id="productAndStationRepetoryResultMap" type="lms.model.LmsStationRepetoryItem" extends="BaseResultMap" >
+    <association property="lmsProduct" javaType="lms.model.LmsProduct">
+      <id column="id" property="id" jdbcType="DECIMAL" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+      <result column="price" property="price" jdbcType="DECIMAL" />
+      <result column="unit" property="unit" jdbcType="VARCHAR" />
+      <result column="LMS_Second_Category_id" property="lmsSecondCategoryId" jdbcType="DECIMAL" />
+      <result column="discount" property="discount" jdbcType="DECIMAL" />
+      <result column="cost" property="cost" jdbcType="DECIMAL" />
+      <result column="size" property="size" jdbcType="VARCHAR" />
+      <result column="LMS_Supplier_id" property="lmsSupplierId" jdbcType="DECIMAL" />
+      <result column="quality_period" property="qualityPeriod" jdbcType="VARCHAR" />
+      <result column="if_back" property="ifBack" jdbcType="DECIMAL" />
+      <result column="if_exchange" property="ifExchange" jdbcType="DECIMAL" />
+      <result column="description" property="description" jdbcType="VARCHAR" />
+    </association>
+
+    <collection property="lmsStationRepetoryList" ofType="lms.model.LmsStationRepetory">
+      <id column="id" property="id" jdbcType="DECIMAL" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+      <result column="address" property="address" jdbcType="VARCHAR" />
+      <result column="phone" property="phone" jdbcType="DECIMAL" />
+      <result column="LMS_Admin_id" property="lmsAdminId" jdbcType="DECIMAL" />
+      <result column="LMS_Station_id" property="lmsStationId" jdbcType="DECIMAL" />
+    </collection>
+  </resultMap>
+
+  <!--一对多映射-->
+  <select id="findproductAndStationRepetoryMap" resultMap="productAndStationRepetoryResultMap">
+    select
+    LMS_PRODUCT.*,LMS_STATION_REPETORY.*,LMS_STATION_REPETORY_ITEM.*
+    from LMS_PRODUCT, LMS_STATION_REPETORY, LMS_STATION_REPETORY_ITEM
+    where LMS_STATION_REPETORY_ITEM."LMS_Product_id" = LMS_PRODUCT."id"
+    and LMS_STATION_REPETORY_ITEM."LMS_Station_Repertory_id" = LMS_STATION_REPETORY."id"
+  </select>
 </mapper>

@@ -109,7 +109,6 @@ public class TestCustomer {
         }
     }
 
-
     @Autowired
     LmsOrderMapper orderMapper;
     @Test
@@ -154,6 +153,37 @@ public class TestCustomer {
             System.out.println(list1.toString());
             System.out.println("-------");
             System.out.println(list1.getProductList().get(0).toString());
+        }
+
+    }
+
+    @Autowired
+    LmsTaskMapper lmsTaskMapper;
+    @Test
+    public void findtask(){
+
+        List<LmsTask>  list=lmsTaskMapper.findtaskMap();
+        System.out.println(list);
+        for (LmsTask list1:
+                list) {
+            System.out.println(list1.toString());
+            System.out.println("-------");
+            System.out.println(list1.getLmsOrderList().get(0).toString());
+        }
+    }
+
+    @Autowired
+    LmsStationRepetoryItemMapper lmsStationRepetoryItemMapper;
+    @Test
+    public void findLmsStationRepetoryItemMapper(){
+
+        List<LmsStationRepetoryItem>  list=lmsStationRepetoryItemMapper.findproductAndStationRepetoryMap();
+        System.out.println(list);
+        for (LmsStationRepetoryItem list1:
+                list) {
+            System.out.println(list1.toString());
+            System.out.println("-------");
+            System.out.println(list1.getLmsStationRepetoryList().get(0).toString());
         }
 
     }
