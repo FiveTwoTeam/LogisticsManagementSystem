@@ -16,7 +16,7 @@ public class TestCustomer {
     LmsAdminMapper lmsAdminMapper;
 
     @Autowired
-    LmcCommodityReceiptMapper commodityReceiptMapper;
+    LmsCommodityReceiptMapper commodityReceiptMapper;
 
     @Test
     public void fun(){
@@ -27,13 +27,13 @@ public class TestCustomer {
     }
 
     @Test
-    public void findLmcCommodityReceipt(){
+    public void findLmsCommodityReceipt(){
 
-        List<LmcCommodityReceipt> adminList=commodityReceiptMapper.findAllResultMap();
+        List<LmsCommodityReceipt> adminList=commodityReceiptMapper.findAllResultMap();
         BigDecimal big = new BigDecimal(1);
 //        LmcCommodityReceipt adminList=commodityReceiptMapper.selectByPrimaryKey(big);
         System.out.println(adminList);
-        for (LmcCommodityReceipt list:
+        for (LmsCommodityReceipt list:
              adminList) {
             System.out.println(list.toString());
         }
@@ -82,20 +82,12 @@ public class TestCustomer {
     LmsCommodityReceiptItemMapper commodityReceiptItemMapper;
     @Test
     public void findLmsCommodityReceiptItemMapper(){
-        List<LmsCommodityReceiptItem>  list=commodityReceiptItemMapper.findCommodityReceiptMap();
+        List<LmsCommodityReceiptItem>  list=commodityReceiptItemMapper.findProductAndReceiptMap();
         System.out.println(list);
         for (LmsCommodityReceiptItem list1:
                 list) {
             System.out.println(list1.toString());
             System.out.println(list1.getCommodityReceiptList().get(0).toString());
-        }
-
-        System.out.println("---------------------");
-        List<LmsCommodityReceiptItem>  list2=commodityReceiptItemMapper.findProductResultMap();
-        System.out.println(list);
-        for (LmsCommodityReceiptItem list1:
-                list) {
-            System.out.println(list1.toString());
             System.out.println(list1.getProductList().get(0).toString());
         }
     }
@@ -130,6 +122,38 @@ public class TestCustomer {
         for (LmsOrder list1:
              list) {
             System.out.println(list1.toString());
+        }
+    }
+
+
+    @Autowired
+    LmsOrderBackMapper orderBackMapper;
+    @Test
+    public void findLmsOrderBackMapper(){
+
+        List<LmsOrderBack>  list=orderBackMapper.findOrderDetailMap();
+        System.out.println(list);
+        for (LmsOrderBack list1:
+                list) {
+            System.out.println(list1.toString());
+            System.out.println("-------");
+            System.out.println(list1.getLmsorder().toString());
+        }
+
+    }
+
+    @Autowired
+    LmsOrderItemMapper orderItemMapper;
+    @Test
+    public void findLmsOrderItemMapper(){
+
+        List<LmsOrderItem>  list=orderItemMapper.findorderAndProductMap();
+        System.out.println(list);
+        for (LmsOrderItem list1:
+                list) {
+            System.out.println(list1.toString());
+            System.out.println("-------");
+            System.out.println(list1.getProductList().get(0).toString());
         }
 
     }

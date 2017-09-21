@@ -12,6 +12,16 @@ public class LmsOrderBack {
 
     private BigDecimal lmsOrderId;
 
+    private LmsOrder lmsOrder;
+
+    public LmsOrder getLmsorder() {
+        return lmsOrder;
+    }
+
+    public void setLmsorder(LmsOrder lmsorder) {
+        this.lmsOrder = lmsorder;
+    }
+
     public BigDecimal getId() {
         return id;
     }
@@ -42,5 +52,16 @@ public class LmsOrderBack {
 
     public void setLmsOrderId(BigDecimal lmsOrderId) {
         this.lmsOrderId = lmsOrderId;
+    }
+
+    @Override
+    public String toString() {
+        return "LmsOrderBack{" +
+                "id=" + id +
+                ", reason='" + reason + '\'' +
+                ", datetime=" + datetime +
+                ", lmsOrderId=" + lmsOrderId +
+                ", lmsorder=" + lmsOrder +
+                '}';
     }
 }

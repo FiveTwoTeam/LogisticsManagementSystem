@@ -28,4 +28,6 @@ public interface LmsOrderBackMapper {
     int updateByPrimaryKeySelective(LmsOrderBack record);
 
     int updateByPrimaryKey(LmsOrderBack record);
+
+    List<LmsOrderBack> findOrderDetailMap();
 }

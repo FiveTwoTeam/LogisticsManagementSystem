@@ -13,6 +13,8 @@ public class LmsStationRepetoryItem {
 
     private Long lmsProductId;
 
+    private Long lmsStationRepertoryId;
+
     public Long getId() {
         return id;
     }
@@ -59,5 +61,13 @@ public class LmsStationRepetoryItem {
 
     public void setLmsProductId(Long lmsProductId) {
         this.lmsProductId = lmsProductId;
+    }
+
+    public Long getLmsStationRepertoryId() {
+        return lmsStationRepertoryId;
+    }
+
+    public void setLmsStationRepertoryId(Long lmsStationRepertoryId) {
+        this.lmsStationRepertoryId = lmsStationRepertoryId;
     }
 }
