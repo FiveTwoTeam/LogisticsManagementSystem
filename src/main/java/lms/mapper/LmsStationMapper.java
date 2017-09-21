@@ -1,9 +1,10 @@
 package lms.mapper;
 
-import java.util.List;
 import lms.model.LmsStation;
 import lms.model.LmsStationExample;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface LmsStationMapper {
     int countByExample(LmsStationExample example);
@@ -27,4 +28,6 @@ public interface LmsStationMapper {
     int updateByPrimaryKeySelective(LmsStation record);
 
     int updateByPrimaryKey(LmsStation record);
+
+    List<LmsStation> findstationResultMap();
 }

@@ -185,6 +185,39 @@ public class TestCustomer {
             System.out.println("-------");
             System.out.println(list1.getLmsStationRepetoryList().get(0).toString());
         }
-
     }
+
+
+    @Autowired
+    LmsStationRepetoryMapper lmsStationRepetoryMapper;
+    @Test
+    public void findLmsStationRepetoryMapper(){
+
+        List<LmsStationRepetory>  list=lmsStationRepetoryMapper.findstationRepetoryResultMap();
+        System.out.println(list);
+        for (LmsStationRepetory list1:
+                list) {
+            System.out.println(list1.toString());
+            System.out.println("-------");
+            System.out.println(list1.getLmsAdminList().get(0).toString());
+        }
+    }
+
+
+    @Autowired
+    LmsSecondCategoryMapper lmsSecondCategoryMapper;
+    @Test
+    public void findLmsSecondCategoryMapper(){
+
+        List<LmsSecondCategory>  list=lmsSecondCategoryMapper.findsecondCategoryMap();
+        System.out.println(list);
+        for (LmsSecondCategory list1:
+                list) {
+            System.out.println(list1.toString());
+            System.out.println("-------");
+            System.out.println(list1.getLmsFirstCategory().toString());
+        }
+    }
+
+
 }

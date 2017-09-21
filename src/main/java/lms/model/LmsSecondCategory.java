@@ -9,6 +9,8 @@ public class LmsSecondCategory {
 
     private String description;
 
+    private LmsFirstCategory lmsFirstCategory;
+
     public Long getId() {
         return id;
     }
@@ -39,5 +41,24 @@ public class LmsSecondCategory {
 
     public void setDescription(String description) {
         this.description = description == null ? null : description.trim();
+    }
+
+    public LmsFirstCategory getLmsFirstCategory() {
+        return lmsFirstCategory;
+    }
+
+    public void setLmsFirstCategory(LmsFirstCategory lmsFirstCategory) {
+        this.lmsFirstCategory = lmsFirstCategory;
+    }
+
+    @Override
+    public String toString() {
+        return "LmsSecondCategory{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", lmsFirstCategoryId=" + lmsFirstCategoryId +
+                ", description='" + description + '\'' +
+                ", lmsFirstCategory=" + lmsFirstCategory +
+                '}';
     }
 }
