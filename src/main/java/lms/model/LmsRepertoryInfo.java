@@ -13,6 +13,8 @@ public class LmsRepertoryInfo {
 
     private BigDecimal lmsProductId;
 
+    
+
     public BigDecimal getId() {
         return id;
     }
