@@ -15,7 +15,7 @@ public class LmsCommodityReceiptItem {
 
     private Long productId;
 
-    private List<LmsCommodityReceipt> commodityReceiptList;
+    private List<LmcCommodityReceipt> commodityReceiptList;
 
     private List<LmsProduct> productList;
 
@@ -67,11 +67,11 @@ public class LmsCommodityReceiptItem {
         this.productId = productId;
     }
 
-    public List<LmsCommodityReceipt> getCommodityReceiptList() {
+    public List<LmcCommodityReceipt> getCommodityReceiptList() {
         return commodityReceiptList;
     }
 
-    public void setCommodityReceiptList(List<LmsCommodityReceipt> commodityReceiptList) {
+    public void setCommodityReceiptList(List<LmcCommodityReceipt> commodityReceiptList) {
         this.commodityReceiptList = commodityReceiptList;
     }
 

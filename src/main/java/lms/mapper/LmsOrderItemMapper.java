@@ -27,6 +27,4 @@ public interface LmsOrderItemMapper {
     int updateByPrimaryKeySelective(LmsOrderItem record);
 
     int updateByPrimaryKey(LmsOrderItem record);
-
-    List<LmsOrderItem> findorderAndProductMap();
 }

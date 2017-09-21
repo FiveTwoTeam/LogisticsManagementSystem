@@ -132,23 +132,4 @@ public class LmsProduct {
     public void setDescription(String description) {
         this.description = description == null ? null : description.trim();
     }
-
-    @Override
-    public String toString() {
-        return "LmsProduct{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", price=" + price +
-                ", unit='" + unit + '\'' +
-                ", lmsSecondCategoryId=" + lmsSecondCategoryId +
-                ", discount=" + discount +
-                ", cost=" + cost +
-                ", size='" + size + '\'' +
-                ", lmsSupplierId=" + lmsSupplierId +
-                ", qualityPeriod='" + qualityPeriod + '\'' +
-                ", ifBack=" + ifBack +
-                ", ifExchange=" + ifExchange +
-                ", description='" + description + '\'' +
-                '}';
-    }
 }

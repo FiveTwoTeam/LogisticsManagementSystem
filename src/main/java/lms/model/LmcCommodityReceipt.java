@@ -2,6 +2,7 @@ package lms.model;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 public class LmcCommodityReceipt {
     private BigDecimal id;
@@ -29,6 +30,26 @@ public class LmcCommodityReceipt {
     private String feedback;
 
     private String signature;
+
+    private LmsCustomer customer;
+
+    private List<LmsStation> stations;
+
+    public List<LmsStation> getStations() {
+        return stations;
+    }
+
+    public void setStations(List<LmsStation> stations) {
+        this.stations = stations;
+    }
+
+    public LmsCustomer getCustomers() {
+        return customer;
+    }
+
+    public void setCustomers(LmsCustomer customers) {
+        this.customer = customers;
+    }
 
     public BigDecimal getId() {
         return id;
@@ -132,5 +153,27 @@ public class LmcCommodityReceipt {
 
     public void setSignature(String signature) {
         this.signature = signature == null ? null : signature.trim();
+    }
+
+
+    @Override
+    public String toString() {
+        return "LmcCommodityReceipt{" +
+                "id=" + id +
+                ", taskNumber=" + taskNumber +
+                ", cuntomerId=" + cuntomerId +
+                ", address='" + address + '\'' +
+                ", datetime=" + datetime +
+                ", command='" + command + '\'' +
+                ", ifReceipt=" + ifReceipt +
+                ", stationId=" + stationId +
+                ", totalPrice=" + totalPrice +
+                ", type=" + type +
+                ", description='" + description + '\'' +
+                ", feedback='" + feedback + '\'' +
+                ", signature='" + signature + '\'' +
+                ", customer=" + customer +
+                ", stations=" + stations +
+                '}';
     }
 }
