@@ -13,8 +13,6 @@ public class LmsStationRepetory {
 
     private Long lmsAdminId;
 
-    private Long lmsStationId;
-
     public Long getId() {
         return id;
     }
@@ -53,13 +51,5 @@ public class LmsStationRepetory {
 
     public void setLmsAdminId(Long lmsAdminId) {
         this.lmsAdminId = lmsAdminId;
-    }
-
-    public Long getLmsStationId() {
-        return lmsStationId;
-    }
-
-    public void setLmsStationId(Long lmsStationId) {
-        this.lmsStationId = lmsStationId;
     }
 }

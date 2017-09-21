@@ -424,66 +424,6 @@ public class LmsStationRepetoryExample {
             addCriterion("LMS_Admin_id not between", value1, value2, "lmsAdminId");
             return (Criteria) this;
         }
-
-        public Criteria andLmsStationIdIsNull() {
-            addCriterion("LMS_Station_id is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andLmsStationIdIsNotNull() {
-            addCriterion("LMS_Station_id is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andLmsStationIdEqualTo(Long value) {
-            addCriterion("LMS_Station_id =", value, "lmsStationId");
-            return (Criteria) this;
-        }
-
-        public Criteria andLmsStationIdNotEqualTo(Long value) {
-            addCriterion("LMS_Station_id <>", value, "lmsStationId");
-            return (Criteria) this;
-        }
-
-        public Criteria andLmsStationIdGreaterThan(Long value) {
-            addCriterion("LMS_Station_id >", value, "lmsStationId");
-            return (Criteria) this;
-        }
-
-        public Criteria andLmsStationIdGreaterThanOrEqualTo(Long value) {
-            addCriterion("LMS_Station_id >=", value, "lmsStationId");
-            return (Criteria) this;
-        }
-
-        public Criteria andLmsStationIdLessThan(Long value) {
-            addCriterion("LMS_Station_id <", value, "lmsStationId");
-            return (Criteria) this;
-        }
-
-        public Criteria andLmsStationIdLessThanOrEqualTo(Long value) {
-            addCriterion("LMS_Station_id <=", value, "lmsStationId");
-            return (Criteria) this;
-        }
-
-        public Criteria andLmsStationIdIn(List<Long> values) {
-            addCriterion("LMS_Station_id in", values, "lmsStationId");
-            return (Criteria) this;
-        }
-
-        public Criteria andLmsStationIdNotIn(List<Long> values) {
-            addCriterion("LMS_Station_id not in", values, "lmsStationId");
-            return (Criteria) this;
-        }
-
-        public Criteria andLmsStationIdBetween(Long value1, Long value2) {
-            addCriterion("LMS_Station_id between", value1, value2, "lmsStationId");
-            return (Criteria) this;
-        }
-
-        public Criteria andLmsStationIdNotBetween(Long value1, Long value2) {
-            addCriterion("LMS_Station_id not between", value1, value2, "lmsStationId");
-            return (Criteria) this;
-        }
     }
 
     public static class Criteria extends GeneratedCriteria {

@@ -28,5 +28,7 @@ public interface LmsCommodityReceiptItemMapper {
 
     int updateByPrimaryKey(LmsCommodityReceiptItem record);
 
-    List<LmsCommodityReceiptItem> findProductAndReceiptMap();
+    List<LmsCommodityReceiptItem> findProductResultMap();
+
+    List<LmsCommodityReceiptItem> findCommodityReceiptMap();
 }

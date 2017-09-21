@@ -1,7 +1,6 @@
 package lms.model;
 
 import java.math.BigDecimal;
-import java.util.List;
 
 public class LmsOrderItem {
     private Long id;
@@ -19,27 +18,6 @@ public class LmsOrderItem {
     private BigDecimal subprice;
 
     private String productDescription;
-
-    private LmsOrder lmsOrder;
-
-    private List<LmsProduct> productList;
-
-    public List<LmsProduct> getProductList() {
-        return productList;
-    }
-
-    public void setProductList(List<LmsProduct> productList) {
-        this.productList = productList;
-    }
-
-    public LmsOrder getLmsOrder() {
-        return lmsOrder;
-    }
-
-    public void setLmsOrder(LmsOrder lmsOrder) {
-        this.lmsOrder = lmsOrder;
-    }
-
 
     public Long getId() {
         return id;
@@ -103,21 +81,5 @@ public class LmsOrderItem {
 
     public void setProductDescription(String productDescription) {
         this.productDescription = productDescription == null ? null : productDescription.trim();
-    }
-
-    @Override
-    public String toString() {
-        return "LmsOrderItem{" +
-                "id=" + id +
-                ", lmsOrderId=" + lmsOrderId +
-                ", lmsProductId=" + lmsProductId +
-                ", count=" + count +
-                ", price=" + price +
-                ", discount=" + discount +
-                ", subprice=" + subprice +
-                ", productDescription='" + productDescription + '\'' +
-                ", lmsOrder=" + lmsOrder +
-                ", productList=" + productList +
-                '}';
     }
 }
