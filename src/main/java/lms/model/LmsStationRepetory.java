@@ -1,6 +1,7 @@
 package lms.model;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 public class LmsStationRepetory {
     private Long id;
@@ -12,6 +13,12 @@ public class LmsStationRepetory {
     private BigDecimal phone;
 
     private Long lmsAdminId;
+
+    private Long lmsStationId;
+
+    private List<LmsAdmin> lmsAdminList;
+
+    private LmsStation lmsStation;
 
     public Long getId() {
         return id;
@@ -51,5 +58,43 @@ public class LmsStationRepetory {
 
     public void setLmsAdminId(Long lmsAdminId) {
         this.lmsAdminId = lmsAdminId;
+    }
+
+    public Long getLmsStationId() {
+        return lmsStationId;
+    }
+
+    public void setLmsStationId(Long lmsStationId) {
+        this.lmsStationId = lmsStationId;
+    }
+
+    public List<LmsAdmin> getLmsAdminList() {
+        return lmsAdminList;
+    }
+
+    public void setLmsAdminList(List<LmsAdmin> lmsAdminList) {
+        this.lmsAdminList = lmsAdminList;
+    }
+
+    public LmsStation getLmsStation() {
+        return lmsStation;
+    }
+
+    public void setLmsStation(LmsStation lmsStation) {
+        this.lmsStation = lmsStation;
+    }
+
+    @Override
+    public String toString() {
+        return "LmsStationRepetory{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", phone=" + phone +
+                ", lmsAdminId=" + lmsAdminId +
+                ", lmsStationId=" + lmsStationId +
+                ", lmsAdminList=" + lmsAdminList +
+                ", lmsStation=" + lmsStation +
+                '}';
     }
 }

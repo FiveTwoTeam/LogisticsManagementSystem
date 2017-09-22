@@ -1,6 +1,7 @@
 package lms.model;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 public class LmsStation {
     private Long id;
@@ -12,6 +13,8 @@ public class LmsStation {
     private BigDecimal phone;
 
     private Long lmsAdminId;
+
+    private List<LmsAdmin> lmsAdminList;
 
     public Long getId() {
         return id;
@@ -51,5 +54,25 @@ public class LmsStation {
 
     public void setLmsAdminId(Long lmsAdminId) {
         this.lmsAdminId = lmsAdminId;
+    }
+
+    public List<LmsAdmin> getLmsAdminList() {
+        return lmsAdminList;
+    }
+
+    public void setLmsAdminList(List<LmsAdmin> lmsAdminList) {
+        this.lmsAdminList = lmsAdminList;
+    }
+
+    @Override
+    public String toString() {
+        return "LmsStation{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", phone=" + phone +
+                ", lmsAdminId=" + lmsAdminId +
+                ", lmsAdminList=" + lmsAdminList +
+                '}';
     }
 }

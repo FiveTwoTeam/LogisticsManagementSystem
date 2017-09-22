@@ -1,9 +1,10 @@
 package lms.mapper;
 
-import java.util.List;
 import lms.model.LmsSecondCategory;
 import lms.model.LmsSecondCategoryExample;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface LmsSecondCategoryMapper {
     int countByExample(LmsSecondCategoryExample example);
@@ -27,4 +28,6 @@ public interface LmsSecondCategoryMapper {
     int updateByPrimaryKeySelective(LmsSecondCategory record);
 
     int updateByPrimaryKey(LmsSecondCategory record);
+
+    List<LmsSecondCategory> findsecondCategoryMap();
 }

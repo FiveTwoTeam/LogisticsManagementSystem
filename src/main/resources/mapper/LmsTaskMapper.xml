@@ -303,4 +303,74 @@
       description = #{description,jdbcType=VARCHAR}
     where id = #{id,jdbcType=DECIMAL}
   </update>
+
+  <!-- 新增的关系 -->
+  <resultMap id="taskResultMap" type="lms.model.LmsTask" extends="BaseResultMap" >
+    <association property="lmsCustomer" javaType="lms.model.LmsCustomer">
+      <id column="ID" property="id" jdbcType="DECIMAL" />
+      <result column="NAME" property="name" jdbcType="VARCHAR" />
+      <result column="IDENTITY_ID" property="identityId" jdbcType="VARCHAR" />
+      <result column="WORK_UNIT" property="workUnit" jdbcType="VARCHAR" />
+      <result column="PHONE_EXT" property="phoneExt" jdbcType="VARCHAR" />
+      <result column="MOBILE_PHONE" property="mobilePhone" jdbcType="VARCHAR" />
+      <result column="ADDRESS" property="address" jdbcType="VARCHAR" />
+      <result column="POST_CODE" property="postCode" jdbcType="DECIMAL" />
+      <result column="MAIL" property="mail" jdbcType="VARCHAR" />
+      <result column="STATUS" property="status" jdbcType="DECIMAL" />
+    </association>
+
+    <association property="lmsStation" javaType="lms.model.LmsStation">
+      <id column="id" property="id" jdbcType="DECIMAL" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+      <result column="address" property="address" jdbcType="VARCHAR" />
+      <result column="phone" property="phone" jdbcType="DECIMAL" />
+      <result column="LMS_Admin_id" property="lmsAdminId" jdbcType="DECIMAL" />
+    </association>
+
+    <association property="lmsDeliveryStaff" javaType="lms.model.LmsDeliveryStaff">
+      <id column="ID" property="id" jdbcType="DECIMAL" />
+      <result column="NAME" property="name" jdbcType="VARCHAR" />
+      <result column="PHONE" property="phone" jdbcType="DECIMAL" />
+      <result column="STATION_ID" property="stationId" jdbcType="DECIMAL" />
+    </association>
+
+    <collection property="lmsOrderList" ofType="lms.model.LmsOrder">
+      <result column="id" property="id" jdbcType="DECIMAL" />
+      <result column="total_price" property="totalPrice" jdbcType="DECIMAL" />
+      <result column="order_number" property="orderNumber" jdbcType="DECIMAL" />
+      <result column="description" property="description" jdbcType="VARCHAR" />
+      <result column="type" property="type" jdbcType="DECIMAL" />
+      <result column="address" property="address" jdbcType="VARCHAR" />
+      <result column="LMS_Customer_id" property="lmsCustomerId" jdbcType="DECIMAL" />
+      <result column="payer" property="payer" jdbcType="VARCHAR" />
+      <result column="payer_address" property="payerAddress" jdbcType="VARCHAR" />
+      <result column="payer_phone" property="payerPhone" jdbcType="DECIMAL" />
+      <result column="payer_post_code" property="payerPostCode" jdbcType="DECIMAL" />
+      <result column="datetime" property="datetime" jdbcType="DATE" />
+      <result column="LMS_Admin_id" property="lmsAdminId" jdbcType="DECIMAL" />
+    </collection>
+
+    <collection property="lmsStationRepetoryList" ofType="lms.model.LmsStationRepetory">
+      <id column="id" property="id" jdbcType="DECIMAL" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+      <result column="address" property="address" jdbcType="VARCHAR" />
+      <result column="phone" property="phone" jdbcType="DECIMAL" />
+      <result column="LMS_Admin_id" property="lmsAdminId" jdbcType="DECIMAL" />
+      <result column="LMS_Station_id" property="lmsStationId" jdbcType="DECIMAL" />
+    </collection>
+  </resultMap>
+
+  <!--一对多映射-->
+  <select id="findtaskMap" resultMap="taskResultMap">
+    select
+    LMS_TASK.*,LMS_ORDER.*,LMS_STATION_REPETORY.*,LMS_CUSTOMER.*,LMS_STATION.*,LMS_DELIVERY_STAFF.*
+    from LMS_TASK,LMS_ORDER, LMS_STATION_REPETORY, LMS_CUSTOMER,LMS_STATION,LMS_DELIVERY_STAFF
+    where LMS_TASK."LMS_Order_id" = LMS_ORDER."id"
+    and LMS_TASK."LMS_Station_Repetory_id" = LMS_STATION_REPETORY."id"
+    and LMS_TASK."LMS_Customer_id" = LMS_CUSTOMER."ID"
+    and LMS_TASK."LMS_Station_id" = LMS_STATION."id"
+    and LMS_TASK."LMS_Delivery_Staff__id" = LMS_DELIVERY_STAFF."ID"
+
+  </select>
+
 </mapper>

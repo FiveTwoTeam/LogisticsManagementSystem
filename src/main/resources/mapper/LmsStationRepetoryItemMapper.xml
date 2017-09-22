@@ -8,6 +8,7 @@
     <result column="guard" property="guard" jdbcType="DECIMAL" />
     <result column="status" property="status" jdbcType="DECIMAL" />
     <result column="LMS_Product_id" property="lmsProductId" jdbcType="DECIMAL" />
+    <result column="LMS_Station_Repertory_id" property="lmsStationRepertoryId" jdbcType="DECIMAL" />
   </resultMap>
   <sql id="Example_Where_Clause" >
     <where >
@@ -68,7 +69,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    id, count, max, guard, status, LMS_Product_id
+    id, count, max, guard, status, LMS_Product_id, LMS_Station_Repertory_id
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="lms.model.LmsStationRepetoryItemExample" >
     select
@@ -102,11 +103,11 @@
   </delete>
   <insert id="insert" parameterType="lms.model.LmsStationRepetoryItem" >
     insert into LMS_STATION_REPETORY_ITEM (id, count, max, 
-      guard, status, LMS_Product_id
-      )
+      guard, status, LMS_Product_id, 
+      LMS_Station_Repertory_id)
     values (#{id,jdbcType=DECIMAL}, #{count,jdbcType=DECIMAL}, #{max,jdbcType=DECIMAL}, 
-      #{guard,jdbcType=DECIMAL}, #{status,jdbcType=DECIMAL}, #{lmsProductId,jdbcType=DECIMAL}
-      )
+      #{guard,jdbcType=DECIMAL}, #{status,jdbcType=DECIMAL}, #{lmsProductId,jdbcType=DECIMAL}, 
+      #{lmsStationRepertoryId,jdbcType=DECIMAL})
   </insert>
   <insert id="insertSelective" parameterType="lms.model.LmsStationRepetoryItem" >
     insert into LMS_STATION_REPETORY_ITEM
@@ -129,6 +130,9 @@
       <if test="lmsProductId != null" >
         LMS_Product_id,
       </if>
+      <if test="lmsStationRepertoryId != null" >
+        LMS_Station_Repertory_id,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
       <if test="id != null" >
@@ -148,6 +152,9 @@
       </if>
       <if test="lmsProductId != null" >
         #{lmsProductId,jdbcType=DECIMAL},
+      </if>
+      <if test="lmsStationRepertoryId != null" >
+        #{lmsStationRepertoryId,jdbcType=DECIMAL},
       </if>
     </trim>
   </insert>
@@ -178,6 +185,9 @@
       <if test="record.lmsProductId != null" >
         LMS_Product_id = #{record.lmsProductId,jdbcType=DECIMAL},
       </if>
+      <if test="record.lmsStationRepertoryId != null" >
+        LMS_Station_Repertory_id = #{record.lmsStationRepertoryId,jdbcType=DECIMAL},
+      </if>
     </set>
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
@@ -190,7 +200,8 @@
       max = #{record.max,jdbcType=DECIMAL},
       guard = #{record.guard,jdbcType=DECIMAL},
       status = #{record.status,jdbcType=DECIMAL},
-      LMS_Product_id = #{record.lmsProductId,jdbcType=DECIMAL}
+      LMS_Product_id = #{record.lmsProductId,jdbcType=DECIMAL},
+      LMS_Station_Repertory_id = #{record.lmsStationRepertoryId,jdbcType=DECIMAL}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -213,6 +224,9 @@
       <if test="lmsProductId != null" >
         LMS_Product_id = #{lmsProductId,jdbcType=DECIMAL},
       </if>
+      <if test="lmsStationRepertoryId != null" >
+        LMS_Station_Repertory_id = #{lmsStationRepertoryId,jdbcType=DECIMAL},
+      </if>
     </set>
     where id = #{id,jdbcType=DECIMAL}
   </update>
@@ -222,7 +236,45 @@
       max = #{max,jdbcType=DECIMAL},
       guard = #{guard,jdbcType=DECIMAL},
       status = #{status,jdbcType=DECIMAL},
-      LMS_Product_id = #{lmsProductId,jdbcType=DECIMAL}
+      LMS_Product_id = #{lmsProductId,jdbcType=DECIMAL},
+      LMS_Station_Repertory_id = #{lmsStationRepertoryId,jdbcType=DECIMAL}
     where id = #{id,jdbcType=DECIMAL}
   </update>
+
+
+  <resultMap id="productAndStationRepetoryResultMap" type="lms.model.LmsStationRepetoryItem" extends="BaseResultMap" >
+    <association property="lmsProduct" javaType="lms.model.LmsProduct">
+      <id column="id" property="id" jdbcType="DECIMAL" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+      <result column="price" property="price" jdbcType="DECIMAL" />
+      <result column="unit" property="unit" jdbcType="VARCHAR" />
+      <result column="LMS_Second_Category_id" property="lmsSecondCategoryId" jdbcType="DECIMAL" />
+      <result column="discount" property="discount" jdbcType="DECIMAL" />
+      <result column="cost" property="cost" jdbcType="DECIMAL" />
+      <result column="size" property="size" jdbcType="VARCHAR" />
+      <result column="LMS_Supplier_id" property="lmsSupplierId" jdbcType="DECIMAL" />
+      <result column="quality_period" property="qualityPeriod" jdbcType="VARCHAR" />
+      <result column="if_back" property="ifBack" jdbcType="DECIMAL" />
+      <result column="if_exchange" property="ifExchange" jdbcType="DECIMAL" />
+      <result column="description" property="description" jdbcType="VARCHAR" />
+    </association>
+
+    <collection property="lmsStationRepetoryList" ofType="lms.model.LmsStationRepetory">
+      <id column="id" property="id" jdbcType="DECIMAL" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+      <result column="address" property="address" jdbcType="VARCHAR" />
+      <result column="phone" property="phone" jdbcType="DECIMAL" />
+      <result column="LMS_Admin_id" property="lmsAdminId" jdbcType="DECIMAL" />
+      <result column="LMS_Station_id" property="lmsStationId" jdbcType="DECIMAL" />
+    </collection>
+  </resultMap>
+
+  <!--一对多映射-->
+  <select id="findproductAndStationRepetoryMap" resultMap="productAndStationRepetoryResultMap">
+    select
+    LMS_PRODUCT.*,LMS_STATION_REPETORY.*,LMS_STATION_REPETORY_ITEM.*
+    from LMS_PRODUCT, LMS_STATION_REPETORY, LMS_STATION_REPETORY_ITEM
+    where LMS_STATION_REPETORY_ITEM."LMS_Product_id" = LMS_PRODUCT."id"
+    and LMS_STATION_REPETORY_ITEM."LMS_Station_Repertory_id" = LMS_STATION_REPETORY."id"
+  </select>
 </mapper>

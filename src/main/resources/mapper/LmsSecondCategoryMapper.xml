@@ -193,4 +193,21 @@
       description = #{description,jdbcType=VARCHAR}
     where id = #{id,jdbcType=DECIMAL}
   </update>
+
+
+  <resultMap id="secondCategoryMap" type="lms.model.LmsSecondCategory" extends="BaseResultMap" >
+    <collection property="lmsFirstCategory" ofType="lms.model.LmsFirstCategory">
+      <result column="ID" property="id" jdbcType="DECIMAL" />
+      <result column="NAME" property="name" jdbcType="VARCHAR" />
+      <result column="DESCRIPTION" property="description" jdbcType="VARCHAR" />
+    </collection>
+  </resultMap>
+
+  <!--一对多映射-->
+  <select id="findsecondCategoryMap" resultMap="secondCategoryMap">
+    select
+    LMS_SECOND_CATEGORY.*,LMS_FIRST_CATEGORY.*
+    from LMS_SECOND_CATEGORY, LMS_FIRST_CATEGORY
+    where LMS_SECOND_CATEGORY."LMS_First_Category_id" = LMS_FIRST_CATEGORY."ID"
+  </select>
 </mapper>

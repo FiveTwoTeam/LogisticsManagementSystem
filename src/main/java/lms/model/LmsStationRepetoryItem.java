@@ -1,5 +1,7 @@
 package lms.model;
 
+import java.util.List;
+
 public class LmsStationRepetoryItem {
     private Long id;
 
@@ -12,6 +14,12 @@ public class LmsStationRepetoryItem {
     private Short status;
 
     private Long lmsProductId;
+
+    private Long lmsStationRepertoryId;
+
+    private LmsProduct lmsProduct;
+
+    private List<LmsStationRepetory> lmsStationRepetoryList;
 
     public Long getId() {
         return id;
@@ -59,5 +67,44 @@ public class LmsStationRepetoryItem {
 
     public void setLmsProductId(Long lmsProductId) {
         this.lmsProductId = lmsProductId;
+    }
+
+    public Long getLmsStationRepertoryId() {
+        return lmsStationRepertoryId;
+    }
+
+    public void setLmsStationRepertoryId(Long lmsStationRepertoryId) {
+        this.lmsStationRepertoryId = lmsStationRepertoryId;
+    }
+
+    public LmsProduct getLmsProduct() {
+        return lmsProduct;
+    }
+
+    public void setLmsProduct(LmsProduct lmsProduct) {
+        this.lmsProduct = lmsProduct;
+    }
+
+    public List<LmsStationRepetory> getLmsStationRepetoryList() {
+        return lmsStationRepetoryList;
+    }
+
+    public void setLmsStationRepetoryList(List<LmsStationRepetory> lmsStationRepetoryList) {
+        this.lmsStationRepetoryList = lmsStationRepetoryList;
+    }
+
+    @Override
+    public String toString() {
+        return "LmsStationRepetoryItem{" +
+                "id=" + id +
+                ", count=" + count +
+                ", max=" + max +
+                ", guard=" + guard +
+                ", status=" + status +
+                ", lmsProductId=" + lmsProductId +
+                ", lmsStationRepertoryId=" + lmsStationRepertoryId +
+                ", lmsProduct=" + lmsProduct +
+                ", lmsStationRepetoryList=" + lmsStationRepetoryList +
+                '}';
     }
 }
