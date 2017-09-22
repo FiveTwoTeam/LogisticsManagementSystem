@@ -86,7 +86,7 @@
     </if>
   </select>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
-    select 
+    select
     <include refid="Base_Column_List" />
     from LMS_STATION_REPETORY_ITEM
     where id = #{id,jdbcType=DECIMAL}
@@ -102,12 +102,12 @@
     </if>
   </delete>
   <insert id="insert" parameterType="lms.model.LmsStationRepetoryItem" >
-    insert into LMS_STATION_REPETORY_ITEM (id, count, max, 
-      guard, status, LMS_Product_id, 
-      LMS_Station_Repertory_id)
-    values (#{id,jdbcType=DECIMAL}, #{count,jdbcType=DECIMAL}, #{max,jdbcType=DECIMAL}, 
-      #{guard,jdbcType=DECIMAL}, #{status,jdbcType=DECIMAL}, #{lmsProductId,jdbcType=DECIMAL}, 
-      #{lmsStationRepertoryId,jdbcType=DECIMAL})
+    insert into LMS_STATION_REPETORY_ITEM (id, count, max,
+    guard, status, LMS_Product_id,
+    LMS_Station_Repertory_id)
+    values (#{id,jdbcType=DECIMAL}, #{count,jdbcType=DECIMAL}, #{max,jdbcType=DECIMAL},
+    #{guard,jdbcType=DECIMAL}, #{status,jdbcType=DECIMAL}, #{lmsProductId,jdbcType=DECIMAL},
+    #{lmsStationRepertoryId,jdbcType=DECIMAL})
   </insert>
   <insert id="insertSelective" parameterType="lms.model.LmsStationRepetoryItem" >
     insert into LMS_STATION_REPETORY_ITEM
@@ -196,12 +196,12 @@
   <update id="updateByExample" parameterType="map" >
     update LMS_STATION_REPETORY_ITEM
     set id = #{record.id,jdbcType=DECIMAL},
-      count = #{record.count,jdbcType=DECIMAL},
-      max = #{record.max,jdbcType=DECIMAL},
-      guard = #{record.guard,jdbcType=DECIMAL},
-      status = #{record.status,jdbcType=DECIMAL},
-      LMS_Product_id = #{record.lmsProductId,jdbcType=DECIMAL},
-      LMS_Station_Repertory_id = #{record.lmsStationRepertoryId,jdbcType=DECIMAL}
+    count = #{record.count,jdbcType=DECIMAL},
+    max = #{record.max,jdbcType=DECIMAL},
+    guard = #{record.guard,jdbcType=DECIMAL},
+    status = #{record.status,jdbcType=DECIMAL},
+    LMS_Product_id = #{record.lmsProductId,jdbcType=DECIMAL},
+    LMS_Station_Repertory_id = #{record.lmsStationRepertoryId,jdbcType=DECIMAL}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -233,11 +233,11 @@
   <update id="updateByPrimaryKey" parameterType="lms.model.LmsStationRepetoryItem" >
     update LMS_STATION_REPETORY_ITEM
     set count = #{count,jdbcType=DECIMAL},
-      max = #{max,jdbcType=DECIMAL},
-      guard = #{guard,jdbcType=DECIMAL},
-      status = #{status,jdbcType=DECIMAL},
-      LMS_Product_id = #{lmsProductId,jdbcType=DECIMAL},
-      LMS_Station_Repertory_id = #{lmsStationRepertoryId,jdbcType=DECIMAL}
+    max = #{max,jdbcType=DECIMAL},
+    guard = #{guard,jdbcType=DECIMAL},
+    status = #{status,jdbcType=DECIMAL},
+    LMS_Product_id = #{lmsProductId,jdbcType=DECIMAL},
+    LMS_Station_Repertory_id = #{lmsStationRepertoryId,jdbcType=DECIMAL}
     where id = #{id,jdbcType=DECIMAL}
   </update>
 

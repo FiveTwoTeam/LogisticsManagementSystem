@@ -1,6 +1,7 @@
 package lms.model;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 public class LmsProduct {
     private Long id;
@@ -28,6 +29,26 @@ public class LmsProduct {
     private BigDecimal ifExchange;
 
     private String description;
+
+    private LmsSecondCategory lmsSecondCategory;
+
+    private List<LmsSupplier> supplierList;
+
+    public LmsSecondCategory getLmsSecondCategory() {
+        return lmsSecondCategory;
+    }
+
+    public void setLmsSecondCategory(LmsSecondCategory lmsSecondCategory) {
+        this.lmsSecondCategory = lmsSecondCategory;
+    }
+
+    public List<LmsSupplier> getSupplierList() {
+        return supplierList;
+    }
+
+    public void setSupplierList(List<LmsSupplier> supplierList) {
+        this.supplierList = supplierList;
+    }
 
     public Long getId() {
         return id;
@@ -131,5 +152,27 @@ public class LmsProduct {
 
     public void setDescription(String description) {
         this.description = description == null ? null : description.trim();
+    }
+
+
+    @Override
+    public String toString() {
+        return "LmsProduct{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", unit='" + unit + '\'' +
+                ", lmsSecondCategoryId=" + lmsSecondCategoryId +
+                ", discount=" + discount +
+                ", cost=" + cost +
+                ", size='" + size + '\'' +
+                ", lmsSupplierId=" + lmsSupplierId +
+                ", qualityPeriod='" + qualityPeriod + '\'' +
+                ", ifBack=" + ifBack +
+                ", ifExchange=" + ifExchange +
+                ", description='" + description + '\'' +
+                ", lmsSecondCategory=" + lmsSecondCategory +
+                ", supplierList=" + supplierList +
+                '}';
     }
 }

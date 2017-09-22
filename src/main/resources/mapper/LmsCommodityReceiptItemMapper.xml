@@ -85,7 +85,7 @@
     </if>
   </select>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
-    select 
+    select
     <include refid="Base_Column_List" />
     from LMS_COMMODITY_RECEIPT_ITEM
     where ID = #{id,jdbcType=DECIMAL}
@@ -101,12 +101,12 @@
     </if>
   </delete>
   <insert id="insert" parameterType="lms.model.LmsCommodityReceiptItem" >
-    insert into LMS_COMMODITY_RECEIPT_ITEM (ID, COUNT, PRICE, 
-      SUBPRICE, COMMODITY_RECEIPT_ID, PRODUCT_ID
-      )
-    values (#{id,jdbcType=DECIMAL}, #{count,jdbcType=DECIMAL}, #{price,jdbcType=DECIMAL}, 
-      #{subprice,jdbcType=DECIMAL}, #{commodityReceiptId,jdbcType=DECIMAL}, #{productId,jdbcType=DECIMAL}
-      )
+    insert into LMS_COMMODITY_RECEIPT_ITEM (ID, COUNT, PRICE,
+    SUBPRICE, COMMODITY_RECEIPT_ID, PRODUCT_ID
+    )
+    values (#{id,jdbcType=DECIMAL}, #{count,jdbcType=DECIMAL}, #{price,jdbcType=DECIMAL},
+    #{subprice,jdbcType=DECIMAL}, #{commodityReceiptId,jdbcType=DECIMAL}, #{productId,jdbcType=DECIMAL}
+    )
   </insert>
   <insert id="insertSelective" parameterType="lms.model.LmsCommodityReceiptItem" >
     insert into LMS_COMMODITY_RECEIPT_ITEM
@@ -186,11 +186,11 @@
   <update id="updateByExample" parameterType="map" >
     update LMS_COMMODITY_RECEIPT_ITEM
     set ID = #{record.id,jdbcType=DECIMAL},
-      COUNT = #{record.count,jdbcType=DECIMAL},
-      PRICE = #{record.price,jdbcType=DECIMAL},
-      SUBPRICE = #{record.subprice,jdbcType=DECIMAL},
-      COMMODITY_RECEIPT_ID = #{record.commodityReceiptId,jdbcType=DECIMAL},
-      PRODUCT_ID = #{record.productId,jdbcType=DECIMAL}
+    COUNT = #{record.count,jdbcType=DECIMAL},
+    PRICE = #{record.price,jdbcType=DECIMAL},
+    SUBPRICE = #{record.subprice,jdbcType=DECIMAL},
+    COMMODITY_RECEIPT_ID = #{record.commodityReceiptId,jdbcType=DECIMAL},
+    PRODUCT_ID = #{record.productId,jdbcType=DECIMAL}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -219,16 +219,16 @@
   <update id="updateByPrimaryKey" parameterType="lms.model.LmsCommodityReceiptItem" >
     update LMS_COMMODITY_RECEIPT_ITEM
     set COUNT = #{count,jdbcType=DECIMAL},
-      PRICE = #{price,jdbcType=DECIMAL},
-      SUBPRICE = #{subprice,jdbcType=DECIMAL},
-      COMMODITY_RECEIPT_ID = #{commodityReceiptId,jdbcType=DECIMAL},
-      PRODUCT_ID = #{productId,jdbcType=DECIMAL}
+    PRICE = #{price,jdbcType=DECIMAL},
+    SUBPRICE = #{subprice,jdbcType=DECIMAL},
+    COMMODITY_RECEIPT_ID = #{commodityReceiptId,jdbcType=DECIMAL},
+    PRODUCT_ID = #{productId,jdbcType=DECIMAL}
     where ID = #{id,jdbcType=DECIMAL}
   </update>
 
 
   <!--对LmsProduct的映射-->
-  <resultMap id="productResultMap" type="lms.model.LmsCommodityReceiptItem" extends="BaseResultMap" >
+  <resultMap id="ProductAndReceiptMap" type="lms.model.LmsCommodityReceiptItem" extends="BaseResultMap" >
     <collection property="productList" ofType="lms.model.LmsProduct">
       <id column="id" property="id" jdbcType="DECIMAL" />
       <result column="name" property="name" jdbcType="VARCHAR" />
@@ -244,20 +244,8 @@
       <result column="if_exchange" property="ifExchange" jdbcType="DECIMAL" />
       <result column="description" property="description" jdbcType="VARCHAR" />
     </collection>
-  </resultMap>
-  <!--查询-->
-  <select id="findProductResultMap" resultMap="productResultMap">
-    select
-    LMS_COMMODITY_RECEIPT_ITEM.*,LMS_PRODUCT.*
-    from LMS_COMMODITY_RECEIPT_ITEM,  LMS_PRODUCT
-    where LMS_COMMODITY_RECEIPT_ITEM."PRODUCT_ID" = LMS_PRODUCT."id"
-  </select>
 
-
-
-  <!--对LmcCommodityReceipt的映射-->
-  <resultMap id="commodityReceiptMap" type="lms.model.LmsCommodityReceiptItem" extends="BaseResultMap" >
-    <collection property="productList" ofType="lms.model.LmcCommodityReceipt">
+    <collection property="commodityReceiptList" ofType="lms.model.LmsCommodityReceipt">
       <id column="ID" property="id" jdbcType="DECIMAL" />
       <result column="TASK_NUMBER" property="taskNumber" jdbcType="DECIMAL" />
       <result column="CUNTOMER_ID" property="cuntomerId" jdbcType="DECIMAL" />
@@ -274,11 +262,15 @@
     </collection>
   </resultMap>
   <!--查询-->
-  <select id="findCommodityReceiptMap" resultMap="commodityReceiptMap">
+  <select id="findProductAndReceiptMap" resultMap="ProductAndReceiptMap">
     select
-    LMS_COMMODITY_RECEIPT_ITEM.*,LMC_COMMODITY_RECEIPT.*
-    from LMS_COMMODITY_RECEIPT_ITEM,  LMC_COMMODITY_RECEIPT
-    where LMS_COMMODITY_RECEIPT_ITEM."COMMODITY_RECEIPT_ID" = LMC_COMMODITY_RECEIPT."ID"
+    LMS_COMMODITY_RECEIPT_ITEM.*,LMS_PRODUCT.*,LMS_COMMODITY_RECEIPT.*
+    from LMS_COMMODITY_RECEIPT_ITEM,  LMS_PRODUCT, LMS_COMMODITY_RECEIPT
+    where LMS_COMMODITY_RECEIPT_ITEM."PRODUCT_ID" = LMS_PRODUCT."id"
+    and LMS_COMMODITY_RECEIPT_ITEM."COMMODITY_RECEIPT_ID" = LMS_COMMODITY_RECEIPT."ID"
   </select>
+
+
+
 
 </mapper>

@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a08c411d-f9de-441f-a520-4f5156c9c91f" name="Default" comment="" />
+    <list default="true" id="8a334c46-cd62-4d66-91ed-ea2038f036a1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LogisticsManagementSystem.iml" afterPath="$PROJECT_DIR$/LogisticsManagementSystem.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsCommodityReceiptItemMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsCommodityReceiptItemMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderBackMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderBackMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderItemMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderItemMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderProductBackMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderProductBackMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderProductExchangeMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderProductExchangeMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsProductMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsProductMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsCommodityReceiptItem.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsCommodityReceiptItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsOrderBack.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsOrderBack.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsOrderItem.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsOrderItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsOrderProductBack.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsOrderProductBack.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsOrderProductExchange.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsOrderProductExchange.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsProduct.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsProduct.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmcCommodityReceiptMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmcCommodityReceiptMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsCommodityReceiptItemMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsCommodityReceiptItemMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsOrderBackMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsOrderBackMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsOrderItemMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsOrderItemMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsOrderProductBackMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsOrderProductBackMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsOrderProductExchangeMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsOrderProductExchangeMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsProductMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsProductMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsStationRepetoryItemMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsStationRepetoryItemMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsStationRepetoryMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsStationRepetoryMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestCustomer.java" afterPath="$PROJECT_DIR$/src/test/java/TestCustomer.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -10,30 +37,36 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
-  </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
-  </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LmsStation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsStation.java">
+      <file leaf-file-name="TestCustomer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestCustomer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="317">
+              <caret line="255" column="36" lean-forward="false" selection-start-line="255" selection-start-column="36" selection-end-line="255" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LmsStationRepetory.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsStationRepetory.java">
+      <file leaf-file-name="LmsOrderProductExchange.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsOrderProductExchange.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="158">
+              <caret line="88" column="18" lean-forward="false" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LmsProduct.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsProduct.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-420">
+              <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,27 +81,39 @@
       <projects_view />
     </option>
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/lms/mapper/LmsCommodityReceiptItemMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/model/LmsStationRepetoryItem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/model/LmsStationRepetory.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/LmsStationRepetoryMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/LmsStationRepetoryItemMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/model/LmsOrderProductBack.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/LmsOrderProductBackMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderProductBackMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/model/LmsOrderProductExchange.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/LmsOrderProductExchangeMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderProductExchangeMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/model/LmsProduct.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/mapper/LmsProductMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/mapper/LmsProductMapper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestCustomer.java" />
+      </list>
+    </option>
+  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="E:/apache-maven-3.5.0" />
-        <option name="userSettingsFile" value="E:\apache\maven\settings.xml" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="20" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="820" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1118" />
+    <option name="height" value="734" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -84,9 +129,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,7 +169,31 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="lms" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LogisticsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LogisticsManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lms" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LogisticsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LogisticsManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LogisticsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LogisticsManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LogisticsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -146,14 +212,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
   </component>
@@ -169,7 +234,107 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.TestCustomer.findLmsProductMapper">
+    <configuration name="TestCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="LogisticsManagementSystem" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCustomer" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestCustomer.findLmsOrderProductBackMapper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="LogisticsManagementSystem" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCustomer" />
+      <option name="METHOD_NAME" value="findLmsOrderProductBackMapper" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestCustomer.findLmsOrderProductExchangeMapper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="LogisticsManagementSystem" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCustomer" />
+      <option name="METHOD_NAME" value="findLmsOrderProductExchangeMapper" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestCustomer.findLmsProductMapper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="LogisticsManagementSystem" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCustomer" />
+      <option name="METHOD_NAME" value="findLmsProductMapper" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="TestCustomer.findLmsStationRepetoryMapper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="LogisticsManagementSystem" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestCustomer" />
+      <option name="METHOD_NAME" value="findLmsStationRepetoryMapper" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -251,51 +416,100 @@
       <properties />
       <listeners />
     </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TestCustomer" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestCustomer.findLmsStationRepetoryMapper" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestCustomer.findLmsOrderProductBackMapper" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestCustomer.findLmsOrderProductExchangeMapper" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestCustomer.findLmsProductMapper" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestCustomer.findLmsProductMapper" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestCustomer.findLmsOrderProductExchangeMapper" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestCustomer.findLmsOrderProductBackMapper" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestCustomer" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestCustomer.findLmsStationRepetoryMapper" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a08c411d-f9de-441f-a520-4f5156c9c91f" name="Default" comment="" />
-      <created>1506044180558</created>
+      <changelist id="8a334c46-cd62-4d66-91ed-ea2038f036a1" name="Default" comment="" />
+      <created>1506046770872</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1506044180558</updated>
-      <workItem from="1506044187711" duration="75000" />
+      <updated>1506046770872</updated>
+      <workItem from="1506046792461" duration="2734000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TestCustomer - 2017.09.22 at 10h 22m 09s.xml">
+      <configuration name="TestCustomer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCustomer - 2017.09.22 at 10h 34m 11s.xml">
+      <configuration name="TestCustomer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCustomer - 2017.09.22 at 10h 36m 38s.xml">
+      <configuration name="TestCustomer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCustomer_findLmsCommodityReceiptItemMapper - 2017.09.22 at 10h 27m 45s.xml">
+      <configuration name="TestCustomer.findLmsCommodityReceiptItemMapper" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCustomer_findLmsDeliveryStaffMapper - 2017.09.22 at 10h 21m 59s.xml">
+      <configuration name="TestCustomer.findLmsDeliveryStaffMapper" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCustomer_findLmsOrderProductBackMapper - 2017.09.22 at 10h 47m 43s.xml">
+      <configuration name="TestCustomer.findLmsOrderProductBackMapper" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCustomer_findLmsOrderProductExchangeMapper - 2017.09.22 at 10h 50m 35s.xml">
+      <configuration name="TestCustomer.findLmsOrderProductExchangeMapper" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCustomer_findLmsProductMapper - 2017.09.22 at 11h 00m 39s.xml">
+      <configuration name="TestCustomer.findLmsProductMapper" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCustomer_findLmsStationRepetoryItemMapper - 2017.09.22 at 10h 36m 15s.xml">
+      <configuration name="TestCustomer.findLmsStationRepetoryItemMapper" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCustomer_findLmsStationRepetoryMapper - 2017.09.22 at 10h 36m 22s.xml">
+      <configuration name="TestCustomer.findLmsStationRepetoryMapper" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75000" />
+    <option name="totallyTimeSpent" value="2734000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1456" height="916" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32948717" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25787964" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -307,6 +521,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -315,71 +539,522 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsStation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsCommodityReceiptItemMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="263">
+          <caret line="264" column="38" lean-forward="false" selection-start-line="264" selection-start-column="14" selection-end-line="264" selection-end-column="38" />
+          <folding>
+            <marker date="1506046502268" expanded="true" signature="3694:3815" ph="select from LMS_COMMODITY_RECEIPT_ITEM" />
+            <marker date="1506046502268" expanded="true" signature="3899:3975" ph="delete from " />
+            <marker date="1506046502268" expanded="true" signature="4082:4120" ph="delete from " />
+            <marker date="1506046502268" expanded="true" signature="4304:4614" ph="insert into LMS_COMMODITY_RECEIPT_ITEM... " />
+            <marker date="1506046502268" expanded="true" signature="5939:5986" ph="select count... LMS_COMMODITY_RECEIPT_ITEM" />
+            <marker date="1506046502268" expanded="true" signature="7052:7401" ph="update LMS_C... " />
+            <marker date="1506046502268" expanded="true" signature="7616:8212" ph="update LMS_C... " />
+            <marker date="1506046502268" expanded="true" signature="8315:8627" ph="update LMS_C... " />
+            <marker date="1506046502268" expanded="true" signature="10996:11302" ph="select LMS_C... LMS_COMMODITY_RECEIPT_ITEM" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/mapper/LmsCommodityReceiptItemMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="30" column="61" lean-forward="false" selection-start-line="30" selection-start-column="61" selection-end-line="30" selection-end-column="61" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/mapper/LmsSecondCategoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="25" column="19" lean-forward="false" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/mapper/LmsStationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/mapper/LmsStationRepetoryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-478">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsStationMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-121">
+          <caret line="217" column="24" lean-forward="false" selection-start-line="217" selection-start-column="24" selection-end-line="217" selection-end-column="24" />
+          <folding>
+            <marker date="1506044547247" expanded="true" signature="3523:3630" ph="select from LMS_STATION" />
+            <marker date="1506044547247" expanded="true" signature="3714:3775" ph="delete from " />
+            <marker date="1506044547247" expanded="true" signature="3869:3892" ph="delete from " />
+            <marker date="1506044547247" expanded="true" signature="4063:4291" ph="insert into LMS_STATION... " />
+            <marker date="1506044547247" expanded="true" signature="5378:5410" ph="select count... LMS_STATION" />
+            <marker date="1506044547247" expanded="true" signature="6316:6583" ph="update LMS_S... " />
+            <marker date="1506044547247" expanded="true" signature="6785:7235" ph="update LMS_S... " />
+            <marker date="1506044547247" expanded="true" signature="7325:7560" ph="update LMS_S... " />
+            <marker date="1506044547247" expanded="true" signature="8260:8382" ph="select LMS_S... LMS_STATION" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsStationRepetoryItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="105" column="18" lean-forward="false" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
+          <folding>
+            <element signature="e#399#400#0" expanded="true" />
+            <element signature="e#424#425#0" expanded="true" />
+            <element signature="e#458#459#0" expanded="true" />
+            <element signature="e#486#487#0" expanded="true" />
+            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#708#709#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#768#769#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+            <element signature="e#870#871#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+            <element signature="e#931#932#0" expanded="true" />
+            <element signature="e#974#975#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+            <element signature="e#1047#1048#0" expanded="true" />
+            <element signature="e#1082#1083#0" expanded="true" />
+            <element signature="e#1136#1137#0" expanded="true" />
+            <element signature="e#1184#1185#0" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1274#1275#0" expanded="true" />
+            <element signature="e#1453#1454#0" expanded="true" />
+            <element signature="e#1486#1487#0" expanded="true" />
+            <element signature="e#1542#1543#0" expanded="true" />
+            <element signature="e#1586#1587#0" expanded="true" />
+            <element signature="e#1653#1654#0" expanded="true" />
+            <element signature="e#1698#1699#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsStationRepetory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
+        <state relative-caret-position="166">
+          <caret line="95" column="24" lean-forward="false" selection-start-line="95" selection-start-column="24" selection-end-line="95" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#379#380#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#497#498#0" expanded="true" />
+            <element signature="e#524#525#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
+            <element signature="e#659#660#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#735#736#0" expanded="true" />
+            <element signature="e#805#806#0" expanded="true" />
+            <element signature="e#841#842#0" expanded="true" />
+            <element signature="e#869#870#0" expanded="true" />
+            <element signature="e#915#916#0" expanded="true" />
+            <element signature="e#949#950#0" expanded="true" />
+            <element signature="e#984#985#0" expanded="true" />
+            <element signature="e#1017#1018#0" expanded="true" />
+            <element signature="e#1067#1068#0" expanded="true" />
+            <element signature="e#1111#1112#0" expanded="true" />
+            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="e#1183#1184#0" expanded="true" />
+            <element signature="e#1237#1238#0" expanded="true" />
+            <element signature="e#1285#1286#0" expanded="true" />
+            <element signature="e#1332#1333#0" expanded="true" />
+            <element signature="e#1367#1368#0" expanded="true" />
+            <element signature="e#1431#1432#0" expanded="true" />
+            <element signature="e#1479#1480#0" expanded="true" />
+            <element signature="e#1520#1521#0" expanded="true" />
+            <element signature="e#1553#1554#0" expanded="true" />
+            <element signature="e#1609#1610#0" expanded="true" />
+            <element signature="e#1653#1654#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsStationRepetoryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="256" column="9" lean-forward="false" selection-start-line="256" selection-start-column="9" selection-end-line="256" selection-end-column="9" />
+          <folding>
+            <marker date="1506047703431" expanded="true" signature="3654:3660" ph="select from LMS_STATION_REPETORY" />
+            <marker date="1506047703431" expanded="true" signature="3654:3769" ph="select from LMS_STATION_REPETORY" />
+            <marker date="1506047703431" expanded="true" signature="3853:3923" ph="delete from " />
+            <marker date="1506047703431" expanded="true" signature="4025:4057" ph="delete from " />
+            <marker date="1506047703431" expanded="true" signature="4236:4527" ph="insert into LMS_STATION_REPETORY... " />
+            <marker date="1506047703431" expanded="true" signature="5809:5850" ph="select count... LMS_STATION_REPETORY" />
+            <marker date="1506047703431" expanded="true" signature="6890:7220" ph="update LMS_S... " />
+            <marker date="1506047703431" expanded="true" signature="7430:8000" ph="update LMS_S... " />
+            <marker date="1506047703431" expanded="true" signature="8098:8391" ph="update LMS_S... " />
+            <marker date="1506047703431" expanded="true" signature="9559:9800" ph="select LMS_S... LMS_STATION" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsStationRepetoryItemMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="279" column="9" lean-forward="false" selection-start-line="279" selection-start-column="9" selection-end-line="279" selection-end-column="9" />
+          <folding>
+            <marker date="1506047761964" expanded="true" signature="3773:3779" ph="select from LMS_STATION_REPETORY_ITEM" />
+            <marker date="1506047761964" expanded="true" signature="3773:3893" ph="select from LMS_STATION_REPETORY_ITEM" />
+            <marker date="1506047761964" expanded="true" signature="3977:4052" ph="delete from " />
+            <marker date="1506047761964" expanded="true" signature="4158:4195" ph="delete from " />
+            <marker date="1506047761964" expanded="true" signature="4378:4725" ph="insert into LMS_STATION_REPETORY_ITEM... " />
+            <marker date="1506047761964" expanded="true" signature="6197:6243" ph="select count... LMS_STATION_REPETORY_ITEM" />
+            <marker date="1506047761964" expanded="true" signature="7418:7818" ph="update LMS_S... " />
+            <marker date="1506047761964" expanded="true" signature="8032:8723" ph="update LMS_S... " />
+            <marker date="1506047761964" expanded="true" signature="8825:9181" ph="update LMS_S... " />
+            <marker date="1506047761964" expanded="true" signature="11037:11343" ph="select LMS_P... LMS_PRODUCT" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsStation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsSupplier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-42">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsSupplierExample.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-105">
+          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsCenterproductExport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsCenterproductExportItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-84">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsDeliveryStaff.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsFirstCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsOrderBack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsProductExport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-233">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsProductImport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsProductExportItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsOrderItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="24" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsOrderItemMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="260" column="2" lean-forward="true" selection-start-line="260" selection-start-column="2" selection-end-line="301" selection-end-column="11" />
+          <folding>
+            <marker date="1506045575692" expanded="true" signature="3832:3941" ph="select from LMS_ORDER_ITEM" />
+            <marker date="1506045575692" expanded="true" signature="4025:4089" ph="delete from " />
+            <marker date="1506045575692" expanded="true" signature="4185:4211" ph="delete from " />
+            <marker date="1506045575692" expanded="true" signature="4384:4784" ph="insert into LMS_ORDER_ITEM... " />
+            <marker date="1506045575692" expanded="true" signature="6401:6436" ph="select count... LMS_ORDER_ITEM" />
+            <marker date="1506045575692" expanded="true" signature="7729:8182" ph="update LMS_O... " />
+            <marker date="1506045575692" expanded="true" signature="8386:9181" ph="update LMS_O... " />
+            <marker date="1506045575692" expanded="true" signature="9273:9687" ph="update LMS_O... " />
+            <marker date="1506045575692" expanded="true" signature="12046:12263" ph="select LMS_O... LMS_ORDER_ITEM" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderItemMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="31" column="4" lean-forward="true" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsOrderProductBack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="41" />
+          <folding>
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#454#455#0" expanded="true" />
+            <element signature="e#504#505#0" expanded="true" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#592#593#0" expanded="true" />
+            <element signature="e#626#627#0" expanded="true" />
+            <element signature="e#690#691#0" expanded="true" />
+            <element signature="e#736#737#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsOrderProductBackMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="229" column="2" lean-forward="true" selection-start-line="229" selection-start-column="2" selection-end-line="270" selection-end-column="11" />
+          <folding>
+            <marker date="1506048455570" expanded="true" signature="3665:3783" ph="select from LMS_ORDER_PRODUCT_BACK" />
+            <marker date="1506048455570" expanded="true" signature="3867:3939" ph="delete from " />
+            <marker date="1506048455570" expanded="true" signature="4042:4076" ph="delete from " />
+            <marker date="1506048455570" expanded="true" signature="4256:4562" ph="insert into LMS_ORDER_PRODUCT_BACK... " />
+            <marker date="1506048455570" expanded="true" signature="5857:5900" ph="select count... LMS_ORDER_PRODUCT_BACK" />
+            <marker date="1506048455570" expanded="true" signature="6948:7293" ph="update LMS_O... " />
+            <marker date="1506048455570" expanded="true" signature="7504:8082" ph="update LMS_O... " />
+            <marker date="1506048455570" expanded="true" signature="8181:8487" ph="update LMS_O... " />
+            <marker date="1506048455570" expanded="true" signature="10852:11101" ph="select LMS_O... LMS_ORDER_PRODUCT_BACK" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderProductExchangeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="31" column="32" lean-forward="false" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderProductBackMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="30" column="4" lean-forward="true" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsOrderProductExchangeMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="230" column="2" lean-forward="false" selection-start-line="230" selection-start-column="2" selection-end-line="271" selection-end-column="11" />
+          <folding>
+            <marker date="1506048627912" expanded="true" signature="3687:3809" ph="select from LMS_ORDER_PRODUCT_EXCHANGE" />
+            <marker date="1506048627912" expanded="true" signature="3899:3975" ph="delete from " />
+            <marker date="1506048627912" expanded="true" signature="4082:4120" ph="delete from " />
+            <marker date="1506048627912" expanded="true" signature="4304:4614" ph="insert into LMS_ORDER_PRODUCT_EXCHANGE... " />
+            <marker date="1506048627912" expanded="true" signature="5921:5968" ph="select count... LMS_ORDER_PRODUCT_EXCHANGE" />
+            <marker date="1506048627912" expanded="true" signature="7020:7369" ph="update LMS_O... " />
+            <marker date="1506048627912" expanded="true" signature="7584:8166" ph="update LMS_O... " />
+            <marker date="1506048627912" expanded="true" signature="8269:8579" ph="update LMS_O... " />
+            <marker date="1506048627912" expanded="true" signature="10949:11214" ph="select LMS_O... LMS_ORDER_PRODUCT_EXCHANGE" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsSecondCategory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsSupplierMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1764">
+          <caret line="84" column="21" lean-forward="false" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="21" />
+          <folding>
+            <marker date="1505279610000" expanded="true" signature="4019:4127" ph="select from LMS_SUPPLIER" />
+            <marker date="1505279610000" expanded="true" signature="4211:4273" ph="delete from " />
+            <marker date="1505279610000" expanded="true" signature="4368:4392" ph="delete from " />
+            <marker date="1505279610000" expanded="true" signature="4564:5057" ph="insert into LMS_SUPPLIER... " />
+            <marker date="1505279610000" expanded="true" signature="7049:7082" ph="select count... LMS_SUPPLIER" />
+            <marker date="1505279610000" expanded="true" signature="8648:9236" ph="update LMS_S... " />
+            <marker date="1505279610000" expanded="true" signature="9439:10465" ph="update LMS_S... " />
+            <marker date="1505279610000" expanded="true" signature="10556:11070" ph="update LMS_S... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsSecondCategoryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="76" column="28" lean-forward="false" selection-start-line="76" selection-start-column="9" selection-end-line="76" selection-end-column="28" />
+          <folding>
+            <marker date="1506044547246" expanded="true" signature="3517:3632" ph="select from LMS_SECOND_CATEGORY" />
+            <marker date="1506044547246" expanded="true" signature="3716:3785" ph="delete from " />
+            <marker date="1506044547246" expanded="true" signature="3886:3917" ph="delete from " />
+            <marker date="1506044547246" expanded="true" signature="4095:4322" ph="insert into LMS_SECOND_CATEGORY... " />
+            <marker date="1506044547246" expanded="true" signature="5340:5380" ph="select count... LMS_SECOND_CATEGORY" />
+            <marker date="1506044547246" expanded="true" signature="6229:6481" ph="update LMS_S... " />
+            <marker date="1506044547246" expanded="true" signature="6690:7097" ph="update LMS_S... " />
+            <marker date="1506044547246" expanded="true" signature="7194:7421" ph="update LMS_S... " />
+            <marker date="1506044547246" expanded="true" signature="7943:8125" ph="select LMS_S... LMS_SECOND_CATEGORY" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsProductMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="363" column="46" lean-forward="false" selection-start-line="363" selection-start-column="14" selection-end-line="363" selection-end-column="46" />
+          <folding>
+            <marker date="1506049230143" expanded="true" signature="4229:4336" ph="select from LMS_PRODUCT" />
+            <marker date="1506049230143" expanded="true" signature="4420:4481" ph="delete from " />
+            <marker date="1506049230143" expanded="true" signature="4575:4598" ph="delete from " />
+            <marker date="1506049230143" expanded="true" signature="4769:5387" ph="insert into LMS_PRODUCT... " />
+            <marker date="1506049230143" expanded="true" signature="7740:7772" ph="select count... LMS_PRODUCT" />
+            <marker date="1506049230143" expanded="true" signature="9605:10332" ph="update LMS_P... " />
+            <marker date="1506049230143" expanded="true" signature="10534:11799" ph="update LMS_P... " />
+            <marker date="1506049230143" expanded="true" signature="11889:12528" ph="update LMS_P... " />
+            <marker date="1506049230143" expanded="true" signature="14050:14299" ph="select LMS_P... LMS_PRODUCT" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/mapper/LmsProductMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="30" column="21" lean-forward="false" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestCustomer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="255" column="36" lean-forward="false" selection-start-line="255" selection-start-column="36" selection-end-line="255" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsOrderProductExchange.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="88" column="18" lean-forward="false" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-420">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>

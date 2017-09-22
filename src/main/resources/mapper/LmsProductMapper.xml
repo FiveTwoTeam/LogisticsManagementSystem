@@ -335,4 +335,38 @@
       description = #{description,jdbcType=VARCHAR}
     where id = #{id,jdbcType=DECIMAL}
   </update>
+
+
+  <resultMap id="secondCategoryAndSupplierMap" type="lms.model.LmsProduct" extends="BaseResultMap" >
+    <association property="lmsSecondCategory" javaType="lms.model.LmsSecondCategory">
+      <id column="id" property="id" jdbcType="DECIMAL" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+      <result column="LMS_First_Category_id" property="lmsFirstCategoryId" jdbcType="DECIMAL" />
+      <result column="description" property="description" jdbcType="VARCHAR" />
+    </association>
+
+    <collection property="supplierList" ofType="lms.model.LmsSupplier">
+      <id column="id" property="id" jdbcType="DECIMAL" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+      <result column="address" property="address" jdbcType="VARCHAR" />
+      <result column="contact_man" property="contactMan" jdbcType="VARCHAR" />
+      <result column="phone" property="phone" jdbcType="DECIMAL" />
+      <result column="bank" property="bank" jdbcType="VARCHAR" />
+      <result column="bank_account" property="bankAccount" jdbcType="DECIMAL" />
+      <result column="fax" property="fax" jdbcType="VARCHAR" />
+      <result column="post_code" property="postCode" jdbcType="DECIMAL" />
+      <result column="legal_man" property="legalMan" jdbcType="VARCHAR" />
+      <result column="description" property="description" jdbcType="VARCHAR" />
+    </collection>
+  </resultMap>
+
+  <!--一对多映射-->
+  <select id="findSecondCategoryAndSupplierMap" resultMap="secondCategoryAndSupplierMap">
+    select
+    LMS_PRODUCT.*,LMS_SUPPLIER.*,LMS_SECOND_CATEGORY.*
+    from LMS_PRODUCT, LMS_SUPPLIER, LMS_SECOND_CATEGORY
+    where LMS_PRODUCT."LMS_Supplier_id" = LMS_SUPPLIER."id"
+    and LMS_PRODUCT."LMS_Second_Category_id" = LMS_SECOND_CATEGORY."id"
+  </select>
+
 </mapper>

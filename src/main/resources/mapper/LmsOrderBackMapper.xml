@@ -83,7 +83,7 @@
     </if>
   </select>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.math.BigDecimal" >
-    select 
+    select
     <include refid="Base_Column_List" />
     from LMS_ORDER_BACK
     where id = #{id,jdbcType=DECIMAL}
@@ -164,9 +164,9 @@
   <update id="updateByExample" parameterType="map" >
     update LMS_ORDER_BACK
     set id = #{record.id,jdbcType=DECIMAL},
-      reason = #{record.reason,jdbcType=VARCHAR},
-      datetime = #{record.datetime,jdbcType=DATE},
-      LMS_Order_id = #{record.lmsOrderId,jdbcType=DECIMAL}
+    reason = #{record.reason,jdbcType=VARCHAR},
+    datetime = #{record.datetime,jdbcType=DATE},
+    LMS_Order_id = #{record.lmsOrderId,jdbcType=DECIMAL}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -193,4 +193,32 @@
       LMS_Order_id = #{lmsOrderId,jdbcType=DECIMAL}
     where id = #{id,jdbcType=DECIMAL}
   </update>
+
+
+  <!--对LmsOrder做映射-->
+  <resultMap id="OrderResultMap" type="lms.model.LmsOrderBack" extends="BaseResultMap" >
+    <association property="lmsOrder" javaType="lms.model.LmsOrder">
+      <result column="id" property="id" jdbcType="DECIMAL" />
+      <result column="total_price" property="totalPrice" jdbcType="DECIMAL" />
+      <result column="order_number" property="orderNumber" jdbcType="DECIMAL" />
+      <result column="description" property="description" jdbcType="VARCHAR" />
+      <result column="type" property="type" jdbcType="DECIMAL" />
+      <result column="address" property="address" jdbcType="VARCHAR" />
+      <result column="LMS_Customer_id" property="lmsCustomerId" jdbcType="DECIMAL" />
+      <result column="payer" property="payer" jdbcType="VARCHAR" />
+      <result column="payer_address" property="payerAddress" jdbcType="VARCHAR" />
+      <result column="payer_phone" property="payerPhone" jdbcType="DECIMAL" />
+      <result column="payer_post_code" property="payerPostCode" jdbcType="DECIMAL" />
+      <result column="datetime" property="datetime" jdbcType="DATE" />
+      <result column="LMS_Admin_id" property="lmsAdminId" jdbcType="DECIMAL" />
+    </association>
+  </resultMap>
+
+  <!--查找-->
+  <select id="findOrderDetailMap" resultMap="OrderResultMap">
+    select
+    LMS_ORDER_BACK.*,LMS_ORDER.*
+    from LMS_ORDER_BACK, LMS_ORDER
+    where LMS_ORDER_BACK."LMS_Order_id" = LMS_ORDER."id"
+  </select>
 </mapper>

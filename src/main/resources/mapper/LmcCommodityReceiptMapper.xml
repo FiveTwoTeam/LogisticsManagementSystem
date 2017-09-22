@@ -101,7 +101,7 @@
     </if>
   </select>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.math.BigDecimal" >
-    select 
+    select
     <include refid="Base_Column_List" />
     from LMC_COMMODITY_RECEIPT
     where ID = #{id,jdbcType=DECIMAL}
@@ -269,18 +269,18 @@
   <update id="updateByExample" parameterType="map" >
     update LMC_COMMODITY_RECEIPT
     set ID = #{record.id,jdbcType=DECIMAL},
-      TASK_NUMBER = #{record.taskNumber,jdbcType=DECIMAL},
-      CUNTOMER_ID = #{record.cuntomerId,jdbcType=DECIMAL},
-      ADDRESS = #{record.address,jdbcType=VARCHAR},
-      DATETIME = #{record.datetime,jdbcType=DATE},
-      COMMAND = #{record.command,jdbcType=VARCHAR},
-      IF_RECEIPT = #{record.ifReceipt,jdbcType=DECIMAL},
-      STATION_ID = #{record.stationId,jdbcType=DECIMAL},
-      TOTAL_PRICE = #{record.totalPrice,jdbcType=DECIMAL},
-      TYPE = #{record.type,jdbcType=DECIMAL},
-      DESCRIPTION = #{record.description,jdbcType=VARCHAR},
-      FEEDBACK = #{record.feedback,jdbcType=VARCHAR},
-      SIGNATURE = #{record.signature,jdbcType=VARCHAR}
+    TASK_NUMBER = #{record.taskNumber,jdbcType=DECIMAL},
+    CUNTOMER_ID = #{record.cuntomerId,jdbcType=DECIMAL},
+    ADDRESS = #{record.address,jdbcType=VARCHAR},
+    DATETIME = #{record.datetime,jdbcType=DATE},
+    COMMAND = #{record.command,jdbcType=VARCHAR},
+    IF_RECEIPT = #{record.ifReceipt,jdbcType=DECIMAL},
+    STATION_ID = #{record.stationId,jdbcType=DECIMAL},
+    TOTAL_PRICE = #{record.totalPrice,jdbcType=DECIMAL},
+    TYPE = #{record.type,jdbcType=DECIMAL},
+    DESCRIPTION = #{record.description,jdbcType=VARCHAR},
+    FEEDBACK = #{record.feedback,jdbcType=VARCHAR},
+    SIGNATURE = #{record.signature,jdbcType=VARCHAR}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
     </if>

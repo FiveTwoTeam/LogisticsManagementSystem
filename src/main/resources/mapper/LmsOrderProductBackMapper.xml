@@ -225,4 +225,48 @@
       LMS_Product_id = #{lmsProductId,jdbcType=DECIMAL}
     where id = #{id,jdbcType=DECIMAL}
   </update>
+
+
+  <resultMap id="orderAndProductResultMap" type="lms.model.LmsOrderProductBack" extends="BaseResultMap" >
+    <association property="lmsOrder" javaType="lms.model.LmsOrder">
+      <result column="id" property="id" jdbcType="DECIMAL" />
+      <result column="total_price" property="totalPrice" jdbcType="DECIMAL" />
+      <result column="order_number" property="orderNumber" jdbcType="DECIMAL" />
+      <result column="description" property="description" jdbcType="VARCHAR" />
+      <result column="type" property="type" jdbcType="DECIMAL" />
+      <result column="address" property="address" jdbcType="VARCHAR" />
+      <result column="LMS_Customer_id" property="lmsCustomerId" jdbcType="DECIMAL" />
+      <result column="payer" property="payer" jdbcType="VARCHAR" />
+      <result column="payer_address" property="payerAddress" jdbcType="VARCHAR" />
+      <result column="payer_phone" property="payerPhone" jdbcType="DECIMAL" />
+      <result column="payer_post_code" property="payerPostCode" jdbcType="DECIMAL" />
+      <result column="datetime" property="datetime" jdbcType="DATE" />
+      <result column="LMS_Admin_id" property="lmsAdminId" jdbcType="DECIMAL" />
+    </association>
+
+    <collection property="productList" ofType="lms.model.LmsProduct">
+      <id column="id" property="id" jdbcType="DECIMAL" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+      <result column="price" property="price" jdbcType="DECIMAL" />
+      <result column="unit" property="unit" jdbcType="VARCHAR" />
+      <result column="LMS_Second_Category_id" property="lmsSecondCategoryId" jdbcType="DECIMAL" />
+      <result column="discount" property="discount" jdbcType="DECIMAL" />
+      <result column="cost" property="cost" jdbcType="DECIMAL" />
+      <result column="size" property="size" jdbcType="VARCHAR" />
+      <result column="LMS_Supplier_id" property="lmsSupplierId" jdbcType="DECIMAL" />
+      <result column="quality_period" property="qualityPeriod" jdbcType="VARCHAR" />
+      <result column="if_back" property="ifBack" jdbcType="DECIMAL" />
+      <result column="if_exchange" property="ifExchange" jdbcType="DECIMAL" />
+      <result column="description" property="description" jdbcType="VARCHAR" />
+    </collection>
+  </resultMap>
+
+  <!--一对多映射-->
+  <select id="findorderAndProductMap" resultMap="orderAndProductResultMap">
+    select
+    LMS_ORDER_PRODUCT_BACK.*,LMS_PRODUCT.*,LMS_ORDER.*
+    from LMS_ORDER_PRODUCT_BACK, LMS_PRODUCT, LMS_ORDER
+    where LMS_ORDER_PRODUCT_BACK."LMS_Order_id" = LMS_ORDER."id"
+    and LMS_ORDER_PRODUCT_BACK."LMS_Product_id" = LMS_PRODUCT."id"
+  </select>
 </mapper>
