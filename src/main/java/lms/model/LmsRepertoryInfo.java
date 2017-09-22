@@ -13,7 +13,7 @@ public class LmsRepertoryInfo {
 
     private BigDecimal lmsProductId;
 
-    
+    private BigDecimal count;
 
     public BigDecimal getId() {
         return id;
@@ -53,5 +53,13 @@ public class LmsRepertoryInfo {
 
     public void setLmsProductId(BigDecimal lmsProductId) {
         this.lmsProductId = lmsProductId;
+    }
+
+    public BigDecimal getCount() {
+        return count;
+    }
+
+    public void setCount(BigDecimal count) {
+        this.count = count;
     }
 }
