@@ -265,4 +265,22 @@ public class TestCustomer {
             System.out.println(list1.getLmsSecondCategory().toString());
         }
     }
+
+    @Autowired
+    LmsRepertoryMapper  lmsRepertoryMapper;
+    @Test
+    public void findLmsRepertoryMapper(){
+
+        List<LmsRepertory>  list=lmsRepertoryMapper.findadminAndRepertoryResultMap();
+        System.out.println("list: "+list);
+        System.out.println("-------");
+        System.out.println("each list:");
+        for (LmsRepertory list1:
+                list) {
+            System.out.println(list1.toString());
+           // System.out.println("");
+            System.out.println(list1.getLmsAdminList().get(0).toString());
+            System.out.println("-------");
+        }
+    }
 }

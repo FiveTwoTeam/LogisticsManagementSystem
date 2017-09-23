@@ -225,4 +225,33 @@
       count = #{count,jdbcType=DECIMAL}
     where id = #{id,jdbcType=DECIMAL}
   </update>
+
+
+
+ <!-- <resultMap id="stationRepetoryResultMap" type="lms.model.LmsStationRepetory" extends="BaseResultMap" >
+    <association property="lmsStation" javaType="lms.model.LmsStation">
+      <id column="id" property="id" jdbcType="DECIMAL" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+      <result column="address" property="address" jdbcType="VARCHAR" />
+      <result column="phone" property="phone" jdbcType="DECIMAL" />
+      <result column="LMS_Admin_id" property="lmsAdminId" jdbcType="DECIMAL" />
+    </association>
+
+    <association property="lmsStation" javaType="lms.model.LmsStation">
+      <id column="id" property="id" jdbcType="DECIMAL" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+      <result column="address" property="address" jdbcType="VARCHAR" />
+      <result column="phone" property="phone" jdbcType="DECIMAL" />
+      <result column="LMS_Admin_id" property="lmsAdminId" jdbcType="DECIMAL" />
+    </association>
+  </resultMap>
+
+  &lt;!&ndash;一对多映射&ndash;&gt;
+  <select id="findstationRepetoryResultMap" resultMap="stationRepetoryResultMap">
+    select
+    LMS_STATION.*,LMS_STATION_REPETORY.*,LMS_ADMIN.*
+    from LMS_STATION, LMS_STATION_REPETORY, LMS_ADMIN
+    where LMS_STATION_REPETORY."LMS_Station_id" = LMS_STATION."id"
+    and LMS_STATION_REPETORY."LMS_Admin_id" = LMS_ADMIN."ID"
+  </select>-->
 </mapper>

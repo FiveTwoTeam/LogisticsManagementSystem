@@ -13,6 +13,10 @@ public class LmsRepertoryInfo {
 
     private BigDecimal lmsProductId;
 
+    private LmsProduct lmsProduct;
+
+    private LmsRepertory lmsRepertory;
+
     private BigDecimal count;
 
     public BigDecimal getId() {
@@ -61,5 +65,36 @@ public class LmsRepertoryInfo {
 
     public void setCount(BigDecimal count) {
         this.count = count;
+    }
+
+    public LmsProduct getLmsProduct() {
+        return lmsProduct;
+    }
+
+    public void setLmsProduct(LmsProduct lmsProduct) {
+        this.lmsProduct = lmsProduct;
+    }
+
+    public LmsRepertory getLmsRepertory() {
+        return lmsRepertory;
+    }
+
+    public void setLmsRepertory(LmsRepertory lmsRepertory) {
+        this.lmsRepertory = lmsRepertory;
+    }
+
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "LmsRepertoryInfo{" +
+                "id=" + id +
+                ", max=" + max +
+                ", guard=" + guard +
+                ", lmsRepertoryId=" + lmsRepertoryId +
+                ", lmsProductId=" + lmsProductId +
+                ", lmsProduct=" + lmsProduct +
+                ", lmsRepertory=" + lmsRepertory +
+                ", count=" + count +
+                '}';
     }
 }
