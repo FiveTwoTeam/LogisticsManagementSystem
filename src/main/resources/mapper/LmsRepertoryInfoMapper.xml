@@ -228,30 +228,36 @@
 
 
 
- <!-- <resultMap id="stationRepetoryResultMap" type="lms.model.LmsStationRepetory" extends="BaseResultMap" >
-    <association property="lmsStation" javaType="lms.model.LmsStation">
+<resultMap id="productAndRepertoryResultMap" type="lms.model.LmsRepertoryInfo" extends="BaseResultMap" >
+    <association property="lmsProduct" javaType="lms.model.LmsProduct">
       <id column="id" property="id" jdbcType="DECIMAL" />
       <result column="name" property="name" jdbcType="VARCHAR" />
-      <result column="address" property="address" jdbcType="VARCHAR" />
-      <result column="phone" property="phone" jdbcType="DECIMAL" />
-      <result column="LMS_Admin_id" property="lmsAdminId" jdbcType="DECIMAL" />
+      <result column="price" property="price" jdbcType="DECIMAL" />
+      <result column="unit" property="unit" jdbcType="VARCHAR" />
+      <result column="LMS_Second_Category_id" property="lmsSecondCategoryId" jdbcType="DECIMAL" />
+      <result column="discount" property="discount" jdbcType="DECIMAL" />
+      <result column="cost" property="cost" jdbcType="DECIMAL" />
+      <result column="size" property="size" jdbcType="VARCHAR" />
+      <result column="LMS_Supplier_id" property="lmsSupplierId" jdbcType="DECIMAL" />
+      <result column="quality_period" property="qualityPeriod" jdbcType="VARCHAR" />
+      <result column="if_back" property="ifBack" jdbcType="DECIMAL" />
+      <result column="if_exchange" property="ifExchange" jdbcType="DECIMAL" />
+      <result column="description" property="description" jdbcType="VARCHAR" />
     </association>
 
-    <association property="lmsStation" javaType="lms.model.LmsStation">
+    <association property="lmsRepertory" javaType="lms.model.LmsRepertory">
       <id column="id" property="id" jdbcType="DECIMAL" />
       <result column="name" property="name" jdbcType="VARCHAR" />
       <result column="address" property="address" jdbcType="VARCHAR" />
-      <result column="phone" property="phone" jdbcType="DECIMAL" />
       <result column="LMS_Admin_id" property="lmsAdminId" jdbcType="DECIMAL" />
     </association>
   </resultMap>
 
-  &lt;!&ndash;一对多映射&ndash;&gt;
-  <select id="findstationRepetoryResultMap" resultMap="stationRepetoryResultMap">
+  <select id="findproductAndRepertoryMap" resultMap="productAndRepertoryResultMap">
     select
-    LMS_STATION.*,LMS_STATION_REPETORY.*,LMS_ADMIN.*
-    from LMS_STATION, LMS_STATION_REPETORY, LMS_ADMIN
-    where LMS_STATION_REPETORY."LMS_Station_id" = LMS_STATION."id"
-    and LMS_STATION_REPETORY."LMS_Admin_id" = LMS_ADMIN."ID"
-  </select>-->
+    LMS_REPERTORY_INFO.*,LMS_PRODUCT.*,LMS_REPERTORY.*
+    from LMS_REPERTORY_INFO, LMS_PRODUCT, LMS_REPERTORY
+    where LMS_REPERTORY_INFO."LMS_Product_id" = LMS_PRODUCT."id"
+    and LMS_REPERTORY_INFO."LMS_Repertory_id" = LMS_REPERTORY."id"
+  </select>
 </mapper>

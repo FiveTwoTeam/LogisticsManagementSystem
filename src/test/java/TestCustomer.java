@@ -283,4 +283,23 @@ public class TestCustomer {
             System.out.println("-------");
         }
     }
+
+
+    @Autowired
+    LmsRepertoryInfoMapper  lmsRepertoryInfoMapper;
+    @Test
+    public void findLmsRepertoryInfoMapper(){
+
+        List<LmsRepertoryInfo>  list=lmsRepertoryInfoMapper.findproductAndRepertoryMap();
+        System.out.println("list: "+list);
+        System.out.println("-------");
+        System.out.println("each list:");
+        for (LmsRepertoryInfo list1:
+                list) {
+            System.out.println(list1.toString());
+            System.out.println("property: "+list1.getLmsProduct().toString());
+            System.out.println("-------");
+        }
+    }
+
 }
