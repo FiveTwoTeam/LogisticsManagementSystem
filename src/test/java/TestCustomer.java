@@ -337,4 +337,22 @@ public class TestCustomer {
             System.out.println("-------");
         }
     }
+
+
+    @Autowired
+    LmsProductExportItemMapper  lmsProductExportItemMapper;
+    @Test
+    public void findLmsProductExportItemMapper(){
+
+        List<LmsProductExportItem> list=lmsProductExportItemMapper.findproductAndProductExportMap();
+        System.out.println("list: "+list);
+        System.out.println("-------");
+        System.out.println("each list:");
+        for (LmsProductExportItem list1:
+                list) {
+            System.out.println(list1.toString());
+            System.out.println("property: "+list1.getLmsProductExport().toString());
+            System.out.println("-------");
+        }
+    }
 }

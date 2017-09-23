@@ -63,4 +63,16 @@ public class LmsProductExport {
     public void setDatetime(Date datetime) {
         this.datetime = datetime;
     }
+
+    @Override
+    public String toString() {
+        return "LmsProductExport{" +
+                "id=" + id +
+                ", transport='" + transport + '\'' +
+                ", description='" + description + '\'' +
+                ", totalCount=" + totalCount +
+                ", totalPrice=" + totalPrice +
+                ", datetime=" + datetime +
+                '}';
+    }
 }

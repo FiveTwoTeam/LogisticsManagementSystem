@@ -15,6 +15,10 @@ public class LmsProductExportItem {
 
     private BigDecimal lmsProductExportId;
 
+    private LmsProduct lmsProduct;
+
+    private LmsProductExport lmsProductExport;
+
     public BigDecimal getId() {
         return id;
     }
@@ -61,5 +65,35 @@ public class LmsProductExportItem {
 
     public void setLmsProductExportId(BigDecimal lmsProductExportId) {
         this.lmsProductExportId = lmsProductExportId;
+    }
+
+    public LmsProduct getLmsProduct() {
+        return lmsProduct;
+    }
+
+    public void setLmsProduct(LmsProduct lmsProduct) {
+        this.lmsProduct = lmsProduct;
+    }
+
+    public LmsProductExport getLmsProductExport() {
+        return lmsProductExport;
+    }
+
+    public void setLmsProductExport(LmsProductExport lmsProductExport) {
+        this.lmsProductExport = lmsProductExport;
+    }
+
+    @Override
+    public String toString() {
+        return "LmsProductExportItem{" +
+                "id=" + id +
+                ", count=" + count +
+                ", price=" + price +
+                ", subprice=" + subprice +
+                ", lmsProductId=" + lmsProductId +
+                ", lmsProductExportId=" + lmsProductExportId +
+                ", lmsProduct=" + lmsProduct +
+                ", lmsProductExport=" + lmsProductExport +
+                '}';
     }
 }
