@@ -241,4 +241,39 @@
       LMS_Product_Import_Itemcol = #{lmsProductImportItemcol,jdbcType=VARCHAR}
     where id = #{id,jdbcType=DECIMAL}
   </update>
+
+  <!--商品入库单与商品-->
+  <resultMap id="productAndProductImportMap" type="lms.model.LmsProductImportItem" extends="BaseResultMap" >
+    <association property="lmsProduct" javaType="lms.model.LmsProduct">
+      <id column="id" property="id" jdbcType="DECIMAL" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+      <result column="price" property="price" jdbcType="DECIMAL" />
+      <result column="unit" property="unit" jdbcType="VARCHAR" />
+      <result column="LMS_Second_Category_id" property="lmsSecondCategoryId" jdbcType="DECIMAL" />
+      <result column="discount" property="discount" jdbcType="DECIMAL" />
+      <result column="cost" property="cost" jdbcType="DECIMAL" />
+      <result column="size" property="size" jdbcType="VARCHAR" />
+      <result column="LMS_Supplier_id" property="lmsSupplierId" jdbcType="DECIMAL" />
+      <result column="quality_period" property="qualityPeriod" jdbcType="VARCHAR" />
+      <result column="if_back" property="ifBack" jdbcType="DECIMAL" />
+      <result column="if_exchange" property="ifExchange" jdbcType="DECIMAL" />
+      <result column="description" property="description" jdbcType="VARCHAR" />
+    </association>
+
+    <association property="lmsProductImport" javaType="lms.model.LmsProductImport">
+      <id column="id" property="id" jdbcType="DECIMAL" />
+      <result column="import_no" property="importNo" jdbcType="DECIMAL" />
+      <result column="datetime" property="datetime" jdbcType="DATE" />
+      <result column="LMS_Supplier_id" property="lmsSupplierId" jdbcType="DECIMAL" />
+    </association>
+  </resultMap>
+
+  <!--一对多映射-->
+  <select id="findproductAndProductImportMap" resultMap="productAndProductImportMap">
+    select
+    LMS_PRODUCT_IMPORT_ITEM.*,LMS_PRODUCT.*,LMS_PRODUCT_IMPORT.*
+    from LMS_PRODUCT_IMPORT_ITEM, LMS_PRODUCT, LMS_PRODUCT_IMPORT
+    where LMS_PRODUCT_IMPORT_ITEM."LMS_Product_id" = LMS_PRODUCT."id"
+    and LMS_PRODUCT_IMPORT_ITEM."LMS_Product_Import_id" = LMS_PRODUCT_IMPORT."id"
+  </select>
 </mapper>

@@ -302,4 +302,39 @@ public class TestCustomer {
         }
     }
 
+
+    @Autowired
+    LmsProductImportItemMapper  lmsProductImportItemMapper;
+    @Test
+    public void findLmsProductImportItemMapper(){
+
+        List<LmsProductImportItem> list=lmsProductImportItemMapper.findproductAndProductImportMap();
+        System.out.println("list: "+list);
+        System.out.println("-------");
+        System.out.println("each list:");
+        for (LmsProductImportItem list1:
+                list) {
+            System.out.println(list1.toString());
+            System.out.println("property: "+list1.getLmsProductImport().toString());
+            System.out.println("-------");
+        }
+    }
+
+
+    @Autowired
+    LmsProductImportMapper  lmsProductImportMapper;
+    @Test
+    public void findLmsProductImportMapper(){
+
+        List<LmsProductImport> list=lmsProductImportMapper.findproductImportResultMap();
+        System.out.println("list: "+list);
+        System.out.println("-------");
+        System.out.println("each list:");
+        for (LmsProductImport list1:
+                list) {
+            System.out.println(list1.toString());
+            System.out.println("property: "+list1.getLmsSupplierList().toString());
+            System.out.println("-------");
+        }
+    }
 }

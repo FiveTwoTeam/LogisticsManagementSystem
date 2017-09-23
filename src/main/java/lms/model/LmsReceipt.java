@@ -83,4 +83,18 @@ public class LmsReceipt {
     public void setState(Short state) {
         this.state = state;
     }
+
+    @Override
+    public String toString() {
+        return "LmsReceipt{" +
+                "id=" + id +
+                ", totalMoney=" + totalMoney +
+                ", gainDate=" + gainDate +
+                ", missDate=" + missDate +
+                ", gainMan='" + gainMan + '\'' +
+                ", missMan='" + missMan + '\'' +
+                ", orderNumber=" + orderNumber +
+                ", state=" + state +
+                '}';
+    }
 }
