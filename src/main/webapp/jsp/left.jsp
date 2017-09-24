@@ -15,46 +15,56 @@
                 </a>
                 <dl class="layui-nav-child">
                     <dd class="">
-                    <dd class="">
-                        <a href="javascript:;" _href="${ basePath }/query">
+                        <a href="javascript:;" _href="${ basePath }/queryCustom">
                             <cite>客户管理</cite>
                         </a>
                     </dd>
+                </dl>
+                <dl class="layui-nav-child">
                     </dd>
                     <dd class="">
-                    <dd class="">
-                        <a href="javascript:;" _href="./category.html">
+                        <a href="javascript:;" _href="${ basePath }/queryOrder">
                             <cite>订单管理</cite>
                         </a>
                     </dd>
+                </dl>
+                <dl class="layui-nav-child">
+                    <dd class="">
+                        <a href="javascript:;" _href="${ basePath }/queryOrderBack">
+                            <cite>退订查询</cite>
+                        </a>
+                    </dd>
+                </dl>
+                <dl class="layui-nav-child">
+                    <dd class="">
+                        <a href="javascript:;" _href="${ basePath }/queryProductExchange">
+                            <cite>换货查询</cite>
+                        </a>
+                    </dd>
+                </dl>
+                <dl class="layui-nav-child">
+                    <dd class="">
+                        <a href="javascript:;" _href="${ basePath }/queryOrderProductBack">
+                            <cite>退货查询</cite>
+                        </a>
+                    </dd>
+                </dl>
+                <dl class="layui-nav-child">
+                    <dd class="">
+                        <a href="javascript:;" _href="${ basePath }/queryRepertory">
+                            <cite>中心库房查询</cite>
+                        </a>
                     </dd>
                 </dl>
             </li>
 
             <li class="layui-nav-item">
                 <a class="javascript:;" href="javascript:;">
-                    <i class="layui-icon" style="top: 3px;">&#xe612;</i><cite>客户管理</cite>
+                    <i class="layui-icon" style="top: 3px;">&#xe612;</i><cite>管理员管理</cite>
                 </a>
                 <dl class="layui-nav-child">
                     <dd class="">
-                        <a href="javascript:;" _href="custom_list.html">
-                            <cite>客户列表</cite>
-                        </a>
-                    </dd>
-                    <dd class="">
-                        <a href="javascript:;" _href="./custom_del.html">
-                            <cite>已删除客户</cite>
-                        </a>
-                    </dd>
-                </dl>
-            </li>
-            <li class="layui-nav-item">
-                <a class="javascript:;" href="javascript:;">
-                    <i class="layui-icon" style="top: 3px;">&#xe613;</i><cite>管理员管理</cite>
-                </a>
-                <dl class="layui-nav-child">
-                    <dd class="">
-                        <a href="javascript:;" _href="./admin_list.html">
+                        <a href="javascript:;" _href="${ basePath }/queryAdmin">
                             <cite>管理员列表</cite>
                         </a>
                     </dd>
@@ -63,91 +73,104 @@
             </li>
             <li class="layui-nav-item">
                 <a class="javascript:;" href="javascript:;">
-                    <i class="layui-icon" style="top: 3px;">&#xe612;</i><cite>供应商管理</cite>
+                    <i class="layui-icon" style="top: 3px;">&#xe613;</i><cite>调度管理</cite>
                 </a>
                 <dl class="layui-nav-child">
                     <dd class="">
-                        <a href="javascript:;" _href="supplier_list.html">
-                            <cite>供应商列表</cite>
-                        </a>
-                    </dd>
-                </dl>
-            </li>
-            <li class="layui-nav-item">
-                <a class="javascript:;" href="javascript:;">
-                    <i class="layui-icon" style="top: 3px;">&#xe613;</i><cite>管理员管理</cite>
-                </a>
-                <dl class="layui-nav-child">
-                    <dd class="">
-                        <a href="javascript:;" _href="./admin_list.html">
-                            <cite>管理员列表</cite>
+                        <a href="javascript:;" _href="${ basePath }/queryOrder">
+                            <cite>订单调度</cite>
                         </a>
                     </dd>
 
                 </dl>
             </li>
+
             <li class="layui-nav-item">
                 <a class="javascript:;" href="javascript:;">
-                    <i class="layui-icon" style="top: 3px;">&#xe612;</i><cite>配送员管理</cite>
+                    <i class="layui-icon" style="top: 3px;">&#xe612;</i><cite>分站库房</cite>
                 </a>
                 <dl class="layui-nav-child">
                     <dd class="">
-                        <a href="javascript:;" _href="staff_list.html">
-                            <cite>配送员列表</cite>
+                        <a href="javascript:;" _href="${ basePath }/queryProductExportList">
+                            <cite>出库单</cite>
+                        </a>
+                    </dd>
+                </dl>
+                <dl class="layui-nav-child">
+                    <dd class="">
+                        <a href="javascript:;" _href="#">
+                            <cite>库存信息</cite>
                         </a>
                     </dd>
                 </dl>
             </li>
             <li class="layui-nav-item">
                 <a class="javascript:;" href="javascript:;">
-                    <i class="layui-icon" style="top: 3px;">&#xe612;</i><cite>未分类</cite>
+                    <i class="layui-icon" style="top: 3px;">&#xe612;</i><cite>配送中心</cite>
                 </a>
                 <dl class="layui-nav-child">
                     <dd class="">
-                        <a href="javascript:;" _href="product_import_list.html">
-                            <cite>商品入库</cite>
+                        <a href="javascript:;" _href="#">
+                            <cite>分类管理</cite>
                         </a>
                     </dd>
                 </dl>
                 <dl class="layui-nav-child">
                     <dd class="">
-                        <a href="javascript:;" _href="product_export_list.html">
-                            <cite>商品出库</cite>
+                        <a href="javascript:;" _href="#">
+                            <cite>商品管理</cite>
+                        </a>
+                    </dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a class="javascript:;" href="javascript:;">
+                    <i class="layui-icon" style="top: 3px;">&#xe612;</i><cite>中心库房</cite>
+                </a>
+                <dl class="layui-nav-child">
+                    <dd class="">
+                        <a href="javascript:;" _href="${ basePath }/queryProductExportList">
+                            <cite>商品查询</cite>
                         </a>
                     </dd>
                 </dl>
                 <dl class="layui-nav-child">
                     <dd class="">
-                        <a href="javascript:;" _href="repertory_list.html">
-                            <cite>中心库房</cite>
+                        <a href="javascript:;" _href="${ basePath }/queryStation">
+                            <cite>分站库房修改</cite>
                         </a>
                     </dd>
                 </dl>
                 <dl class="layui-nav-child">
                     <dd class="">
-                        <a href="javascript:;" _href="repertory_info_list.html">
-                            <cite>库房信息</cite>
+                        <a href="javascript:;" _href="${ basePath }/queryProductExport">
+                            <cite>出库单查询</cite>
                         </a>
                     </dd>
                 </dl>
                 <dl class="layui-nav-child">
                     <dd class="">
-                        <a href="javascript:;" _href="centerProduct_export_list.html">
-                            <cite>中心库房退货表</cite>
+                        <a href="javascript:;" _href="${ basePath }/queryProductImport">
+                            <cite>入库单查询</cite>
+                        </a>
+                    </dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a class="javascript:;" href="javascript:;">
+                    <i class="layui-icon" style="top: 3px;">&#xe612;</i><cite>分站管理</cite>
+                </a>
+                <dl class="layui-nav-child">
+                    <dd class="">
+                        <a href="javascript:;" _href="${ basePath }/queryTask">
+                            <cite>配送任务单</cite>
                         </a>
                     </dd>
                 </dl>
                 <dl class="layui-nav-child">
                     <dd class="">
-                        <a href="javascript:;" _href="station_list.html">
-                            <cite>分站表</cite>
-                        </a>
-                    </dd>
-                </dl>
-                <dl class="layui-nav-child">
-                    <dd class="">
-                        <a href="javascript:;" _href="station_repetory_list.html">
-                            <cite>分站库房表</cite>
+                        <a href="javascript:;" _href="${ basePath }/queryReceipt">
+                            <cite>发票</cite>
                         </a>
                     </dd>
                 </dl>

@@ -10,5 +10,6 @@
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
-<script src="${ basePath }/lib/layui/layui.js" charset="utf-8"></script>
-<script src="${ basePath }/js/x-admin.js"></script>
+<script src="${pageContext.request.contextPath}/lib/layui/layui.js" charset="utf-8"></script>
+<script src="${pageContext.request.contextPath}/js/x-admin.js"></script>
+

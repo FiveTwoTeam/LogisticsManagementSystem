@@ -11,82 +11,88 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
         <div class="x-body">
             <form class="layui-form">
                 <div class="layui-form-item">
-                    <label for="username" class="layui-form-label">
-                        登录名
+                    <label for="name" class="layui-form-label">
+                        昵称
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="username" name="username" required="" lay-verify="required"
-                        autocomplete="off" class="layui-input">
-                    </div>
-                    <div class="layui-form-mid layui-word-aux">
-                        将会成为您唯一的登入名
+                        <input type="text" id="name" name="name" required lay-verify="required"
+                               autocomplete="off" value="zhibinm" class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
-                    <label for="L_pass" class="layui-form-label">
-                        密码
+                    <label for="identityId" class="layui-form-label">
+                        身份证
                     </label>
                     <div class="layui-input-inline">
-                        <input type="password" id="L_pass" name="password" required="" lay-verify="pass"
-                        autocomplete="off" class="layui-input">
+                        <input type="text" id="identityId" name="identityId" required lay-verify="email"
+                               autocomplete="off" value="113664000@qq.com" class="layui-input">
                     </div>
-                    <div class="layui-form-mid layui-word-aux">
-                        6到16个字符
+
+                </div>
+                <div class="layui-form-item">
+                    <label for="workUnit" class="layui-form-label">
+                        工作单位
+                    </label>
+                    <div class="layui-input-inline">
+                        <input type="text" id="workUnit" name="workUnit" autocomplete="off"
+                               class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
-                    <label for="L_repass" class="layui-form-label">
-                        确认密码
+                    <label for="phnieExt" class="layui-form-label">
+                        座机号码
                     </label>
                     <div class="layui-input-inline">
-                        <input type="password" id="L_repass" name="repass" required="" lay-verify="repass"
-                        autocomplete="off" class="layui-input">
-                    </div>
-                </div>
-                 <div class="layui-form-item">
-                    <label for="L_email" class="layui-form-label">
-                        <span class="x-red" name="mail">*</span>邮箱
-                    </label>
-                    <div class="layui-input-inline">
-                        <input type="text" id="L_email" name="mail" required="" lay-verify="email"
-                        autocomplete="off" class="layui-input">
-                    </div>
-                    <div class="layui-form-mid layui-word-aux">
-                        <span class="x-red">*</span>
+                        <input type="text" id="phnieExt" name="phnieExt" autocomplete="off"
+                               class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
-                    <label for="phone" class="layui-form-label">
-                        <span class="x-red" name="phone">*</span>手机
+                    <label for="mobilePhone" class="layui-form-label">
+                        手机号码
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="phone" name="phone" required="" lay-verify="phone"
-                        autocomplete="off" class="layui-input">
-                    </div>
-                    <div class="layui-form-mid layui-word-aux">
-                        将会成为您唯一的登入名
+                        <input type="text" id="mobilePhone" name="mobilePhone" autocomplete="off"
+                               class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
-                    <label for="role" class="layui-form-label">
-                        角色
+                    <label for="address" class="layui-form-label">
+                        地址
                     </label>
                     <div class="layui-input-inline">
-                      <select name="right">
-                        <option value="">请选择角色</option>
-                        <option value="编辑人员">客服</option>
-                        <option value="问题维护">调度中心管理员</option>
-                        <option value="问题维护">分站管理员</option>
-                        <option value="问题维护">中心库房管理员</option>
-                        <option value="问题维护">分站库房管理员</option>
-                        <option value="问题维护">配送中心管理员</option>
-                        <option value="问题维护">财务中心管理员</option>
-                      </select>
+                        <input type="text" id="address" name="address" autocomplete="off"
+                               class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
-                    <label for="L_repass" class="layui-form-label">
+                    <label for="postCode" class="layui-form-label">
+                        邮编
                     </label>
+                    <div class="layui-input-inline">
+                        <input type="text" id="postCode" name="postCode" autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label for="mail" class="layui-form-label">
+                        邮箱
+                    </label>
+                    <div class="layui-input-inline">
+                        <input type="text" id="mail" name="mail" autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label for="status" class="layui-form-label">
+                        权限
+                    </label>
+                    <div class="layui-input-inline">
+                        <input type="text" id="status" name="status" autocomplete="off"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
                     <button  class="layui-btn" >
                         增加
                     </button>
@@ -102,7 +108,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
                 $ = layui.jquery;
               var form = layui.form()
               ,layer = layui.layer;
-
+            
               //自定义验证规则
               form.verify({
                 nikename: function(value){
@@ -130,9 +136,19 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
                     });
                     return false;
                 });
-
-
+              
+              
             });
+        </script>
+        <script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+            <%--window.location = "${pageContext.request.contextPath}/addAdmin";--%>
+        })();
         </script>
     </body>
 
