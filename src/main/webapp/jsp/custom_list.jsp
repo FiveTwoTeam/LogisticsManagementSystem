@@ -9,7 +9,7 @@
 <html>
 <jsp:include page="header.jsp"/>
 <body ng-app="customApp">
-	<div class="layui-layout layui-layout-admin" ng-controller="customController">
+	<div class="layui-layout layui-layout-custom" ng-controller="customController">
  			<span class="layui-breadcrumb">
               <a><cite>首页</cite></a>
               <a><cite>客服</cite></a>
@@ -40,7 +40,7 @@
 					</div>
 				</div>
 			</form>
-			<button class="layui-btn" onclick="admin_add('添加用户','${pageContext.request.contextPath}/jsp/custom_add.jsp','600','500')"><i class="layui-icon">&#xe608;</i>添加
+			<button class="layui-btn" onclick="custom_add('添加用户','${basePath}/jsp/custom_add.jsp','600','500')"><i class="layui-icon">&#xe608;</i>添加
 			</button>
 			<table class="layui-table">
 				<thead>
@@ -71,14 +71,14 @@
 					<td>{{ custom.mail }}</td>
 					<td>{{ custom.status }}</td>
 					<td>
-						<a style="text-decoration:none" onclick="admin_stop(this,'10001')" href="javascript:;" title="停用">
+						<a style="text-decoration:none" onclick="custom_stop(this,'10001')" href="javascript:;" title="停用">
 							<i class="layui-icon">&#xe601;</i>
 						</a>
-						<a title="编辑" href="${pageContext.request.contextPath}/updateAdmin"
+						<a title="编辑" href="javascript:;" onclick="custom_edit('添加用户','${basePath}/jsp/custom_edit.jsp','600','500')"
 						   class="ml-5" style="text-decoration:none">
 							<i class="layui-icon">&#xe642;</i>
 						</a>
-						<a title="删除" href="javascript:;" onclick="admin_del(this,'1')"
+						<a title="删除" href="javascript:;" onclick="custom_del(this,'1')"
 						   style="text-decoration:none">
 							<i class="layui-icon">&#xe640;</i>
 						</a>
@@ -154,16 +154,16 @@
 
 
 		/*添加*/
-        function admin_add(title,url,w,h){
+        function custom_add(title,url,w,h){
             x_admin_show(title,url,w,h);
         }
 
         //编辑
-        function admin_edit (title,url,id,w,h) {
+        function custom_edit (title,url,id,w,h) {
             x_admin_show(title,url,w,h);
         }
 		/*删除*/
-        function admin_del(obj,id){
+        function custom_del(obj,id){
             layer.confirm('确认要删除吗？',function(index){
                 //发异步删除数据
                 $(obj).parents("tr").remove();

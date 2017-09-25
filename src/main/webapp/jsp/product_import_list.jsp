@@ -41,7 +41,7 @@
 					</div>
 				</div>
 			</form>
-			<button class="layui-btn" onclick="productImport_add('添加用户','${pageContext.request.contextPath}/jsp/product_import_add.jsp','600','500')"><i class="layui-icon">&#xe608;</i>添加
+			<button class="layui-btn" onclick="productImport_add('添加用户','${basePath}/jsp/product_import_add.jsp','600','500')"><i class="layui-icon">&#xe608;</i>添加
 			</button>
 			<table class="layui-table">
 				<thead>
@@ -60,7 +60,7 @@
 				<td>{{item.datetime}}</td>
 				<td>{{item.lmsSupplierId}}</td>
 				<td>
-					<a title="编辑" href="${pageContext.request.contextPath}/updateProductImport"
+					<a title="编辑" href=javascript:;" onclick="productImport_edit('添加用户','${basePath}/jsp/product_import_edit.jsp','600','500')"
 					   class="ml-5" style="text-decoration:none">
 						<i class="layui-icon">&#xe642;</i>
 					</a>
@@ -137,11 +137,11 @@
 
 	/*添加*/
     function productImport_add(title,url,w,h){
-        x_productImport_show(title,url,w,h);
+        x_admin_show(title,url,w,h);
     }
     //编辑
     function productImport_edit (title,url,id,w,h) {
-        x_productImport_show(title,url,w,h);
+        x_admin_show(title,url,w,h);
     }
 	/*删除*/
     function productImport_del(obj,id){

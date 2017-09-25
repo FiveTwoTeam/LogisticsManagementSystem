@@ -8,8 +8,8 @@
 <html>
 <jsp:include page="header.jsp"/>
 
-<body ng-app="productExportApp">
-	<div class="layui-layout layui-layout-productExport" ng-controller="productExportController">
+<body ng-app="adminApp">
+	<div class="layui-layout layui-layout-admin" ng-controller="adminController">
  			<span class="layui-breadcrumb">
               <a><cite>首页</cite></a>
               <a><cite>管理员管理</cite></a>
@@ -30,8 +30,8 @@
 							<input class="layui-input" placeholder="截止日" id="LAY_demorange_e">
 						</div>
 						<div class="layui-input-inline">
-							<input type="text" name="transport" placeholder="请输入运输公司名" autocomplete="off" class="layui-input"
-								   ng-model="transport">
+							<input type="text" name="username" placeholder="请输入登录名" autocomplete="off" class="layui-input"
+								   ng-model="username">
 						</div>
 						<<div class="layui-input-inline" style="width:80px">
 							<button class="layui-btn" lay-submit="" lay-filter="sreach"><i class="layui-icon"
@@ -41,53 +41,74 @@
 					</div>
 				</div>
 			</form>
-			<button class="layui-btn" onclick="productExport_add('添加用户','${basePath}/jsp/produt_export_add.jsp','600','500')"><i class="layui-icon">&#xe608;</i>添加
+			<button class="layui-btn" onclick="admin_add('添加用户','${pageContext.request.contextPath}/jsp/admin_add.jsp','600','500')"><i class="layui-icon">&#xe608;</i>添加
 			</button>
 			<table class="layui-table">
 				<thead>
 				<tr>
 					<th><input type="checkbox" name="" value="">
-					<th>运输公司</th>
+					<th>数量</th>
 					<th>描述</th>
-					<th>总数量</th>
-					<th>总价格</th>
-					<th>时间</th>
+					<th>商品出库ID</th>
+					<th>商品ID</th>
 					<th>操作</th>
 				</tr>
 				</thead>
+				<!--<tbody>
+			<tr ng-repeat="admin in admins| filter:{'username':username}">
+				<td>{{ admin.username }}</td>
+				<td>{{ admin.password }}</td>
+				<td>{{ admin.mail }}</td>
+				<td>{{ admin.phnoe }}</td>
+				<td>{{ admin.right }}</td>
+				<td>
+					<a style="text-decoration:none" onclick="admin_stop(this,'10001')" href="javascript:;" title="停用">
+						<i class="layui-icon">&#xe601;</i>
+					</a>
+					<a title="编辑" href="${pageContext.request.contextPath}/updateAdmin"
+					   class="ml-5" style="text-decoration:none">
+						<i class="layui-icon">&#xe642;</i>
+					</a>
+					<a title="删除" href="javascript:;" onclick="admin_del(this,'1')"
+					   style="text-decoration:none">
+						<i class="layui-icon">&#xe640;</i>
+					</a>
+				</td>
+			</tr>
+			</tbody>-->
 				<tbody>
-				<tr ng-repeat="productExport in productExports| filter:{'transport':transport}">
-						<td>{{productExport.transport}}</td>
-						<td>{{productExport.description}}</td>
-						<td>{{productExport.totalCount}}</td>
-						<td>{{productExport.totalPrice}}</td>
-						<td>{{productExport.datetime}}</td>
-					<td>
-						<a title="编辑" href="javascript:;" onclick="product_export_edit('添加用户','${basePath}/jsp/product_export_edit.jsp','600','500')"
+				<c:forEach var="item" items="${itemList}">
+				<tr>
+					<td>${item.totalMoney}</td>
+					<td>${item.gainDate}</td>
+					<td>${item.missDate}</td>
+					<td>${item.gainMan}</td>
+					<td>${item.missMan}</td>
+					<td>${item.orderNumber}</td>
+					<td>${item.state}</td>
+
+					<td class="td-manage">
+						<a style="text-decoration:none" onclick="admin_stop(this,'10001')" href="javascript:;" title="停用">
+							<i class="layui-icon">&#xe601;</i>
+						</a>
+						<a title="编辑" href="${pageContext.request.contextPath}/updateAdmin"
 						   class="ml-5" style="text-decoration:none">
 							<i class="layui-icon">&#xe642;</i>
 						</a>
-						<a title="删除" href="javascript:;" onclick="productExport_del(this,'1')"
+						<a title="删除" href="javascript:;" onclick="admin_del(this,'1')"
 						   style="text-decoration:none">
 							<i class="layui-icon">&#xe640;</i>
 						</a>
 					</td>
+					</c:forEach>
 				</tr>
-			</tbody>
+				</tbody>
+
 			</table>
 		</div>
 </div>
-
-	<script src="${ basePath }/js/angular.min.js"></script>
-	<script type="text/javascript">
-        var app = angular.module('productExportApp', []);
-        app.controller('productExportController', function ($scope) {
-            $scope.productExports = ${ productExports };
-        });
-	</script>
-
-<script src="${ basePath }/lib/layui/layui.js" charset="utf-8"></script>
-<script src="${ basePath }/js/x-layui.js" charset="utf-8"></script>
+<script src="./lib/layui/layui.js" charset="utf-8"></script>
+<script src="./js/x-layui.js" charset="utf-8"></script>
 <script>
     layui.use(['laydate','element','laypage','layer'], function(){
         $ = layui.jquery;//jquery
@@ -139,22 +160,52 @@
 
 
 	/*添加*/
-    function productExport_add(title,url,w,h){
+    function admin_add(title,url,w,h){
         x_admin_show(title,url,w,h);
     }
 
+	/*停用*/
+    function admin_stop(obj,id){
+        layer.confirm('确认要停用吗？',function(index){
+            //发异步把用户状态进行更改
+            $(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="admin_start(this,id)" href="javascript:;" title="启用"><i class="layui-icon">&#xe62f;</i></a>');
+            $(obj).parents("tr").find(".td-status").html('<span class="layui-btn layui-btn-disabled layui-btn-mini">已停用</span>');
+            $(obj).remove();
+            layer.msg('已停用!',{icon: 5,time:1000});
+        });
+    }
+
+	/*启用*/
+    function admin_start(obj,id){
+        layer.confirm('确认要启用吗？',function(index){
+            //发异步把用户状态进行更改
+            $(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="admin_stop(this,id)" href="javascript:;" title="停用"><i class="layui-icon">&#xe601;</i></a>');
+            $(obj).parents("tr").find(".td-status").html('<span class="layui-btn layui-btn-normal layui-btn-mini">已启用</span>');
+            $(obj).remove();
+            layer.msg('已启用!',{icon: 6,time:1000});
+        });
+    }
     //编辑
-    function product_export_edit (title,url,id,w,h) {
+    function admin_edit (title,url,id,w,h) {
         x_admin_show(title,url,w,h);
     }
 	/*删除*/
-    function productExport_del(obj,id){
+    function admin_del(obj,id){
         layer.confirm('确认要删除吗？',function(index){
             //发异步删除数据
             $(obj).parents("tr").remove();
             layer.msg('已删除!',{icon:1,time:1000});
         });
     }
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
 </script>
 </body>
 </html>

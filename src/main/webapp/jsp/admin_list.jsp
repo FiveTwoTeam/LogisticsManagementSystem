@@ -54,9 +54,7 @@
                 <th> 登录名</th>
                 <th>邮箱</th>
                 <th>手机</th>
-                <th> 权限</th>
-                <th>加入时间</th>
-                <th> 状态</th>
+                <th>权限</th>
                 <th>操作</th>
             </tr>
             </thead>
@@ -71,11 +69,11 @@
                     <a style="text-decoration:none" onclick="admin_stop(this,'10001')" href="javascript:;" title="停用">
                         <i class="layui-icon">&#xe601;</i>
                     </a>
-                    <a title="编辑" href="${pageContext.request.contextPath}/updateAdmin"
+                    <a title="编辑" href="javascript:;" onclick="admin_edit('添加用户','${basePath}/jsp/admin_edit.jsp','600','500')"
                        class="ml-5" style="text-decoration:none">
                         <i class="layui-icon">&#xe642;</i>
                     </a>
-                    <a title="删除" href="javascript:;" onclick="admin_del(this,'1')"
+                    <a title="删除" href="javascript:;" _href="${basePath}/deleteAdmin"
                        style="text-decoration:none">
                         <i class="layui-icon">&#xe640;</i>
                     </a>

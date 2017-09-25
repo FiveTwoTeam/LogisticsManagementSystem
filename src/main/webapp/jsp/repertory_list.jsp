@@ -9,7 +9,6 @@
 <jsp:include page="header.jsp"/>
 <body ng-app="adminApp">
 <div class="layui-layout layui-layout-admin" ng-controller="adminController">
-	<div class="layui-tab layui-tab-card site-demo-title x-main" lay-filter="x-tab" lay-allowclose="true">
 		<div class="x-nav">
  			<span class="layui-breadcrumb">
               <a><cite>首页</cite></a>
@@ -102,7 +101,6 @@
 
 			</table>
 
-		</div>
 
 	</div>
 
