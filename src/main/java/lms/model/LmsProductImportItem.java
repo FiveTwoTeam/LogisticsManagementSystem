@@ -19,7 +19,32 @@ public class LmsProductImportItem {
 
     private LmsProduct lmsProduct;
 
-   private LmsProductImport lmsProductImport;
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"id\":")
+                .append(id);
+        sb.append(",\"expectCount\":")
+                .append(expectCount);
+        sb.append(",\"factCount\":")
+                .append(factCount);
+        sb.append(",\"description\":\"")
+                .append(description).append('\"');
+        sb.append(",\"lmsProductId\":")
+                .append(lmsProductId);
+        sb.append(",\"lmsProductImportId\":")
+                .append(lmsProductImportId);
+        sb.append(",\"lmsProductImportItemcol\":\"")
+                .append(lmsProductImportItemcol).append('\"');
+        sb.append(",\"lmsProduct\":")
+                .append(lmsProduct);
+        sb.append(",\"lmsProductImport\":")
+                .append(lmsProductImport);
+        sb.append('}');
+        return sb.toString();
+    }
+
+    private LmsProductImport lmsProductImport;
 
     public BigDecimal getId() {
         return id;
@@ -94,18 +119,4 @@ public class LmsProductImportItem {
         this.lmsProductImport = lmsProductImport;
     }
 
-    @Override
-    public String toString() {
-        return "LmsProductImportItem{" +
-                "id=" + id +
-                ", expectCount=" + expectCount +
-                ", factCount=" + factCount +
-                ", description='" + description + '\'' +
-                ", lmsProductId=" + lmsProductId +
-                ", lmsProductImportId=" + lmsProductImportId +
-                ", lmsProductImportItemcol='" + lmsProductImportItemcol + '\'' +
-                ", lmsProduct=" + lmsProduct +
-                ", lmsProductImport=" + lmsProductImport +
-                '}';
-    }
 }

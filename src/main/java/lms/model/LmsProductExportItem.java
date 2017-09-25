@@ -17,6 +17,29 @@ public class LmsProductExportItem {
 
     private LmsProduct lmsProduct;
 
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"id\":")
+                .append(id);
+        sb.append(",\"count\":")
+                .append(count);
+        sb.append(",\"price\":")
+                .append(price);
+        sb.append(",\"subprice\":")
+                .append(subprice);
+        sb.append(",\"lmsProductId\":")
+                .append(lmsProductId);
+        sb.append(",\"lmsProductExportId\":")
+                .append(lmsProductExportId);
+        sb.append(",\"lmsProduct\":")
+                .append(lmsProduct);
+        sb.append(",\"lmsProductExport\":")
+                .append(lmsProductExport);
+        sb.append('}');
+        return sb.toString();
+    }
+
     private LmsProductExport lmsProductExport;
 
     public BigDecimal getId() {
@@ -83,17 +106,4 @@ public class LmsProductExportItem {
         this.lmsProductExport = lmsProductExport;
     }
 
-    @Override
-    public String toString() {
-        return "LmsProductExportItem{" +
-                "id=" + id +
-                ", count=" + count +
-                ", price=" + price +
-                ", subprice=" + subprice +
-                ", lmsProductId=" + lmsProductId +
-                ", lmsProductExportId=" + lmsProductExportId +
-                ", lmsProduct=" + lmsProduct +
-                ", lmsProductExport=" + lmsProductExport +
-                '}';
-    }
 }

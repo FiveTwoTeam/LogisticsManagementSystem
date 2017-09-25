@@ -157,22 +157,38 @@ public class LmsProduct {
 
     @Override
     public String toString() {
-        return "LmsProduct{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", price=" + price +
-                ", unit='" + unit + '\'' +
-                ", lmsSecondCategoryId=" + lmsSecondCategoryId +
-                ", discount=" + discount +
-                ", cost=" + cost +
-                ", size='" + size + '\'' +
-                ", lmsSupplierId=" + lmsSupplierId +
-                ", qualityPeriod='" + qualityPeriod + '\'' +
-                ", ifBack=" + ifBack +
-                ", ifExchange=" + ifExchange +
-                ", description='" + description + '\'' +
-                ", lmsSecondCategory=" + lmsSecondCategory +
-                ", supplierList=" + supplierList +
-                '}';
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"id\":")
+                .append(id);
+        sb.append(",\"name\":\"")
+                .append(name).append('\"');
+        sb.append(",\"price\":")
+                .append(price);
+        sb.append(",\"unit\":\"")
+                .append(unit).append('\"');
+        sb.append(",\"lmsSecondCategoryId\":")
+                .append(lmsSecondCategoryId);
+        sb.append(",\"discount\":")
+                .append(discount);
+        sb.append(",\"cost\":")
+                .append(cost);
+        sb.append(",\"size\":\"")
+                .append(size).append('\"');
+        sb.append(",\"lmsSupplierId\":")
+                .append(lmsSupplierId);
+        sb.append(",\"qualityPeriod\":\"")
+                .append(qualityPeriod).append('\"');
+        sb.append(",\"ifBack\":")
+                .append(ifBack);
+        sb.append(",\"ifExchange\":")
+                .append(ifExchange);
+        sb.append(",\"description\":\"")
+                .append(description).append('\"');
+        sb.append(",\"lmsSecondCategory\":")
+                .append(lmsSecondCategory);
+        sb.append(",\"supplierList\":")
+                .append(supplierList);
+        sb.append('}');
+        return sb.toString();
     }
 }

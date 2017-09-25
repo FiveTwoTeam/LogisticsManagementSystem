@@ -66,13 +66,20 @@ public class LmsProductExport {
 
     @Override
     public String toString() {
-        return "LmsProductExport{" +
-                "id=" + id +
-                ", transport='" + transport + '\'' +
-                ", description='" + description + '\'' +
-                ", totalCount=" + totalCount +
-                ", totalPrice=" + totalPrice +
-                ", datetime=" + datetime +
-                '}';
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"id\":")
+                .append(id);
+        sb.append(",\"transport\":\"")
+                .append(transport).append('\"');
+        sb.append(",\"description\":\"")
+                .append(description).append('\"');
+        sb.append(",\"totalCount\":")
+                .append(totalCount);
+        sb.append(",\"totalPrice\":")
+                .append(totalPrice);
+        sb.append(",\"datetime\":\"")
+                .append(datetime).append('\"');
+        sb.append('}');
+        return sb.toString();
     }
 }

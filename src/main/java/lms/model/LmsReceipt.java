@@ -86,15 +86,24 @@ public class LmsReceipt {
 
     @Override
     public String toString() {
-        return "LmsReceipt{" +
-                "id=" + id +
-                ", totalMoney=" + totalMoney +
-                ", gainDate=" + gainDate +
-                ", missDate=" + missDate +
-                ", gainMan='" + gainMan + '\'' +
-                ", missMan='" + missMan + '\'' +
-                ", orderNumber=" + orderNumber +
-                ", state=" + state +
-                '}';
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"id\":")
+                .append(id);
+        sb.append(",\"totalMoney\":")
+                .append(totalMoney);
+        sb.append(",\"gainDate\":\"")
+                .append(gainDate).append('\"');
+        sb.append(",\"missDate\":\"")
+                .append(missDate).append('\"');
+        sb.append(",\"gainMan\":\"")
+                .append(gainMan).append('\"');
+        sb.append(",\"missMan\":\"")
+                .append(missMan).append('\"');
+        sb.append(",\"orderNumber\":")
+                .append(orderNumber);
+        sb.append(",\"state\":")
+                .append(state);
+        sb.append('}');
+        return sb.toString();
     }
 }

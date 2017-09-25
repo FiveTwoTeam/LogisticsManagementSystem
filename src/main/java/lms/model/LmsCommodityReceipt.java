@@ -157,22 +157,38 @@ public class LmsCommodityReceipt {
 
     @Override
     public String toString() {
-        return "LmsCommodityReceipt{" +
-                "id=" + id +
-                ", taskNumber=" + taskNumber +
-                ", cuntomerId=" + cuntomerId +
-                ", address='" + address + '\'' +
-                ", datetime=" + datetime +
-                ", command='" + command + '\'' +
-                ", ifReceipt=" + ifReceipt +
-                ", stationId=" + stationId +
-                ", totalPrice=" + totalPrice +
-                ", type=" + type +
-                ", description='" + description + '\'' +
-                ", feedback='" + feedback + '\'' +
-                ", signature='" + signature + '\'' +
-                ", customer=" + customer +
-                ", stations=" + stations +
-                '}';
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"id\":")
+                .append(id);
+        sb.append(",\"taskNumber\":")
+                .append(taskNumber);
+        sb.append(",\"cuntomerId\":")
+                .append(cuntomerId);
+        sb.append(",\"address\":\"")
+                .append(address).append('\"');
+        sb.append(",\"datetime\":\"")
+                .append(datetime).append('\"');
+        sb.append(",\"command\":\"")
+                .append(command).append('\"');
+        sb.append(",\"ifReceipt\":")
+                .append(ifReceipt);
+        sb.append(",\"stationId\":")
+                .append(stationId);
+        sb.append(",\"totalPrice\":")
+                .append(totalPrice);
+        sb.append(",\"type\":")
+                .append(type);
+        sb.append(",\"description\":\"")
+                .append(description).append('\"');
+        sb.append(",\"feedback\":\"")
+                .append(feedback).append('\"');
+        sb.append(",\"signature\":\"")
+                .append(signature).append('\"');
+        sb.append(",\"customer\":")
+                .append(customer);
+        sb.append(",\"stations\":")
+                .append(stations);
+        sb.append('}');
+        return sb.toString();
     }
 }

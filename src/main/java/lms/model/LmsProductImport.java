@@ -13,6 +13,23 @@ public class LmsProductImport {
 
     private BigDecimal lmsSupplierId;
 
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"id\":")
+                .append(id);
+        sb.append(",\"importNo\":")
+                .append(importNo);
+        sb.append(",\"datetime\":\"")
+                .append(datetime).append('\"');
+        sb.append(",\"lmsSupplierId\":")
+                .append(lmsSupplierId);
+        sb.append(",\"lmsSupplierList\":")
+                .append(lmsSupplierList);
+        sb.append('}');
+        return sb.toString();
+    }
+
     private List<LmsSupplier> lmsSupplierList;
 
     public BigDecimal getId() {
@@ -55,14 +72,4 @@ public class LmsProductImport {
         this.lmsSupplierList = lmsSupplierList;
     }
 
-    @Override
-    public String toString() {
-        return "LmsProductImport{" +
-                "id=" + id +
-                ", importNo=" + importNo +
-                ", datetime=" + datetime +
-                ", lmsSupplierId=" + lmsSupplierId +
-                ", lmsSupplierList=" + lmsSupplierList +
-                '}';
-    }
 }

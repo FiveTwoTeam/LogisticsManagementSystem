@@ -86,15 +86,24 @@ public class LmsStationRepetory {
 
     @Override
     public String toString() {
-        return "LmsStationRepetory{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                ", phone=" + phone +
-                ", lmsAdminId=" + lmsAdminId +
-                ", lmsStationId=" + lmsStationId +
-                ", lmsAdminList=" + lmsAdminList +
-                ", lmsStation=" + lmsStation +
-                '}';
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"id\":")
+                .append(id);
+        sb.append(",\"name\":\"")
+                .append(name).append('\"');
+        sb.append(",\"address\":\"")
+                .append(address).append('\"');
+        sb.append(",\"phone\":")
+                .append(phone);
+        sb.append(",\"lmsAdminId\":")
+                .append(lmsAdminId);
+        sb.append(",\"lmsStationId\":")
+                .append(lmsStationId);
+        sb.append(",\"lmsAdminList\":")
+                .append(lmsAdminList);
+        sb.append(",\"lmsStation\":")
+                .append(lmsStation);
+        sb.append('}');
+        return sb.toString();
     }
 }

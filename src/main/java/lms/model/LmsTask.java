@@ -12,6 +12,45 @@ public class LmsTask {
 
     private Short type;
 
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"id\":")
+                .append(id);
+        sb.append(",\"status\":")
+                .append(status);
+        sb.append(",\"datetime\":\"")
+                .append(datetime).append('\"');
+        sb.append(",\"type\":")
+                .append(type);
+        sb.append(",\"lmsOrderId\":")
+                .append(lmsOrderId);
+        sb.append(",\"lmsCustomerId\":")
+                .append(lmsCustomerId);
+        sb.append(",\"lmsStationId\":")
+                .append(lmsStationId);
+        sb.append(",\"lmsStationRepetoryId\":")
+                .append(lmsStationRepetoryId);
+        sb.append(",\"lmsDeliveryStaffId\":")
+                .append(lmsDeliveryStaffId);
+        sb.append(",\"satisfy\":\"")
+                .append(satisfy).append('\"');
+        sb.append(",\"description\":\"")
+                .append(description).append('\"');
+        sb.append(",\"lmsOrderList\":")
+                .append(lmsOrderList);
+        sb.append(",\"lmsStationRepetoryList\":")
+                .append(lmsStationRepetoryList);
+        sb.append(",\"lmsCustomer\":")
+                .append(lmsCustomer);
+        sb.append(",\"lmsStation\":")
+                .append(lmsStation);
+        sb.append(",\"lmsDeliveryStaff\":")
+                .append(lmsDeliveryStaff);
+        sb.append('}');
+        return sb.toString();
+    }
+
     private Long lmsOrderId;
 
     private Long lmsCustomerId;
@@ -164,25 +203,4 @@ public class LmsTask {
         this.lmsOrderList = lmsOrderList;
     }
 
-    @Override
-    public String toString() {
-        return "LmsTask{" +
-                "id=" + id +
-                ", status=" + status +
-                ", datetime=" + datetime +
-                ", type=" + type +
-                ", lmsOrderId=" + lmsOrderId +
-                ", lmsCustomerId=" + lmsCustomerId +
-                ", lmsStationId=" + lmsStationId +
-                ", lmsStationRepetoryId=" + lmsStationRepetoryId +
-                ", lmsDeliveryStaffId=" + lmsDeliveryStaffId +
-                ", satisfy='" + satisfy + '\'' +
-                ", description='" + description + '\'' +
-                ", lmsOrderList=" + lmsOrderList +
-                ", lmsCustomer=" + lmsCustomer +
-                ", lmsStation=" + lmsStation +
-                ", lmsStationRepetoryList=" + lmsStationRepetoryList +
-                ", lmsDeliveryStaff=" + lmsDeliveryStaff +
-                '}';
-    }
 }

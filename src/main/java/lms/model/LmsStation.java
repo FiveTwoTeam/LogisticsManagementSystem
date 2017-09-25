@@ -16,6 +16,25 @@ public class LmsStation {
 
     private List<LmsAdmin> lmsAdminList;
 
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"id\":")
+                .append(id);
+        sb.append(",\"name\":\"")
+                .append(name).append('\"');
+        sb.append(",\"address\":\"")
+                .append(address).append('\"');
+        sb.append(",\"phone\":")
+                .append(phone);
+        sb.append(",\"lmsAdminId\":")
+                .append(lmsAdminId);
+        sb.append(",\"lmsAdminList\":")
+                .append(lmsAdminList);
+        sb.append('}');
+        return sb.toString();
+    }
+
     public Long getId() {
         return id;
     }
@@ -64,15 +83,4 @@ public class LmsStation {
         this.lmsAdminList = lmsAdminList;
     }
 
-    @Override
-    public String toString() {
-        return "LmsStation{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                ", phone=" + phone +
-                ", lmsAdminId=" + lmsAdminId +
-                ", lmsAdminList=" + lmsAdminList +
-                '}';
-    }
 }

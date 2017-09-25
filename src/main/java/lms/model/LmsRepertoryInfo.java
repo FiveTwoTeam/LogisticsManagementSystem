@@ -15,6 +15,29 @@ public class LmsRepertoryInfo {
 
     private LmsProduct lmsProduct;
 
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"id\":")
+                .append(id);
+        sb.append(",\"max\":")
+                .append(max);
+        sb.append(",\"guard\":")
+                .append(guard);
+        sb.append(",\"lmsRepertoryId\":")
+                .append(lmsRepertoryId);
+        sb.append(",\"lmsProductId\":")
+                .append(lmsProductId);
+        sb.append(",\"lmsProduct\":")
+                .append(lmsProduct);
+        sb.append(",\"lmsRepertory\":")
+                .append(lmsRepertory);
+        sb.append(",\"count\":")
+                .append(count);
+        sb.append('}');
+        return sb.toString();
+    }
+
     private LmsRepertory lmsRepertory;
 
     private BigDecimal count;
@@ -84,17 +107,4 @@ public class LmsRepertoryInfo {
     }
 
 
-    @java.lang.Override
-    public java.lang.String toString() {
-        return "LmsRepertoryInfo{" +
-                "id=" + id +
-                ", max=" + max +
-                ", guard=" + guard +
-                ", lmsRepertoryId=" + lmsRepertoryId +
-                ", lmsProductId=" + lmsProductId +
-                ", lmsProduct=" + lmsProduct +
-                ", lmsRepertory=" + lmsRepertory +
-                ", count=" + count +
-                '}';
-    }
 }

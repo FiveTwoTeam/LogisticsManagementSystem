@@ -7,6 +7,31 @@ public class LmsStationRepetoryItem {
 
     private Long count;
 
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"id\":")
+                .append(id);
+        sb.append(",\"count\":")
+                .append(count);
+        sb.append(",\"max\":")
+                .append(max);
+        sb.append(",\"guard\":")
+                .append(guard);
+        sb.append(",\"status\":")
+                .append(status);
+        sb.append(",\"lmsProductId\":")
+                .append(lmsProductId);
+        sb.append(",\"lmsStationRepertoryId\":")
+                .append(lmsStationRepertoryId);
+        sb.append(",\"lmsProduct\":")
+                .append(lmsProduct);
+        sb.append(",\"lmsStationRepetoryList\":")
+                .append(lmsStationRepetoryList);
+        sb.append('}');
+        return sb.toString();
+    }
+
     private Long max;
 
     private Long guard;
@@ -93,18 +118,4 @@ public class LmsStationRepetoryItem {
         this.lmsStationRepetoryList = lmsStationRepetoryList;
     }
 
-    @Override
-    public String toString() {
-        return "LmsStationRepetoryItem{" +
-                "id=" + id +
-                ", count=" + count +
-                ", max=" + max +
-                ", guard=" + guard +
-                ", status=" + status +
-                ", lmsProductId=" + lmsProductId +
-                ", lmsStationRepertoryId=" + lmsStationRepertoryId +
-                ", lmsProduct=" + lmsProduct +
-                ", lmsStationRepetoryList=" + lmsStationRepetoryList +
-                '}';
-    }
 }

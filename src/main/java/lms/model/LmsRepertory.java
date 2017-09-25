@@ -54,14 +54,20 @@ public class LmsRepertory {
         this.lmsAdminList = lmsAdminList;
     }
 
-    @java.lang.Override
-    public java.lang.String toString() {
-        return "LmsRepertory{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                ", lmsAdminId=" + lmsAdminId +
-                ", lmsAdminList=" + lmsAdminList +
-                '}';
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"id\":")
+                .append(id);
+        sb.append(",\"name\":\"")
+                .append(name).append('\"');
+        sb.append(",\"address\":\"")
+                .append(address).append('\"');
+        sb.append(",\"lmsAdminId\":")
+                .append(lmsAdminId);
+        sb.append(",\"lmsAdminList\":")
+                .append(lmsAdminList);
+        sb.append('}');
+        return sb.toString();
     }
 }

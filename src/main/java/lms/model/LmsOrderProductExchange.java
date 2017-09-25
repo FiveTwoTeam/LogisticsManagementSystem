@@ -87,15 +87,24 @@ public class LmsOrderProductExchange {
 
     @Override
     public String toString() {
-        return "LmsOrderProductExchange{" +
-                "id=" + id +
-                ", reason='" + reason + '\'' +
-                ", datetime=" + datetime +
-                ", count=" + count +
-                ", lmsOrderId=" + lmsOrderId +
-                ", lmsProductId=" + lmsProductId +
-                ", lmsOrder=" + lmsOrder +
-                ", productList=" + productList +
-                '}';
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"id\":")
+                .append(id);
+        sb.append(",\"reason\":\"")
+                .append(reason).append('\"');
+        sb.append(",\"datetime\":\"")
+                .append(datetime).append('\"');
+        sb.append(",\"count\":")
+                .append(count);
+        sb.append(",\"lmsOrderId\":")
+                .append(lmsOrderId);
+        sb.append(",\"lmsProductId\":")
+                .append(lmsProductId);
+        sb.append(",\"lmsOrder\":")
+                .append(lmsOrder);
+        sb.append(",\"productList\":")
+                .append(productList);
+        sb.append('}');
+        return sb.toString();
     }
 }
