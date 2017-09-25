@@ -22,11 +22,11 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
                     </div>
                 </div>
                 <div class="layui-form-item">
-                    <label for="L_pass" class="layui-form-label">
+                    <label for="password" class="layui-form-label">
                         密码
                     </label>
                     <div class="layui-input-inline">
-                        <input type="password" id="L_pass" name="password"
+                        <input type="text" id="password" name="password"
                       class="layui-input">
                     </div>
                     <div class="layui-form-mid layui-word-aux">
@@ -43,11 +43,11 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
                     </div>
                 </div>
                  <div class="layui-form-item">
-                    <label for="L_email" class="layui-form-label">
+                    <label for="mail" class="layui-form-label">
                         邮箱
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="L_email" name="mail"
+                        <input type="text" id="mail" name="mail"
                         autocomplete="off" class="layui-input">
                     </div>
                     <div class="layui-form-mid layui-word-aux">
@@ -86,9 +86,9 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
                 <div class="layui-form-item">
                     <label for="L_repass" class="layui-form-label">
                     </label>
-                    <button  class="layui-btn" lay-filter="save" lay-submit="">
+                    <a  class="layui-btn" onclick="add()">
                         保存
-                    </button>
+                    </a>
                 </div>
             </form>
         </div>
@@ -97,25 +97,61 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
         <script src="${ basePath }/js/x-layui.js" charset="utf-8">
         </script>
         <script>
+            function add(){
+                $.ajax({
+                    type: "POST",
+                    url:"/addAdmin",
+                    data:{
+                        username:$('#username').val(),
+                        password:$('#password').val(),
+                        mail:$('#mail').val(),
+                        phone:$('#phone').val(),
+                        right:$('#right').val(),
+                    },
+                    error: function(request) {
+                        alert("Connection error");
+                    },
+                    success: function(data) {
+                    }
+                });
+            }
             layui.use(['form','layer'], function(){
                 $ = layui.jquery;
                 var form = layui.form()
                     ,layer = layui.layer;
 
 
+
                 //监听提交
-                form.on('submit(save)', function(data){
+              /*  form.on('submit(save)', function(data){
                     console.log(data);
                     //发异步，把数据提交给php
                     layer.alert("保存成功", {icon: 6},function () {
                         // 获得frame索引
                         var index = parent.layer.getFrameIndex(window.name);
+                        
+                        $.ajax({
+                            type: "POST",
+                            url:"",
+                            data:{
+                              is:1
+                            },
+                            async: false,
+                            error: function(request) {
+                                alert("Connection error");
+                            },
+                            success: function(data) {
+                                $("#commonLayout_appcreshi").parent().html(data);
+                            }
+                        });
+                        
                         //关闭当前frame
                         parent.layer.close(index);
                     });
-                    <%--window.location = "${basePath}/addAdmin";--%>
+                    window.parent.location.reload();
+
                     return false;
-                });
+                });*/
             });
         </script>
     </body>
