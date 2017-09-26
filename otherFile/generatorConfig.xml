@@ -61,8 +61,8 @@
 		<!--<table tableName="LMS_COMMODITY_RECEIPT_ITEM"/>-->
 		<!--<table tableName="LMS_CUSTOMER"/>-->
 		<!--<table tableName="LMS_DELIVERY_STAFF"/>-->
-		<!--<table tableName="LMS_FIRST_CATEGORY"/>-->
-		<!--<table tableName="LMS_Order"/>-->
+		<table tableName="LMS_FIRST_CATEGORY"/>
+		<table tableName="LMS_Order"/>
 		<!--<table tableName="LMS_Order_Back"/>-->
 		<!--<table tableName="LMS_Order_Item"/>-->
 		<!--<table tableName="LMS_Order_Product_Back"/>-->
@@ -81,7 +81,7 @@
 		<!--<table tableName="LMS_Station_Repetory_Item"/>-->
 		<!--<table tableName="LMS_Supplier"/>-->
 		<!--<table tableName="LMS_Task"/>-->
-		<table tableName="LMS_REPERTORY_INFO"/>
+		<!--<table tableName="LMS_REPERTORY_INFO"/>-->
 		<!-- 有些表的字段需要指定java类型
 		 <table schema="" tableName="">
 			<columnOverride column="" javaType="" />
