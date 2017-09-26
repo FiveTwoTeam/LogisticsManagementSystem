@@ -64,6 +64,5 @@ public class AdminServiceImpl implements AdminService {
 
     public void updateAdmin(LmsAdmin admin) {
         lmsAdminMapper.updateByPrimaryKey(admin);
-
     }
 }
