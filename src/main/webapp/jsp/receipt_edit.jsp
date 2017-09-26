@@ -3,75 +3,81 @@
 <html>
 <body>
         <div class="x-body">
-            <form class="layui-form">
+            <form class="layui-form" items="${receipts}">
                 <div class="layui-form-item">
-                    <label for="L_username" class="layui-form-label">
+                    <div class="layui-input-inline">
+                        <input type="text" id="id" name="id" value="${receipts.id}" style="display: none">
+                    </div>
+                    <label for="totalMoney" class="layui-form-label">
                         总价
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="L_username" name="username" required lay-verify="required"
-                               autocomplete="off" value="zhibinm" class="layui-input">
+                        <input type="text" id="totalMoney" name="totalMoney" required lay-verify="required"
+                               autocomplete="off" value="${receipts.totalMoney}" class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
-                    <label for="L_email" class="layui-form-label">
+                    <label for="gainDate" class="layui-form-label">
                         领取日期
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="L_email" name="email" required lay-verify="email"
-                               autocomplete="off" value="113664000@qq.com" class="layui-input">
+                        <input type="text" id="gainDate" name="gainDate" required lay-verify="email"
+                               autocomplete="off" value="${receipts.gainDate}" class="layui-input">
                     </div>
 
                 </div>
                 <div class="layui-form-item">
-                    <label for="L_city" class="layui-form-label">
+                    <label for="missDate" class="layui-form-label">
                         丢失日期
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="L_city" name="city" autocomplete="off" value="广州"
+                        <input type="text" id="missDate" name="missDate" autocomplete="off" value="${receipts.missDate}"
                                class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
-                    <label for="L_city" class="layui-form-label">
+                    <label for="gainMan" class="layui-form-label">
                         领用人
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="L_city" name="city" autocomplete="off" value="广州"
+                        <input type="text" id="gainMan" name="gainMan" autocomplete="off" value="${receipts.gainMan}"
                                class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
-                    <label for="L_city" class="layui-form-label">
+                    <label for="missMan" class="layui-form-label">
                         遗失人姓名
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="L_city" name="city" autocomplete="off" value="广州"
+                        <input type="text" id="missMan" name="missMan" autocomplete="off" value="${receipts.missMan}"
                                class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
-                    <label for="L_city" class="layui-form-label">
+                    <label for="orderNumber" class="layui-form-label">
                         订单号
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="L_city" name="city" autocomplete="off" value="广州"
+                        <input type="text" id="orderNumber" name="orderNumber" autocomplete="off" value="${receipts.orderNumber}"
                                class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
-                    <label for="L_city" class="layui-form-label">
+                    <label class="layui-form-label">
                         发票状态
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="L_city" name="city" autocomplete="off" value="广州"
-                               class="layui-input">
+                        <select name="right" title="right" id="right">
+                            <option value="" >${receipts.state}</option>
+                            <option value="0">分站已领用</option>
+                            <option value="1">客户已领用</option>
+                            <option value="2">已作废</option>
+                        </select>
                     </div>
-                </div>
                 <div class="layui-form-item">
-                    <label for="L_repass" class="layui-form-label">
+                    <label class="layui-form-label">
                     </label>
-                    <button class="layui-btn">修改</button>
+                    <button class="layui-btn" onclick="edit()">修改</button>
                 </div>
             </form>
         </div>
@@ -80,44 +86,32 @@
         <script src="${basePath}/js/x-layui.js" charset="utf-8">
         </script>
         <script>
+
+            function edit() {
+                $.ajax({
+                    type: "POST",
+                    url: "/updateReceiptSub",
+                    data: {
+                        id: $('#id').val(),
+                        importNo: $('#importNo').val(),
+                        datetime: $('#datetime').val(),
+                        lmsSupplierId: $('#lmsSupplierId').val(),
+                    },
+                    error: function (request) {
+                        alert("Connection error");
+                    },
+                    success: function (data) {
+                        window.parent.location.reload();
+                    }
+                });
+            }
+
             layui.use(['form','layer'], function(){
                 $ = layui.jquery;
-              var form = layui.form()
-              ,layer = layui.layer;
-            
-              //自定义验证规则
-              form.verify({
-                nikename: function(value){
-                  if(value.length < 5){
-                    return '昵称至少得5个字符啊';
-                  }
-                }
-                ,pass: [/(.+){6,12}$/, '密码必须6到12位']
-                ,repass: function(value){
-                    if($('#L_pass').val()!=$('#L_repass').val()){
-                        return '两次密码不一致';
-                    }
-                }
-              });
-
-              //监听提交
-              <%--form.on('submit(save)', function(data){--%>
-<%--//                console.log(data);--%>
-                <%--//发异步，把数据提交给php--%>
-                <%--layer.alert("保存成功", {icon: 6},function () {--%>
-                    <%--// 获得frame索引--%>
-                    <%--var index = parent.layer.getFrameIndex(window.name);--%>
-                    <%--//关闭当前frame--%>
-                    <%--parent.layer.close(index);--%>
-                <%--});--%>
-                  <%--window.location = "${pageContext.request.contextPath}/updateAdminSub";--%>
-                <%--return false;--%>
-              <%--});--%>
-              
-              
+                var form = layui.form()
+                    ,layer = layui.layer;
             });
         </script>
-
 
 
     </body>

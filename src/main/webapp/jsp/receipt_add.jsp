@@ -1,139 +1,112 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
-<%
-String path = request.getContextPath();
-String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
-%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ include file="header.jsp"%>
 <html>
-<jsp:include page="header.jsp"/>
-    <body>
-    <div class="x-body">
-        <form class="layui-form">
-            <div class="layui-form-item">
-                <label for="L_username" class="layui-form-label">
-                    总价
-                </label>
-                <div class="layui-input-inline">
-                    <input type="text" id="L_username" name="username" required lay-verify="required"
-                           autocomplete="off" value="zhibinm" class="layui-input">
-                </div>
+<body>
+<div class="x-body">
+    <form class="layui-form">
+        <div class="layui-form-item">
+            <label for="totalMoney" class="layui-form-label">
+                总价
+            </label>
+            <div class="layui-input-inline">
+                <input type="text" id="totalMoney" name="totalMoney" required lay-verify="required"
+                       autocomplete="off" class="layui-input">
             </div>
-            <div class="layui-form-item">
-                <label for="L_email" class="layui-form-label">
-                    领取日期
-                </label>
-                <div class="layui-input-inline">
-                    <input type="text" id="L_email" name="email" required lay-verify="email"
-                           autocomplete="off" value="113664000@qq.com" class="layui-input">
-                </div>
-
-            </div>
-            <div class="layui-form-item">
-                <label for="L_city" class="layui-form-label">
-                    丢失日期
-                </label>
-                <div class="layui-input-inline">
-                    <input type="text" id="L_city" name="city" autocomplete="off" value="广州"
-                           class="layui-input">
-                </div>
-            </div>
-            <div class="layui-form-item">
-                <label for="L_city" class="layui-form-label">
-                    领用人
-                </label>
-                <div class="layui-input-inline">
-                    <input type="text" id="L_city" name="city" autocomplete="off" value="广州"
-                           class="layui-input">
-                </div>
-            </div>
-            <div class="layui-form-item">
-                <label for="L_city" class="layui-form-label">
-                    遗失人姓名
-                </label>
-                <div class="layui-input-inline">
-                    <input type="text" id="L_city" name="city" autocomplete="off" value="广州"
-                           class="layui-input">
-                </div>
-            </div>
-            <div class="layui-form-item">
-                <label for="L_city" class="layui-form-label">
-                    订单号
-                </label>
-                <div class="layui-input-inline">
-                    <input type="text" id="L_city" name="city" autocomplete="off" value="广州"
-                           class="layui-input">
-                </div>
-            </div>
-            <div class="layui-form-item">
-                <label for="L_city" class="layui-form-label">
-                    发票状态
-                </label>
-                <div class="layui-input-inline">
-                    <input type="text" id="L_city" name="city" autocomplete="off" value="广州"
-                           class="layui-input">
-                </div>
-            </div>
-                <div class="layui-form-item">
-                    <label for="L_repass" class="layui-form-label">
-                    </label>
-                    <button  class="layui-btn" >
-                        增加
-                    </button>
-                </div>
-            </form>
         </div>
-        <script src="${ basePath }/lib/layui/layui.js" charset="utf-8">
-        </script>
-        <script src="${ basePath }/js/x-layui.js" charset="utf-8">
-        </script>
-        <script>
-            layui.use(['form','layer'], function(){
-                $ = layui.jquery;
-              var form = layui.form()
-              ,layer = layui.layer;
-            
-              //自定义验证规则
-              form.verify({
-                nikename: function(value){
-                  if(value.length < 5){
-                    return '昵称至少得5个字符啊';
-                  }
-                }
-                ,pass: [/(.+){6,12}$/, '密码必须6到12位']
-                ,repass: function(value){
-                    if($('#L_pass').val()!=$('#L_repass').val()){
-                        return '两次密码不一致';
-                    }
-                }
-              });
+        <div class="layui-form-item">
+            <label for="gainDate" class="layui-form-label">
+                领取日期
+            </label>
+            <div class="layui-input-inline">
+                <input type="text" id="gainDate" name="gainDate" required lay-verify="email"
+                       autocomplete="off"  class="layui-input">
+            </div>
 
-              //监听提交
-                form.on('submit(add)', function(data){
-                    console.log(data);
-                    //发异步，把数据提交给php
-                    layer.alert("增加成功", {icon: 6},function () {
-                        // 获得frame索引
-                        var index = parent.layer.getFrameIndex(window.name);
-                        //关闭当前frame
-                        parent.layer.close(index);
-                    });
-                    return false;
-                });
-              
-              
-            });
-        </script>
-        <script>
-        var _hmt = _hmt || [];
-        (function() {
-          var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?b393d153aeb26b46e9431fabaf0f6190";
-          var s = document.getElementsByTagName("script")[0]; 
-          s.parentNode.insertBefore(hm, s);
-            <%--window.location = "${pageContext.request.contextPath}/addAdmin";--%>
-        })();
-        </script>
-    </body>
+        </div>
+        <div class="layui-form-item">
+            <label for="missDate" class="layui-form-label">
+                丢失日期
+            </label>
+            <div class="layui-input-inline">
+                <input type="text" id="missDate" name="missDate" autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label for="gainMan" class="layui-form-label">
+                领用人
+            </label>
+            <div class="layui-input-inline">
+                <input type="text" id="gainMan" name="gainMan" autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label for="missMan" class="layui-form-label">
+                遗失人姓名
+            </label>
+            <div class="layui-input-inline">
+                <input type="text" id="missMan" name="missMan" autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label for="orderNumber" class="layui-form-label">
+                订单号
+            </label>
+            <div class="layui-input-inline">
+                <input type="text" id="orderNumber" name="orderNumber" autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label for="state" class="layui-form-label">
+                发票状态
+            </label>
+            <div class="layui-input-inline">
+                <input type="text" id="state" name="state" autocomplete="off"
+                       class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">
+            </label>
+            <button class="layui-btn" onclick="add()">增加</button>
+        </div>
+    </form>
+</div>
+<script src="${basePath}/lib/layui/layui.js" charset="utf-8">
+</script>
+<script src="${basePath}/js/x-layui.js" charset="utf-8">
+</script>
+<script>
+
+    function add() {
+        $.ajax({
+            type: "POST",
+            url: "/addReceipt",
+            data: {
+                importNo: $('#importNo').val(),
+                datetime: $('#datetime').val(),
+                lmsSupplierId: $('#lmsSupplierId').val(),
+            },
+            error: function (request) {
+                alert("Connection error");
+            },
+            success: function (data) {
+                window.parent.location.reload();
+            }
+        });
+    }
+
+    layui.use(['form','layer'], function(){
+        $ = layui.jquery;
+        var form = layui.form()
+            ,layer = layui.layer;
+    });
+</script>
+
+
+</body>
 
 </html>

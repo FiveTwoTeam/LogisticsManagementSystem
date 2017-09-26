@@ -38,14 +38,20 @@
                 </div>
 
                 <div class="layui-form-item">
-                    <label for="type" class="layui-form-label">
+                    <label class="layui-form-label">
                         订单类型
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="type" name="type" required="" lay-verify="required"
-                               autocomplete="off" class="layui-input" value="${order.type}">
+                        <select name="right" title="right" id="right">
+                            <option value="" >${order.type}</option>
+                            <option value="0">缺货</option>
+                            <option value="1">可分配</option>
+                            <option value="2">退订</option>
+                            <option value="3">换货</option>
+                            <option value="4">退货</option>
+                            <option value="5">已分配</option>
+                        </select>
                     </div>
-                </div>
 
                 <div class="layui-form-item">
                     <label for="address" class="layui-form-label">

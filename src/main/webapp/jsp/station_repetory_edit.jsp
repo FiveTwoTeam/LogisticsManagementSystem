@@ -3,48 +3,60 @@
 <html>
 <body>
         <div class="x-body">
-            <form class="layui-form" action="${pageContext.request.contextPath}/updateAdminSub">
+            <form class="layui-form"  items="${stationRepetorys}">
+                <div class="layui-input-inline">
+                    <input type="text" id="id" name="id" value="${stationRepetorys.id}" style="display: none">
+                </div>
                 <div>
-                    <label for="L_username" class="layui-form-label">
+                    <label for="name" class="layui-form-label">
                         分站库房名
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="L_username" name="username" required lay-verify="required"
-                               autocomplete="off" value="zhibinm" class="layui-input">
+                        <input type="text" id="name" name="name" required lay-verify="required"
+                               autocomplete="off" value="${stationRepetorys.name}" class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
-                    <label for="L_email" class="layui-form-label">
+                    <label for="address" class="layui-form-label">
                         地址
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="L_email" name="email" required lay-verify="email"
-                               autocomplete="off" value="113664000@qq.com" class="layui-input">
+                        <input type="text" id="address" name="address" required lay-verify="email"
+                               autocomplete="off" value="${stationRepetorys.address}" class="layui-input">
                     </div>
 
                 </div>
                 <div class="layui-form-item">
-                    <label for="L_city" class="layui-form-label">
+                    <label for="phone" class="layui-form-label">
                         联系电话
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="L_city" name="city" autocomplete="off" value="广州"
+                        <input type="text" id="phone" name="phone" autocomplete="off" value="${stationRepetorys.phone}"
                                class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
-                    <label for="L_city" class="layui-form-label">
+                    <label for="lmsstationRepetoryId" class="layui-form-label">
                         管理员ID
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="L_city" name="city" autocomplete="off" value="广州"
+                        <input type="text" id="lmsstationRepetoryId" name="lmsstationRepetoryId" autocomplete="off" value="${stationRepetorys.lmsstationRepetoryId}"
                                class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
-                    <label for="L_repass" class="layui-form-label">
+                    <label for="lmsStationId" class="layui-form-label">
+                        分站库ID
                     </label>
-                    <button class="layui-btn">修改</button>
+                    <div class="layui-input-inline">
+                        <input type="text" id="lmsStationId" name="lmsStationId" autocomplete="off" value="${stationRepetorys.lmsStationId}"
+                               class="layui-input">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">
+                    </label>
+                    <button class="layui-btn" onclick="edit()">修改</button>
                 </div>
             </form>
         </div>
@@ -53,46 +65,35 @@
         <script src="${basePath}/js/x-layui.js" charset="utf-8">
         </script>
         <script>
+
+            function edit() {
+                $.ajax({
+                    type: "POST",
+                    url: "/updateStationRepetorySub",
+                    data: {
+                        id: $('#id').val(),
+                        name: $('#name').val(),
+                        address: $('#address').val(),
+                        phone: $('#phone').val(),
+                        lmsStationRepetoryId: $('#lmsStationRepetoryId').val(),
+                        lmsStationId: $('#lmsStationId').val(),
+                    },
+                    error: function (request) {
+                        alert("Connection error");
+                    },
+                    success: function (data) {
+                        window.parent.location.reload();
+                    }
+                });
+            }
+
             layui.use(['form','layer'], function(){
                 $ = layui.jquery;
-              var form = layui.form()
-              ,layer = layui.layer;
-            
-              //自定义验证规则
-              form.verify({
-                nikename: function(value){
-                  if(value.length < 5){
-                    return '昵称至少得5个字符啊';
-                  }
-                }
-                ,pass: [/(.+){6,12}$/, '密码必须6到12位']
-                ,repass: function(value){
-                    if($('#L_pass').val()!=$('#L_repass').val()){
-                        return '两次密码不一致';
-                    }
-                }
-              });
-
-              //监听提交
-              <%--form.on('submit(save)', function(data){--%>
-<%--//                console.log(data);--%>
-                <%--//发异步，把数据提交给php--%>
-                <%--layer.alert("保存成功", {icon: 6},function () {--%>
-                    <%--// 获得frame索引--%>
-                    <%--var index = parent.layer.getFrameIndex(window.name);--%>
-                    <%--//关闭当前frame--%>
-                    <%--parent.layer.close(index);--%>
-                <%--});--%>
-                  <%--window.location = "${pageContext.request.contextPath}/updateAdminSub";--%>
-                <%--return false;--%>
-              <%--});--%>
-              
-              
+                var form = layui.form()
+                    ,layer = layui.layer;
             });
         </script>
 
-
-
-    </body>
+</body>
 
 </html>

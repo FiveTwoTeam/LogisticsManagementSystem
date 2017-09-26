@@ -60,7 +60,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
                     url:"/addAdmin",
                     data:{
                         importNo: $('#importNo').val(),
-                        datetimr: $('#datetimr').val(),
+                        datetime: $('#datetime').val(),
                         lmsSupplierId: $('#lmsSupplierId').val(),
                     },
                     error: function(request) {

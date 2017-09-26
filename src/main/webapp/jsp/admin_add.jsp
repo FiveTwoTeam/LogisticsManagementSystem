@@ -67,11 +67,11 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
                     </div>
                 </div>
                 <div class="layui-form-item">
-                    <label for="role" class="layui-form-label">
+                    <label class="layui-form-label">
                         角色
                     </label>
                     <div class="layui-input-inline">
-                      <select name="right">
+                      <select  name="right" id="right" title="right">
                         <option value="">请选择角色</option>
                         <option value="编辑人员">客服</option>
                         <option value="问题维护">调度中心管理员</option>
@@ -93,9 +93,9 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
             </form>
         </div>
 
-        <script src="${basePath}/lib/layui/layui.js" charset="utf-8">
+        <script src="${ basePath }/lib/layui/layui.js" charset="utf-8">
         </script>
-        <script src="${basePath}/js/x-layui.js" charset="utf-8">
+        <script src="${ basePath }/js/x-layui.js" charset="utf-8">
         </script>
         <script>
             function add() {
@@ -107,12 +107,12 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
                     password: $('#password').val(),
                     mail: $('#mail').val(),
                     phone: $('#phone').val(),
-                    right: $('#right').val(),
+                    right: $('#right').val()
                 },
-                error: function (request) {
+                error: function () {
                     alert("Connection error");
                 },
-                success: function (data) {
+                success: function () {
                     window.parent.location.reload();
                 }
             });
