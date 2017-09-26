@@ -3,7 +3,7 @@
 <html>
 <body>
         <div class="x-body">
-            <form class="layui-form" action="${pageContext.request.contextPath}/updateAdminSub">
+            <form class="layui-form">
                 <div class="layui-form-item">
                     <label for="username" class="layui-form-label">
                         登录名
@@ -82,7 +82,7 @@
                 <div class="layui-form-item">
                     <label for="L_repass" class="layui-form-label">
                     </label>
-                    <button class="layui-btn">修改</button>
+                    <button class="layui-btn" onclick="edit()">修改</button>
                 </div>
             </form>
         </div>
@@ -91,6 +91,27 @@
         <script src="${basePath}/js/x-layui.js" charset="utf-8">
         </script>
         <script>
+
+            function edit(){
+                $.ajax({
+                    type: "POST",
+                    url:"/addAdmin",
+                    data:{
+                        username:$('#username').val(),
+                        password:$('#password').val(),
+                        mail:$('#mail').val(),
+                        phone:$('#phone').val(),
+                        right:$('#right').val(),
+                    },
+                    error: function(request) {
+                        alert("Connection error");
+                    },
+                    success: function(data) {
+                        window.parent.location.reload();
+                    }
+                });
+            }
+
             layui.use(['form','layer'], function(){
                 $ = layui.jquery;
               var form = layui.form()

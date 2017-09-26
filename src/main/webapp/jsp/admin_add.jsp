@@ -97,7 +97,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
         <script src="${ basePath }/js/x-layui.js" charset="utf-8">
         </script>
         <script>
-            function add(){
+             function add(){
                 $.ajax({
                     type: "POST",
                     url:"/addAdmin",
@@ -112,46 +112,15 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
                         alert("Connection error");
                     },
                     success: function(data) {
+                        window.parent.location.reload();
                     }
                 });
             }
-            layui.use(['form','layer'], function(){
+            layui.use(['form','layer'], function() {
                 $ = layui.jquery;
                 var form = layui.form()
-                    ,layer = layui.layer;
+                    , layer = layui.layer;
 
-
-
-                //监听提交
-              /*  form.on('submit(save)', function(data){
-                    console.log(data);
-                    //发异步，把数据提交给php
-                    layer.alert("保存成功", {icon: 6},function () {
-                        // 获得frame索引
-                        var index = parent.layer.getFrameIndex(window.name);
-                        
-                        $.ajax({
-                            type: "POST",
-                            url:"",
-                            data:{
-                              is:1
-                            },
-                            async: false,
-                            error: function(request) {
-                                alert("Connection error");
-                            },
-                            success: function(data) {
-                                $("#commonLayout_appcreshi").parent().html(data);
-                            }
-                        });
-                        
-                        //关闭当前frame
-                        parent.layer.close(index);
-                    });
-                    window.parent.location.reload();
-
-                    return false;
-                });*/
             });
         </script>
     </body>
