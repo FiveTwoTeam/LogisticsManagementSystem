@@ -3,7 +3,7 @@
 <html>
 <body>
         <div class="x-body">
-            <form class="layui-form" action="${pageContext.request.contextPath}/updateAdminSub">
+            <form class="layui-form">
                 <div class="layui-form-item">
                     <label for="L_username" class="layui-form-label">
                         总价

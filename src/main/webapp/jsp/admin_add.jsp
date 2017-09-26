@@ -92,30 +92,31 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
                 </div>
             </form>
         </div>
-        <script src="${ basePath }/lib/layui/layui.js" charset="utf-8">
+
+        <script src="${basePath}/lib/layui/layui.js" charset="utf-8">
         </script>
-        <script src="${ basePath }/js/x-layui.js" charset="utf-8">
+        <script src="${basePath}/js/x-layui.js" charset="utf-8">
         </script>
         <script>
-             function add(){
-                $.ajax({
-                    type: "POST",
-                    url:"/addAdmin",
-                    data:{
-                        username:$('#username').val(),
-                        password:$('#password').val(),
-                        mail:$('#mail').val(),
-                        phone:$('#phone').val(),
-                        right:$('#right').val(),
-                    },
-                    error: function(request) {
-                        alert("Connection error");
-                    },
-                    success: function(data) {
-                        window.parent.location.reload();
-                    }
-                });
-            }
+            function add() {
+            $.ajax({
+                type: "POST",
+                url: "/addAdmin",
+                data: {
+                    username: $('#username').val(),
+                    password: $('#password').val(),
+                    mail: $('#mail').val(),
+                    phone: $('#phone').val(),
+                    right: $('#right').val(),
+                },
+                error: function (request) {
+                    alert("Connection error");
+                },
+                success: function (data) {
+                    window.parent.location.reload();
+                }
+            });
+        }
             layui.use(['form','layer'], function() {
                 $ = layui.jquery;
                 var form = layui.form()
@@ -123,6 +124,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
 
             });
         </script>
+
     </body>
 
 </html>

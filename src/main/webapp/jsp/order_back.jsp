@@ -63,61 +63,78 @@
 
 	<script src="${ basePath }/js/angular.min.js"></script>
 	<script type="text/javascript">
-        var app = angular.module('orderBackApp', []);
-        app.controller('orderBackController', function ($scope) {
-            $scope.orderBacks = ${ orderBacks };
-        });
-	</script>	
-<script src="${ basePath }/lib/layui/layui.js" charset="utf-8"></script>
-<script src="${ basePath }/js/x-layui.js" charset="utf-8"></script>
-<script>
-    layui.use(['laydate','element','laypage','layer'], function(){
-        $ = layui.jquery;//jquery
-        laydate = layui.laydate;//日期插件
-        lement = layui.element();//面包导航
-        laypage = layui.laypage;//分页
-        layer = layui.layer;//弹出层
+        var app = angular.module('adminApp', []);
+        app.controller('adminController', function ($scope) {
+            $scope.admins = ${ admins };
 
-        //以上模块根据需要引入
-
-        laypage({
-            cont: 'page'
-            ,pages: 100
-            ,first: 1
-            ,last: 100
-            ,prev: '<em><</em>'
-            ,next: '<em>></em>'
-        });
-
-        var start = {
-            min: laydate.now()
-            ,max: '2099-06-16 23:59:59'
-            ,istoday: false
-            ,choose: function(datas){
-                end.min = datas; //开始日选好后，重置结束日的最小日期
-                end.start = datas //将结束日的初始值设定为开始日
+            //编辑
+            $scope.admin_edit = function(title,id,w,h) {
+                x_admin_show(title,'/updateAdmin/'+id,w,h);
             }
-        };
 
-        var end = {
-            min: laydate.now()
-            ,max: '2099-06-16 23:59:59'
-            ,istoday: false
-            ,choose: function(datas){
-                start.max = datas; //结束日选好后，重置开始日的最大日期
+            $scope.admin_add = function(title,url,w,h){
+                x_admin_show(title,url,w,h);
             }
-        };
 
-        document.getElementById('LAY_demorange_s').onclick = function(){
-            start.elem = this;
-            laydate(start);
-        }
-        document.getElementById('LAY_demorange_e').onclick = function(){
-            end.elem = this
-            laydate(end);
-        }
+            $scope.admin_del=function (id) {
+                var adminid = id;
+                layer.confirm('确认要删除吗？',function(){
+                    window.location ="deleteAdmin/"+adminid;
+                });
+            }
+        });
+	</script>
 
-    });
-</script>
+	<script src="${basePath}/lib/layui/layui.js" charset="utf-8"></script>
+	<script src="${basePath}/js/x-layui.js" charset="utf-8"></script>
+	<script>
+        layui.use(['laydate','element','laypage','layer'], function(){
+            $ = layui.jquery;//jquery
+            laydate = layui.laydate;//日期插件
+            lement = layui.element();//面包导航
+            laypage = layui.laypage;//分页
+            layer = layui.layer;//弹出层
+
+            //以上模块根据需要引入
+
+            laypage({
+                cont: 'page'
+                ,pages: 100
+                ,first: 1
+                ,last: 100
+                ,prev: '<em><</em>'
+                ,next: '<em>></em>'
+            });
+
+            var start = {
+                min: laydate.now()
+                ,max: '2099-06-16 23:59:59'
+                ,istoday: false
+                ,choose: function(datas){
+                    end.min = datas; //开始日选好后，重置结束日的最小日期
+                    end.start = datas //将结束日的初始值设定为开始日
+                }
+            };
+
+            var end = {
+                min: laydate.now()
+                ,max: '2099-06-16 23:59:59'
+                ,istoday: false
+                ,choose: function(datas){
+                    start.max = datas; //结束日选好后，重置开始日的最大日期
+                }
+            };
+
+            document.getElementById('LAY_demorange_s').onclick = function(){
+                start.elem = this;
+                laydate(start);
+            }
+            document.getElementById('LAY_demorange_e').onclick = function(){
+                end.elem = this
+                laydate(end);
+            }
+
+        });
+	</script>
 </body>
 </html>

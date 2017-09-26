@@ -40,7 +40,7 @@
 					</div>
 				</div>
 			</form>
-			<button class="layui-btn" onclick="custom_add('添加用户','${basePath}/jsp/custom_add.jsp','600','500')"><i class="layui-icon">&#xe608;</i>添加
+			<button class="layui-btn" ng-click="custom_add('添加用户','${basePath}/jsp/custom_add.jsp','600','500')"><i class="layui-icon">&#xe608;</i>添加
 			</button>
 			<table class="layui-table">
 				<thead>
@@ -71,26 +71,19 @@
 					<td>{{ custom.mail }}</td>
 					<td>{{ custom.status }}</td>
 					<td>
-						<a style="text-decoration:none" onclick="custom_stop(this,'10001')" href="javascript:;" title="停用">
-							<i class="layui-icon">&#xe601;</i>
-						</a>
-						<a title="编辑" href="javascript:;" onclick="custom_edit('添加用户','${basePath}/jsp/custom_edit.jsp','600','500')"
+						<a title="编辑" href="javascript:;" ng-click="custom_edit('编辑用户',custom.id,'600','500')"
 						   class="ml-5" style="text-decoration:none">
 							<i class="layui-icon">&#xe642;</i>
 						</a>
-						<a title="删除" href="javascript:;" onclick="custom_del(this,'1')"
+						<a title="删除" href="javascript:;" ng-click="custom_del(custom.id);"
 						   style="text-decoration:none">
 							<i class="layui-icon">&#xe640;</i>
 						</a>
 					</td>
 				</tr>
 				</tbody>
-
 			</table>
-
-
 	</div>
-
 </div>
 
 	<script src="${ basePath }/js/angular.min.js"></script>
@@ -98,6 +91,22 @@
         var app = angular.module('customApp', []);
         app.controller('customController', function ($scope) {
             $scope.customs = ${ customs };
+
+            //编辑
+            $scope.custom_edit = function(title,id,w,h) {
+                x_admin_show(title,'/updateCustom/'+id,w,h);
+            }
+
+            $scope.custom_add = function(title,url,w,h){
+                x_admin_show(title,url,w,h);
+            }
+
+            $scope.custom_del=function (id) {
+                var customid = id;
+                layer.confirm('确认要删除吗？',function(){
+                    window.location ="deleteCustom/"+customid;
+                });
+            }
         });
 	</script>
 
@@ -151,25 +160,6 @@
             }
 
         });
-
-
-		/*添加*/
-        function custom_add(title,url,w,h){
-            x_admin_show(title,url,w,h);
-        }
-
-        //编辑
-        function custom_edit (title,url,id,w,h) {
-            x_admin_show(title,url,w,h);
-        }
-		/*删除*/
-        function custom_del(obj,id){
-            layer.confirm('确认要删除吗？',function(index){
-                //发异步删除数据
-                $(obj).parents("tr").remove();
-                layer.msg('已删除!',{icon:1,time:1000});
-            });
-        }
 	</script>
 </body>
 </html>

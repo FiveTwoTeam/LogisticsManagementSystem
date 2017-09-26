@@ -3,8 +3,11 @@
 <html>
 <body>
         <div class="x-body">
-            <form class="layui-form" action="${pageContext.request.contextPath}/updateAdminSub">
+            <form class="layui-form" items="${orderEdits}">
                 <div class="layui-form-item">
+                    <div class="layui-input-inline">
+                        <input type="text" id="id" name="id" value="${orderEdits.id}" style="display: none">
+                    </div>
                     <label for="totalPrice" class="layui-form-label">
                         总价
                     </label>
@@ -115,18 +118,18 @@
                 </div>
 
                 <div class="layui-form-item">
-                    <label for="lmsAdminId" class="layui-form-label">
+                    <label for="lmsorderEditId" class="layui-form-label">
                         管理员ID
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="lmsAdminId" name="lmsAdminId" required="" lay-verify="required"
-                               autocomplete="off"  value="${order.lmsAdminId}" disabled="" class="layui-input">
+                        <input type="text" id="lmsorderEditId" name="lmsorderEditId" required="" lay-verify="required"
+                               autocomplete="off"  value="${order.lmsorderEditId}" disabled="" class="layui-input">
                     </div>
                 </div>
                 <div class="layui-form-item">
-                    <label for="L_repass" class="layui-form-label">
+                    <label  class="layui-form-label">
                     </label>
-                    <button class="layui-btn">修改</button>
+                    <button class="layui-btn" onclick="update()">修改</button>
                 </div>
             </form>
         </div>
@@ -138,6 +141,35 @@
         <script src="${basePath}/js/x-layui.js" charset="utf-8">
         </script>
         <script>
+
+            function update() {
+                $.ajax({
+                    type: "POST",
+                    url: "/updateorderEditSub",
+                    data: {
+                        id: $('#id').val(),
+                        totalPrice: $('#totalPrice').val(),
+                        orderNumber: $('#orderNumber').val(),
+                        description: $('#description').val(),
+                        type: $('#type').val(),
+                        address: $('#address').val(),
+                        lmsCustomerId: $('#lmsCustomerId').val(),
+                        payer: $('#payer').val(),
+                        payerAddress: $('#payerAddress').val(),
+                        payerPhone: $('#payerPhone').val(),
+                        payerPostCode: $('#payerPostCode').val(),
+                        datetime: $('#datetime').val(),
+                        lmsAdminId: $('#lmsAdminId').val(),
+                    },
+                    error: function (request) {
+                        alert("Connection error");
+                    },
+                    success: function (data) {
+                        window.parent.location.reload();
+                    }
+                });
+            }
+
             layui.use(['form','layer'], function(){
                 $ = layui.jquery;
               var form = layui.form()

@@ -43,7 +43,7 @@
             </div>
         </form>
         <button class="layui-btn"
-                onclick="admin_add('添加用户','${pageContext.request.contextPath}/jsp/admin_add.jsp','600','500')">
+                ng-click="admin_add('添加用户','/jsp/admin_add.jsp','600','500')">
             <i class="layui-icon">&#xe608;</i>添加
         </button>
         <table class="layui-table">
@@ -65,7 +65,7 @@
                 <td>{{ admin.phone }}</td>
                 <td>{{ admin.right }}</td>
                 <td>
-                    <a title="编辑" href="javascript:;" onclick="admin_edit('添加用户','${basePath}/jsp/admin_edit.jsp','600','500')"
+                    <a title="编辑" href="javascript:;" ng-click="admin_edit('编辑用户',admin.id,'600','500')"
                        class="ml-5" style="text-decoration:none">
                         <i class="layui-icon">&#xe642;</i>
                     </a>
@@ -80,6 +80,31 @@
         </table>
     </div>
 </div>
+
+<script src="${ basePath }/js/angular.min.js"></script>
+<script type="text/javascript">
+    var app = angular.module('adminApp', []);
+    app.controller('adminController', function ($scope) {
+        $scope.admins = ${ admins };
+
+        //编辑
+        $scope.admin_edit = function(title,id,w,h) {
+            x_admin_show(title,'/updateAdmin/'+id,w,h);
+        }
+
+        $scope.admin_add = function(title,url,w,h){
+            x_admin_show(title,url,w,h);
+        }
+
+        $scope.admin_del=function (id) {
+            var adminid = id;
+            layer.confirm('确认要删除吗？',function(){
+                window.location ="deleteAdmin/"+adminid;
+            });
+        }
+    });
+</script>
+
 <script src="${basePath}/lib/layui/layui.js" charset="utf-8"></script>
 <script src="${basePath}/js/x-layui.js" charset="utf-8"></script>
 <script>
@@ -130,33 +155,6 @@
         }
 
     });
-
-
-    /*添加*/
-    function admin_add(title,url,w,h){
-        x_admin_show(title,url,w,h);
-    }
-
-    //编辑
-    function admin_edit (title,url,id,w,h) {
-        x_admin_show(title,url,w,h);
-    }
-
 </script>
-    <script src="${ basePath }/js/angular.min.js"></script>
-    <script type="text/javascript">
-        var app = angular.module('adminApp', []);
-        app.controller('adminController', function ($scope) {
-            $scope.admins = ${ admins };
-
-            $scope.admin_del=function (id) {
-                var adminid = id;
-                layer.confirm('确认要删除吗？',function(){
-                    window.location ="deleteAdmin/"+adminid;
-                });
-            }
-        });
-    </script>
-
 </body>
 </html>
