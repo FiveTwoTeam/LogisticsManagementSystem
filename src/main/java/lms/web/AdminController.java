@@ -26,25 +26,34 @@ public class AdminController {
         return mv;
     }
 
+
     @RequestMapping("/addAdmin")
-    public String addAdmin() {
+    public String addAdmin(LmsAdmin lmsAdmin) {
+        adminService.addAdmin(lmsAdmin);
         return "redirect:/queryAdmin";
     }
 
-    @RequestMapping("/updateAdmin")
-    public ModelAndView updateAdmin() {
+    @RequestMapping("/updateAdmin/{id}")
+    public ModelAndView updateAdmin(@PathVariable long id) {
         ModelAndView mv = new ModelAndView();
+        LmsAdmin admin = adminService.findById(id);
+        mv.addObject("admins", admin);
+
         mv.setViewName("admin_edit");
+        System.out.println(admin.toString());
         return mv;
     }
+
     @RequestMapping("/updateAdminSub")
-    public String updateAdminSub() {
+    public String updateAdminSub(LmsAdmin admin) {
+        adminService.updateAdmin(admin);
         return "redirect:/queryAdmin";
     }
 
+
     @RequestMapping("/deleteAdmin/{id}")
-    public String deleteAdmin(@PathVariable int id) {
-//        adminService.deleteAdmin(id);
+    public String deleteAdmin(@PathVariable long id) {
+        adminService.deleteAdmin(id);
         return "redirect:/queryAdmin";
     }
 

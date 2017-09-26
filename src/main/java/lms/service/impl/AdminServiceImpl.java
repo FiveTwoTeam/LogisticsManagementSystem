@@ -46,4 +46,24 @@ public class AdminServiceImpl implements AdminService {
 
         return null;
     }
+
+    public void deleteAdmin(Long id) {
+
+        lmsAdminMapper.deleteByPrimaryKey(id);
+    }
+
+    public void addAdmin(LmsAdmin lmsAdmin) {
+
+        lmsAdminMapper.insert(lmsAdmin);
+    }
+
+
+    public LmsAdmin findById(long id) {
+        return lmsAdminMapper.selectByPrimaryKey(id);
+    }
+
+    public void updateAdmin(LmsAdmin admin) {
+        lmsAdminMapper.updateByPrimaryKey(admin);
+
+    }
 }
