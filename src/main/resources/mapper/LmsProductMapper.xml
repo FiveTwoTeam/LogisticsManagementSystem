@@ -75,8 +75,8 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    id, name, price, unit, LMS_Second_Category_id, discount, cost, size, LMS_Supplier_id, 
-    quality_period, if_back, if_exchange, description
+    "id", "name", "price", "unit", "LMS_Second_Category_id", "discount", "cost", "size", "LMS_Supplier_id",
+    "quality_period", "if_back", "if_exchange", "description"
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="lms.model.LmsProductExample" >
     select
@@ -96,11 +96,11 @@
     select 
     <include refid="Base_Column_List" />
     from LMS_PRODUCT
-    where id = #{id,jdbcType=DECIMAL}
+    where "id" = #{id,jdbcType=DECIMAL}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
     delete from LMS_PRODUCT
-    where id = #{id,jdbcType=DECIMAL}
+    where "id" = #{id,jdbcType=DECIMAL}
   </delete>
   <delete id="deleteByExample" parameterType="lms.model.LmsProductExample" >
     delete from LMS_PRODUCT

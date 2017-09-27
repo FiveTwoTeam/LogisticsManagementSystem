@@ -12,8 +12,8 @@
 	<div class="layui-layout layui-layout-product" ng-controller="productController">
  			<span class="layui-breadcrumb">
               <a><cite>首页</cite></a>
-              <a><cite>管理员管理</cite></a>
-              <a><cite>管理员列表</cite></a>
+              <a><cite>中心库房</cite></a>
+              <a><cite>商品查询</cite></a>
  			</span>
 			<a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right"
 			   href="javascript:location.replace(location.href);" title="刷新"><i class="layui-icon" style="line-height:30px">ဂ</i></a>
@@ -22,13 +22,6 @@
 			<form class="layui-form x-center" action="#" style="width:80%">
 				<div class="layui-form-pane" style="margin-top: 15px;">
 					<div class="layui-form-item">
-						<label class="layui-form-label">日期范围</label>
-						<div class="layui-input-inline">
-							<input class="layui-input" placeholder="开始日" id="LAY_demorange_s">
-						</div>
-						<div class="layui-input-inline">
-							<input class="layui-input" placeholder="截止日" id="LAY_demorange_e">
-						</div>
 						<div class="layui-input-inline">
 							<input type="text" name="name" placeholder="请输入商品名称" autocomplete="off" class="layui-input"
 								   ng-model="name">
@@ -63,6 +56,7 @@
 				</thead>
 				<tbody>
 					<tr ng-repeat="product in products| filter:{'name':name}">
+						<td><input type="checkbox" name="" value=""></td>
 						<td>{{product.name}}</td>
 						<td>{{product.price}}</td>
 						<td>{{product.unit}}</td>
@@ -76,7 +70,7 @@
 						<td>{{product.ifExchange}}</td>
 						<td>{{product.description}}</td>
 						<td>
-							<a title="编辑" href="javascript:;" ng-click="product_edit('编辑用户',product.id,'600','500')"
+							<a title="编辑" href="javascript:;" ng-click="product_edit('编辑商品',product.id,'600','500')"
 							   class="ml-5" style="text-decoration:none">
 								<i class="layui-icon">&#xe642;</i>
 							</a>
@@ -99,7 +93,7 @@
 
             //编辑
             $scope.product_edit = function(title,id,w,h) {
-                x_admint_show(title,'/updateProduct/'+id,w,h);
+                x_admin_show(title,'/centerProduct/updateProduct/'+id,w,h);
             }
 
             $scope.product_add = function(title,url,w,h){
@@ -109,7 +103,7 @@
             $scope.product_del=function (id) {
                 var productid = id;
                 layer.confirm('确认要删除吗？',function(){
-                    window.location ="deleteProduct/"+productid;
+                    window.location ="/centerProduct/deleteProduct/"+productid;
                 });
             }
         });

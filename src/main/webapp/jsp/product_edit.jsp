@@ -3,10 +3,10 @@
 <html>
 <body>
         <div class="x-body">
-            <form class="layui-form" items="${products}">
+            <form class="layui-form" items="${product}">
                 <div class="layui-form-item">
                     <div class="layui-input-inline">
-                        <input type="text" id="id" name="id" value="${products.id}" style="display: none">
+                        <input type="text" id="id" name="id" value="${product.id}" style="display: none">
                     </div>
                     <label for="name" class="layui-form-label">
                         商品名称
@@ -21,7 +21,7 @@
                         单价
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="price" name="price" required="" lay-verify="email" value="113664000@qq.com"
+                        <input type="text" id="price" name="price" required="" lay-verify="email" 
                                autocomplete="off" class="layui-input" value="${product.price}">
                     </div>
                 </div>
@@ -30,7 +30,7 @@
                         计量单位
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="unit" name="unit" required="" lay-verify="email" value="113664000@qq.com"
+                        <input type="text" id="unit" name="unit" required="" lay-verify="email" 
                                autocomplete="off" class="layui-input" value="${product.unit}">
                     </div>
                 </div>
@@ -48,7 +48,7 @@
                         折扣
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="discount" name="discount" required="" lay-verify="email" value="113664000@qq.com"
+                        <input type="text" id="discount" name="discount" required="" lay-verify="email" 
                                autocomplete="off" class="layui-input" value="${product.discount}">
                     </div>
                 </div>
@@ -57,7 +57,7 @@
                         成本
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="cost" name="cost" required="" lay-verify="email" value="113664000@qq.com"
+                        <input type="text" id="cost" name="cost" required="" lay-verify="email" 
                                autocomplete="off" class="layui-input" value="${product.cost}">
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                         型号
                     </label>
                     <div class="layui-input-inline">
-                        <input type="size" id="size" name="unit" required="" lay-verify="email" value="113664000@qq.com"
+                        <input type="size" id="size" name="unit" required="" lay-verify="email" 
                                autocomplete="off" class="layui-input" value="${product.size}">
                     </div>
                 </div> <div class="layui-form-item">
@@ -74,7 +74,7 @@
                     供应商ID
                 </label>
                 <div class="layui-input-inline">
-                    <input type="text" id="lmsSupplierId" name="lmsSupplierId" required="" lay-verify="email" value="113664000@qq.com"
+                    <input type="text" id="lmsSupplierId" name="lmsSupplierId" required="" lay-verify="email" 
                            autocomplete="off" class="layui-input" value="${product.lmsSupplierId}">
                 </div>
             </div>
@@ -83,17 +83,17 @@
                         质量
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="qualityPeriod" name="qualityPeriod" required="" lay-verify="email" value="113664000@qq.com"
+                        <input type="text" id="qualityPeriod" name="qualityPeriod" required="" lay-verify="email" 
                                autocomplete="off" class="layui-input" value="${product.qualityPeriod}">
                     </div>
                 </div>
                 <div class="layui-form-item">
-                    <label for="idBack" class="layui-form-label">
+                    <label for="ifBack" class="layui-form-label">
                         是否退货
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="idBack" name="idBack" required="" lay-verify="email" value="113664000@qq.com"
-                               autocomplete="off" class="layui-input" value="${product.idBack}">
+                        <input type="text" id="ifBack" name="ifBack" required="" lay-verify="email" 
+                               autocomplete="off" class="layui-input" value="${product.ifBack}">
                     </div>
                 </div>
                 <div class="layui-form-item">
@@ -101,7 +101,7 @@
                         是否换货
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="ifExchange" name="ifExchange" required="" lay-verify="email" value="113664000@qq.com"
+                        <input type="text" id="ifExchange" name="ifExchange" required="" lay-verify="email" 
                                autocomplete="off" class="layui-input" value="${product.ifExchange}">
                     </div>
                 </div>
@@ -110,7 +110,7 @@
                         描述
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="description" name="description" required="" lay-verify="email" value="113664000@qq.com"
+                        <input type="text" id="description" name="description" required="" lay-verify="email" 
                                autocomplete="off" class="layui-input" value="${product.description}">
                     </div>
                 </div>
@@ -131,7 +131,7 @@
             function update() {
                 $.ajax({
                     type: "POST",
-                    url: "/updateproductSub",
+                    url: "/centerProduct/updateproductSub",
                     data: {
                         id: $('#id').val(),
                         name: $('#name').val(),

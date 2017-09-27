@@ -129,28 +129,28 @@
                 </a>
                 <dl class="layui-nav-child">
                     <dd class="">
-                        <a href="javascript:;" _href="${ basePath }/queryProductExportList">
+                        <a href="javascript:;" _href="${ basePath }/centerProduct/queryProductList">
                             <cite>商品查询</cite>
                         </a>
                     </dd>
                 </dl>
                 <dl class="layui-nav-child">
                     <dd class="">
-                        <a href="javascript:;" _href="${ basePath }/queryStation">
+                        <a href="javascript:;" _href="${ basePath }/centerProduct/queryStation">
                             <cite>分站库房修改</cite>
                         </a>
                     </dd>
                 </dl>
                 <dl class="layui-nav-child">
                     <dd class="">
-                        <a href="javascript:;" _href="${ basePath }/queryProductExport">
+                        <a href="javascript:;" _href="${ basePath }/centerProduct/queryProductExport">
                             <cite>出库单查询</cite>
                         </a>
                     </dd>
                 </dl>
                 <dl class="layui-nav-child">
                     <dd class="">
-                        <a href="javascript:;" _href="${ basePath }/queryProductImport">
+                        <a href="javascript:;" _href="${ basePath }/centerProduct/queryProductImport">
                             <cite>入库单查询</cite>
                         </a>
                     </dd>

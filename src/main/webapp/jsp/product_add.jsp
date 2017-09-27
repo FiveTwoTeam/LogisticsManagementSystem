@@ -24,7 +24,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
                         单价
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="price" name="price" required="" lay-verify="email" value="113664000@qq.com"
+                        <input type="text" id="price" name="price" required="" lay-verify="email" value=""
                                autocomplete="off" class="layui-input">
                     </div>
                 </div>
@@ -33,7 +33,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
                         计量单位
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="unit" name="unit" required="" lay-verify="email" value="113664000@qq.com"
+                        <input type="text" id="unit" name="unit" required="" lay-verify="email" value=""
                                autocomplete="off" class="layui-input">
                     </div>
                 </div>
@@ -51,7 +51,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
                         折扣
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="discount" name="discount" required="" lay-verify="email" value="113664000@qq.com"
+                        <input type="text" id="discount" name="discount" required="" lay-verify="email" value=""
                                autocomplete="off" class="layui-input">
                     </div>
                 </div>
@@ -60,7 +60,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
                         成本
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="cost" name="cost" required="" lay-verify="email" value="113664000@qq.com"
+                        <input type="text" id="cost" name="cost" required="" lay-verify="email" value=""
                                autocomplete="off" class="layui-input">
                     </div>
                 </div>
@@ -69,7 +69,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
                         型号
                     </label>
                     <div class="layui-input-inline">
-                        <input type="size" id="size" name="unit" required="" lay-verify="email" value="113664000@qq.com"
+                        <input type="size" id="size" name="unit" required="" lay-verify="email" value=""
                                autocomplete="off" class="layui-input">
                     </div>
                 </div> <div class="layui-form-item">
@@ -77,7 +77,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
                     供应商ID
                 </label>
                 <div class="layui-input-inline">
-                    <input type="text" id="lmsSupplierId" name="lmsSupplierId" required="" lay-verify="email" value="113664000@qq.com"
+                    <input type="text" id="lmsSupplierId" name="lmsSupplierId" required="" lay-verify="email" value=""
                            autocomplete="off" class="layui-input">
                 </div>
             </div>
@@ -86,7 +86,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
                         质量
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="qualityPeriod" name="qualityPeriod" required="" lay-verify="email" value="113664000@qq.com"
+                        <input type="text" id="qualityPeriod" name="qualityPeriod" required="" lay-verify="email" value=""
                                autocomplete="off" class="layui-input">
                     </div>
                 </div>
@@ -95,7 +95,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
                         是否退货
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="idBack" name="idBack" required="" lay-verify="email" value="113664000@qq.com"
+                        <input type="text" id="idBack" name="idBack" required="" lay-verify="email" value=""
                                autocomplete="off" class="layui-input">
                     </div>
                 </div>
@@ -104,7 +104,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
                         是否换货
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="ifExchange" name="ifExchange" required="" lay-verify="email" value="113664000@qq.com"
+                        <input type="text" id="ifExchange" name="ifExchange" required="" lay-verify="email" value=""
                                autocomplete="off" class="layui-input">
                     </div>
                 </div>
@@ -113,7 +113,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
                         描述
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="description" name="description" required="" lay-verify="email" value="113664000@qq.com"
+                        <input type="text" id="description" name="description" required="" lay-verify="email" value=""
                                autocomplete="off" class="layui-input">
                     </div>
                 </div>
@@ -137,7 +137,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
             function add(){
                 $.ajax({
                     type: "POST",
-                    url:"/addAdmin",
+                    url:"/centerProduct/addProduct",
                     data:{
                         name: $('#name').val(),
                         price: $('#price').val(),

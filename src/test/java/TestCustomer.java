@@ -266,6 +266,14 @@ public class TestCustomer {
         }
     }
 
+    @Test
+    public void findLmsProduct(){
+        //Long a = Long.valueOf(701);
+        LmsProduct  list=productMapper.selectByPrimaryKey((long)701);
+        System.out.println(list.toString());
+
+    }
+
     @Autowired
     LmsRepertoryMapper  lmsRepertoryMapper;
     @Test
