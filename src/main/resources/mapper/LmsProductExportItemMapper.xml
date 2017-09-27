@@ -68,7 +68,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    id, count, price, subprice, LMS_Product_id, LMS_Product_Export_id
+    "id", "count", "price", "subprice", "LMS_Product_id", "LMS_Product_Export_id"
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="lms.model.LmsProductExportItemExample" >
     select
@@ -88,11 +88,11 @@
     select 
     <include refid="Base_Column_List" />
     from LMS_PRODUCT_EXPORT_ITEM
-    where id = #{id,jdbcType=DECIMAL}
+    where "id" = #{id,jdbcType=DECIMAL}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.math.BigDecimal" >
     delete from LMS_PRODUCT_EXPORT_ITEM
-    where id = #{id,jdbcType=DECIMAL}
+    where "id" = #{id,jdbcType=DECIMAL}
   </delete>
   <delete id="deleteByExample" parameterType="lms.model.LmsProductExportItemExample" >
     delete from LMS_PRODUCT_EXPORT_ITEM
@@ -101,8 +101,8 @@
     </if>
   </delete>
   <insert id="insert" parameterType="lms.model.LmsProductExportItem" >
-    insert into LMS_PRODUCT_EXPORT_ITEM (id, count, price, 
-      subprice, LMS_Product_id, LMS_Product_Export_id
+    insert into LMS_PRODUCT_EXPORT_ITEM ("id", "count", "price",
+      "subprice", "LMS_Product_id", "LMS_Product_Export_id"
       )
     values (#{id,jdbcType=DECIMAL}, #{count,jdbcType=DECIMAL}, #{price,jdbcType=DECIMAL}, 
       #{subprice,jdbcType=DECIMAL}, #{lmsProductId,jdbcType=DECIMAL}, #{lmsProductExportId,jdbcType=DECIMAL}
@@ -218,11 +218,48 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="lms.model.LmsProductExportItem" >
     update LMS_PRODUCT_EXPORT_ITEM
-    set count = #{count,jdbcType=DECIMAL},
-      price = #{price,jdbcType=DECIMAL},
-      subprice = #{subprice,jdbcType=DECIMAL},
-      LMS_Product_id = #{lmsProductId,jdbcType=DECIMAL},
-      LMS_Product_Export_id = #{lmsProductExportId,jdbcType=DECIMAL}
-    where id = #{id,jdbcType=DECIMAL}
+    set "count" = #{count,jdbcType=DECIMAL},
+      "price" = #{price,jdbcType=DECIMAL},
+      "subprice" = #{subprice,jdbcType=DECIMAL},
+      "LMS_Product_id" = #{lmsProductId,jdbcType=DECIMAL},
+      "LMS_Product_Export_id" = #{lmsProductExportId,jdbcType=DECIMAL}
+    where "id" = #{id,jdbcType=DECIMAL}
   </update>
+
+
+  <resultMap id="productAndProductExportResultMap" type="lms.model.LmsProductExportItem" extends="BaseResultMap" >
+    <association property="lmsProduct" javaType="lms.model.LmsProduct">
+      <id column="id" property="id" jdbcType="DECIMAL" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+      <result column="price" property="price" jdbcType="DECIMAL" />
+      <result column="unit" property="unit" jdbcType="VARCHAR" />
+      <result column="LMS_Second_Category_id" property="lmsSecondCategoryId" jdbcType="DECIMAL" />
+      <result column="discount" property="discount" jdbcType="DECIMAL" />
+      <result column="cost" property="cost" jdbcType="DECIMAL" />
+      <result column="size" property="size" jdbcType="VARCHAR" />
+      <result column="LMS_Supplier_id" property="lmsSupplierId" jdbcType="DECIMAL" />
+      <result column="quality_period" property="qualityPeriod" jdbcType="VARCHAR" />
+      <result column="if_back" property="ifBack" jdbcType="DECIMAL" />
+      <result column="if_exchange" property="ifExchange" jdbcType="DECIMAL" />
+      <result column="description" property="description" jdbcType="VARCHAR" />
+    </association>
+
+    <association property="lmsProductExport" javaType="lms.model.LmsProductExport">
+      <id column="id" property="id" jdbcType="DECIMAL" />
+      <result column="transport" property="transport" jdbcType="VARCHAR" />
+      <result column="description" property="description" jdbcType="VARCHAR" />
+      <result column="total_count" property="totalCount" jdbcType="DECIMAL" />
+      <result column="total_price" property="totalPrice" jdbcType="DECIMAL" />
+      <result column="datetime" property="datetime" jdbcType="DATE" />
+    </association>
+  </resultMap>
+
+  <!--一对多映射-->
+  <select id="findproductAndProductExportMap" resultMap="productAndProductExportResultMap">
+    select
+    LMS_PRODUCT_EXPORT_ITEM.*,LMS_PRODUCT.*,LMS_PRODUCT_EXPORT.*
+    from LMS_PRODUCT_EXPORT_ITEM, LMS_PRODUCT, LMS_PRODUCT_EXPORT
+    where LMS_PRODUCT_EXPORT_ITEM."LMS_Product_id" = LMS_PRODUCT."id"
+    and LMS_PRODUCT_EXPORT_ITEM."LMS_Product_Export_id" = LMS_PRODUCT_EXPORT."id"
+  </select>
 </mapper>

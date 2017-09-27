@@ -2,6 +2,7 @@ package lms.model;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 public class LmcCommodityReceipt {
     private BigDecimal id;
@@ -29,6 +30,26 @@ public class LmcCommodityReceipt {
     private String feedback;
 
     private String signature;
+
+    private LmsCustomer customer;
+
+    private List<LmsStation> stations;
+
+    public List<LmsStation> getStations() {
+        return stations;
+    }
+
+    public void setStations(List<LmsStation> stations) {
+        this.stations = stations;
+    }
+
+    public LmsCustomer getCustomers() {
+        return customer;
+    }
+
+    public void setCustomers(LmsCustomer customers) {
+        this.customer = customers;
+    }
 
     public BigDecimal getId() {
         return id;
@@ -132,5 +153,42 @@ public class LmcCommodityReceipt {
 
     public void setSignature(String signature) {
         this.signature = signature == null ? null : signature.trim();
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"id\":")
+                .append(id);
+        sb.append(",\"taskNumber\":")
+                .append(taskNumber);
+        sb.append(",\"cuntomerId\":")
+                .append(cuntomerId);
+        sb.append(",\"address\":\"")
+                .append(address).append('\"');
+        sb.append(",\"datetime\":\"")
+                .append(datetime).append('\"');
+        sb.append(",\"command\":\"")
+                .append(command).append('\"');
+        sb.append(",\"ifReceipt\":")
+                .append(ifReceipt);
+        sb.append(",\"stationId\":")
+                .append(stationId);
+        sb.append(",\"totalPrice\":")
+                .append(totalPrice);
+        sb.append(",\"type\":")
+                .append(type);
+        sb.append(",\"description\":\"")
+                .append(description).append('\"');
+        sb.append(",\"feedback\":\"")
+                .append(feedback).append('\"');
+        sb.append(",\"signature\":\"")
+                .append(signature).append('\"');
+        sb.append(",\"customer\":")
+                .append(customer);
+        sb.append(",\"stations\":")
+                .append(stations);
+        sb.append('}');
+        return sb.toString();
     }
 }

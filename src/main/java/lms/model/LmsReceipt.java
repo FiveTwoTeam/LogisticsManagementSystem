@@ -20,6 +20,20 @@ public class LmsReceipt {
 
     private Short state;
 
+    public LmsReceipt() {
+    }
+
+    public LmsReceipt(BigDecimal id, BigDecimal totalMoney,  String gainMan, String missMan, BigDecimal orderNumber, Short state) {
+        this.id = id;
+        this.totalMoney = totalMoney;
+        this.gainDate = gainDate;
+        this.missDate = missDate;
+        this.gainMan = gainMan;
+        this.missMan = missMan;
+        this.orderNumber = orderNumber;
+        this.state = state;
+    }
+
     public BigDecimal getId() {
         return id;
     }
@@ -82,5 +96,28 @@ public class LmsReceipt {
 
     public void setState(Short state) {
         this.state = state;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"id\":")
+                .append(id);
+        sb.append(",\"totalMoney\":")
+                .append(totalMoney);
+        sb.append(",\"gainDate\":\"")
+                .append(gainDate).append('\"');
+        sb.append(",\"missDate\":\"")
+                .append(missDate).append('\"');
+        sb.append(",\"gainMan\":\"")
+                .append(gainMan).append('\"');
+        sb.append(",\"missMan\":\"")
+                .append(missMan).append('\"');
+        sb.append(",\"orderNumber\":")
+                .append(orderNumber);
+        sb.append(",\"state\":")
+                .append(state);
+        sb.append('}');
+        return sb.toString();
     }
 }

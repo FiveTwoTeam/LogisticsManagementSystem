@@ -33,10 +33,14 @@ public class LmsFirstCategory {
 
     @Override
     public String toString() {
-        return "LmsFirstCategory{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", description='" + description + '\'' +
-                '}';
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"id\":")
+                .append(id);
+        sb.append(",\"name\":\"")
+                .append(name).append('\"');
+        sb.append(",\"description\":\"")
+                .append(description).append('\"');
+        sb.append('}');
+        return sb.toString();
     }
 }

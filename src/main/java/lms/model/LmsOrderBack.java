@@ -56,12 +56,18 @@ public class LmsOrderBack {
 
     @Override
     public String toString() {
-        return "LmsOrderBack{" +
-                "id=" + id +
-                ", reason='" + reason + '\'' +
-                ", datetime=" + datetime +
-                ", lmsOrderId=" + lmsOrderId +
-                ", lmsorder=" + lmsOrder +
-                '}';
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"id\":")
+                .append(id);
+        sb.append(",\"reason\":\"")
+                .append(reason).append('\"');
+        sb.append(",\"datetime\":\"")
+                .append(datetime).append('\"');
+        sb.append(",\"lmsOrderId\":")
+                .append(lmsOrderId);
+        sb.append(",\"lmsOrder\":")
+                .append(lmsOrder);
+        sb.append('}');
+        return sb.toString();
     }
 }

@@ -17,6 +17,35 @@ public class LmsProductImportItem {
 
     private String lmsProductImportItemcol;
 
+    private LmsProduct lmsProduct;
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"id\":")
+                .append(id);
+        sb.append(",\"expectCount\":")
+                .append(expectCount);
+        sb.append(",\"factCount\":")
+                .append(factCount);
+        sb.append(",\"description\":\"")
+                .append(description).append('\"');
+        sb.append(",\"lmsProductId\":")
+                .append(lmsProductId);
+        sb.append(",\"lmsProductImportId\":")
+                .append(lmsProductImportId);
+        sb.append(",\"lmsProductImportItemcol\":\"")
+                .append(lmsProductImportItemcol).append('\"');
+        sb.append(",\"lmsProduct\":")
+                .append(lmsProduct);
+        sb.append(",\"lmsProductImport\":")
+                .append(lmsProductImport);
+        sb.append('}');
+        return sb.toString();
+    }
+
+    private LmsProductImport lmsProductImport;
+
     public BigDecimal getId() {
         return id;
     }
@@ -72,4 +101,22 @@ public class LmsProductImportItem {
     public void setLmsProductImportItemcol(String lmsProductImportItemcol) {
         this.lmsProductImportItemcol = lmsProductImportItemcol == null ? null : lmsProductImportItemcol.trim();
     }
+
+
+    public LmsProduct getLmsProduct() {
+        return lmsProduct;
+    }
+
+    public void setLmsProduct(LmsProduct lmsProduct) {
+        this.lmsProduct = lmsProduct;
+    }
+
+    public LmsProductImport getLmsProductImport() {
+        return lmsProductImport;
+    }
+
+    public void setLmsProductImport(LmsProductImport lmsProductImport) {
+        this.lmsProductImport = lmsProductImport;
+    }
+
 }

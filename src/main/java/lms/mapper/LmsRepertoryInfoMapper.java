@@ -1,10 +1,11 @@
 package lms.mapper;
 
-import java.math.BigDecimal;
-import java.util.List;
 import lms.model.LmsRepertoryInfo;
 import lms.model.LmsRepertoryInfoExample;
 import org.apache.ibatis.annotations.Param;
+
+import java.math.BigDecimal;
+import java.util.List;
 
 public interface LmsRepertoryInfoMapper {
     int countByExample(LmsRepertoryInfoExample example);
@@ -28,4 +29,6 @@ public interface LmsRepertoryInfoMapper {
     int updateByPrimaryKeySelective(LmsRepertoryInfo record);
 
     int updateByPrimaryKey(LmsRepertoryInfo record);
+
+    List<LmsRepertoryInfo> findproductAndRepertoryMap();
 }

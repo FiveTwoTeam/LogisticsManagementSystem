@@ -13,6 +13,35 @@ public class LmsRepertoryInfo {
 
     private BigDecimal lmsProductId;
 
+    private LmsProduct lmsProduct;
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"id\":")
+                .append(id);
+        sb.append(",\"max\":")
+                .append(max);
+        sb.append(",\"guard\":")
+                .append(guard);
+        sb.append(",\"lmsRepertoryId\":")
+                .append(lmsRepertoryId);
+        sb.append(",\"lmsProductId\":")
+                .append(lmsProductId);
+        sb.append(",\"lmsProduct\":")
+                .append(lmsProduct);
+        sb.append(",\"lmsRepertory\":")
+                .append(lmsRepertory);
+        sb.append(",\"count\":")
+                .append(count);
+        sb.append('}');
+        return sb.toString();
+    }
+
+    private LmsRepertory lmsRepertory;
+
+    private BigDecimal count;
+
     public BigDecimal getId() {
         return id;
     }
@@ -52,4 +81,30 @@ public class LmsRepertoryInfo {
     public void setLmsProductId(BigDecimal lmsProductId) {
         this.lmsProductId = lmsProductId;
     }
+
+    public BigDecimal getCount() {
+        return count;
+    }
+
+    public void setCount(BigDecimal count) {
+        this.count = count;
+    }
+
+    public LmsProduct getLmsProduct() {
+        return lmsProduct;
+    }
+
+    public void setLmsProduct(LmsProduct lmsProduct) {
+        this.lmsProduct = lmsProduct;
+    }
+
+    public LmsRepertory getLmsRepertory() {
+        return lmsRepertory;
+    }
+
+    public void setLmsRepertory(LmsRepertory lmsRepertory) {
+        this.lmsRepertory = lmsRepertory;
+    }
+
+
 }

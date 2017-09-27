@@ -11,6 +11,35 @@ public class LmsSupplier {
 
     private String contactMan;
 
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"id\":")
+                .append(id);
+        sb.append(",\"name\":\"")
+                .append(name).append('\"');
+        sb.append(",\"address\":\"")
+                .append(address).append('\"');
+        sb.append(",\"contactMan\":\"")
+                .append(contactMan).append('\"');
+        sb.append(",\"phone\":")
+                .append(phone);
+        sb.append(",\"bank\":\"")
+                .append(bank).append('\"');
+        sb.append(",\"bankAccount\":")
+                .append(bankAccount);
+        sb.append(",\"fax\":\"")
+                .append(fax).append('\"');
+        sb.append(",\"postCode\":")
+                .append(postCode);
+        sb.append(",\"legalMan\":\"")
+                .append(legalMan).append('\"');
+        sb.append(",\"description\":\"")
+                .append(description).append('\"');
+        sb.append('}');
+        return sb.toString();
+    }
+
     private BigDecimal phone;
 
     private String bank;
@@ -113,20 +142,4 @@ public class LmsSupplier {
         this.description = description == null ? null : description.trim();
     }
 
-    @Override
-    public String toString() {
-        return "LmsSupplier{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                ", contactMan='" + contactMan + '\'' +
-                ", phone=" + phone +
-                ", bank='" + bank + '\'' +
-                ", bankAccount=" + bankAccount +
-                ", fax='" + fax + '\'' +
-                ", postCode=" + postCode +
-                ", legalMan='" + legalMan + '\'' +
-                ", description='" + description + '\'' +
-                '}';
-    }
 }

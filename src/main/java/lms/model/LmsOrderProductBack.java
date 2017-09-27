@@ -2,6 +2,7 @@ package lms.model;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 public class LmsOrderProductBack {
     private Long id;
@@ -15,6 +16,26 @@ public class LmsOrderProductBack {
     private BigDecimal lmsOrderId;
 
     private BigDecimal lmsProductId;
+
+    private LmsOrder lmsOrder;
+
+    private List<LmsProduct> productList;
+
+    public LmsOrder getLmsOrder() {
+        return lmsOrder;
+    }
+
+    public void setLmsOrder(LmsOrder lmsOrder) {
+        this.lmsOrder = lmsOrder;
+    }
+
+    public List<LmsProduct> getProductList() {
+        return productList;
+    }
+
+    public void setProductList(List<LmsProduct> productList) {
+        this.productList = productList;
+    }
 
     public Long getId() {
         return id;
@@ -62,5 +83,28 @@ public class LmsOrderProductBack {
 
     public void setLmsProductId(BigDecimal lmsProductId) {
         this.lmsProductId = lmsProductId;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"id\":")
+                .append(id);
+        sb.append(",\"reason\":\"")
+                .append(reason).append('\"');
+        sb.append(",\"datetime\":\"")
+                .append(datetime).append('\"');
+        sb.append(",\"count\":")
+                .append(count);
+        sb.append(",\"lmsOrderId\":")
+                .append(lmsOrderId);
+        sb.append(",\"lmsProductId\":")
+                .append(lmsProductId);
+        sb.append(",\"lmsOrder\":")
+                .append(lmsOrder);
+        sb.append(",\"productList\":")
+                .append(productList);
+        sb.append('}');
+        return sb.toString();
     }
 }
