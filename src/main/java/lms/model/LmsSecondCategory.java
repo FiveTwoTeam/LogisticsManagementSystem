@@ -9,27 +9,8 @@ public class LmsSecondCategory {
 
     private String description;
 
-    private LmsFirstCategory lmsFirstCategory;
-
     public Long getId() {
         return id;
-    }
-
-    @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder("{");
-        sb.append("\"id\":")
-                .append(id);
-        sb.append(",\"name\":\"")
-                .append(name).append('\"');
-        sb.append(",\"lmsFirstCategoryId\":")
-                .append(lmsFirstCategoryId);
-        sb.append(",\"description\":\"")
-                .append(description).append('\"');
-        sb.append(",\"lmsFirstCategory\":")
-                .append(lmsFirstCategory);
-        sb.append('}');
-        return sb.toString();
     }
 
     public void setId(Long id) {
@@ -59,13 +40,4 @@ public class LmsSecondCategory {
     public void setDescription(String description) {
         this.description = description == null ? null : description.trim();
     }
-
-    public LmsFirstCategory getLmsFirstCategory() {
-        return lmsFirstCategory;
-    }
-
-    public void setLmsFirstCategory(LmsFirstCategory lmsFirstCategory) {
-        this.lmsFirstCategory = lmsFirstCategory;
-    }
-
 }

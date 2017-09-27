@@ -1,7 +1,6 @@
 package lms.model;
 
 import java.util.Date;
-import java.util.List;
 
 public class LmsTask {
     private Long id;
@@ -25,64 +24,6 @@ public class LmsTask {
     private String satisfy;
 
     private String description;
-
-    private List<LmsOrder> lmsOrderList;
-
-    private List<LmsStationRepetory> lmsStationRepetoryList;
-
-    private LmsCustomer lmsCustomer;
-
-    public LmsTask() {
-    }
-
-    public LmsTask(Long id, Short status, Short type, Long lmsOrderId, Long lmsCustomerId, Long lmsStationId, Long lmsStationRepetoryId, Long lmsDeliveryStaffId, String satisfy, String description) {
-        this.id = id;
-        this.status = status;
-        this.type = type;
-        this.lmsOrderId = lmsOrderId;
-        this.lmsCustomerId = lmsCustomerId;
-        this.lmsStationId = lmsStationId;
-        this.lmsStationRepetoryId = lmsStationRepetoryId;
-        this.lmsDeliveryStaffId = lmsDeliveryStaffId;
-        this.satisfy = satisfy;
-        this.description = description;
-    }
-
-    public List<LmsStationRepetory> getLmsStationRepetoryList() {
-        return lmsStationRepetoryList;
-    }
-
-    public void setLmsStationRepetoryList(List<LmsStationRepetory> lmsStationRepetoryList) {
-        this.lmsStationRepetoryList = lmsStationRepetoryList;
-    }
-
-    public LmsCustomer getLmsCustomer() {
-        return lmsCustomer;
-    }
-
-    public void setLmsCustomer(LmsCustomer lmsCustomer) {
-        this.lmsCustomer = lmsCustomer;
-    }
-
-    public LmsStation getLmsStation() {
-        return lmsStation;
-    }
-
-    public void setLmsStation(LmsStation lmsStation) {
-        this.lmsStation = lmsStation;
-    }
-
-    public LmsDeliveryStaff getLmsDeliveryStaff() {
-        return lmsDeliveryStaff;
-    }
-
-    public void setLmsDeliveryStaff(LmsDeliveryStaff lmsDeliveryStaff) {
-        this.lmsDeliveryStaff = lmsDeliveryStaff;
-    }
-
-    private LmsStation lmsStation;
-
-    private LmsDeliveryStaff lmsDeliveryStaff;
 
     public Long getId() {
         return id;
@@ -170,52 +111,5 @@ public class LmsTask {
 
     public void setDescription(String description) {
         this.description = description == null ? null : description.trim();
-    }
-
-    public List<LmsOrder> getLmsOrderList() {
-        return lmsOrderList;
-    }
-
-    public void setLmsOrderList(List<LmsOrder> lmsOrderList) {
-        this.lmsOrderList = lmsOrderList;
-    }
-
-    @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder("{");
-        sb.append("\"id\":")
-                .append(id);
-        sb.append(",\"status\":")
-                .append(status);
-        sb.append(",\"datetime\":\"")
-                .append(datetime).append('\"');
-        sb.append(",\"type\":")
-                .append(type);
-        sb.append(",\"lmsOrderId\":")
-                .append(lmsOrderId);
-        sb.append(",\"lmsCustomerId\":")
-                .append(lmsCustomerId);
-        sb.append(",\"lmsStationId\":")
-                .append(lmsStationId);
-        sb.append(",\"lmsStationRepetoryId\":")
-                .append(lmsStationRepetoryId);
-        sb.append(",\"lmsDeliveryStaffId\":")
-                .append(lmsDeliveryStaffId);
-        sb.append(",\"satisfy\":\"")
-                .append(satisfy).append('\"');
-        sb.append(",\"description\":\"")
-                .append(description).append('\"');
-        sb.append(",\"lmsOrderList\":")
-                .append(lmsOrderList);
-        sb.append(",\"lmsStationRepetoryList\":")
-                .append(lmsStationRepetoryList);
-        sb.append(",\"lmsCustomer\":")
-                .append(lmsCustomer);
-        sb.append(",\"lmsStation\":")
-                .append(lmsStation);
-        sb.append(",\"lmsDeliveryStaff\":")
-                .append(lmsDeliveryStaff);
-        sb.append('}');
-        return sb.toString();
     }
 }

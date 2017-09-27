@@ -1,10 +1,9 @@
 package lms.mapper;
 
+import java.util.List;
 import lms.model.LmsStationRepetory;
 import lms.model.LmsStationRepetoryExample;
 import org.apache.ibatis.annotations.Param;
-
-import java.util.List;
 
 public interface LmsStationRepetoryMapper {
     int countByExample(LmsStationRepetoryExample example);
@@ -28,6 +27,4 @@ public interface LmsStationRepetoryMapper {
     int updateByPrimaryKeySelective(LmsStationRepetory record);
 
     int updateByPrimaryKey(LmsStationRepetory record);
-
-    List<LmsStationRepetory> findstationRepetoryResultMap();
 }

@@ -85,24 +85,15 @@ public class LmsCommodityReceiptItem {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("{");
-        sb.append("\"id\":")
-                .append(id);
-        sb.append(",\"count\":")
-                .append(count);
-        sb.append(",\"price\":")
-                .append(price);
-        sb.append(",\"subprice\":")
-                .append(subprice);
-        sb.append(",\"commodityReceiptId\":")
-                .append(commodityReceiptId);
-        sb.append(",\"productId\":")
-                .append(productId);
-        sb.append(",\"commodityReceiptList\":")
-                .append(commodityReceiptList);
-        sb.append(",\"productList\":")
-                .append(productList);
-        sb.append('}');
-        return sb.toString();
+        return "LmsCommodityReceiptItem{" +
+                "id=" + id +
+                ", count=" + count +
+                ", price=" + price +
+                ", subprice=" + subprice +
+                ", commodityReceiptId=" + commodityReceiptId +
+                ", productId=" + productId +
+                ", commodityReceiptList=" + commodityReceiptList +
+                ", productList=" + productList +
+                '}';
     }
 }

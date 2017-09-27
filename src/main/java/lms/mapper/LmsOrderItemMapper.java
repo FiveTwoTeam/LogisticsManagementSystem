@@ -1,10 +1,9 @@
 package lms.mapper;
 
+import java.util.List;
 import lms.model.LmsOrderItem;
 import lms.model.LmsOrderItemExample;
 import org.apache.ibatis.annotations.Param;
-
-import java.util.List;
 
 public interface LmsOrderItemMapper {
     int countByExample(LmsOrderItemExample example);

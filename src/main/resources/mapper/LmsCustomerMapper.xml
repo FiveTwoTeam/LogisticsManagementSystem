@@ -106,9 +106,9 @@
     </if>
   </delete>
   <insert id="insert" parameterType="lms.model.LmsCustomer" >
-    insert into LMS_CUSTOMER (id, NAME, IDENTITY_ID,
-      WORK_UNIT, PHONE_EXT, MOBILE_PHONE,
-      ADDRESS, POST_CODE, MAIL,
+    insert into LMS_CUSTOMER (ID, NAME, IDENTITY_ID, 
+      WORK_UNIT, PHONE_EXT, MOBILE_PHONE, 
+      ADDRESS, POST_CODE, MAIL, 
       STATUS)
     values (#{id,jdbcType=DECIMAL}, #{name,jdbcType=VARCHAR}, #{identityId,jdbcType=VARCHAR}, 
       #{workUnit,jdbcType=VARCHAR}, #{phoneExt,jdbcType=VARCHAR}, #{mobilePhone,jdbcType=VARCHAR}, 

@@ -1,36 +1,9 @@
 package lms.model;
 
-import java.util.List;
-
 public class LmsStationRepetoryItem {
     private Long id;
 
     private Long count;
-
-    @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder("{");
-        sb.append("\"id\":")
-                .append(id);
-        sb.append(",\"count\":")
-                .append(count);
-        sb.append(",\"max\":")
-                .append(max);
-        sb.append(",\"guard\":")
-                .append(guard);
-        sb.append(",\"status\":")
-                .append(status);
-        sb.append(",\"lmsProductId\":")
-                .append(lmsProductId);
-        sb.append(",\"lmsStationRepertoryId\":")
-                .append(lmsStationRepertoryId);
-        sb.append(",\"lmsProduct\":")
-                .append(lmsProduct);
-        sb.append(",\"lmsStationRepetoryList\":")
-                .append(lmsStationRepetoryList);
-        sb.append('}');
-        return sb.toString();
-    }
 
     private Long max;
 
@@ -41,10 +14,6 @@ public class LmsStationRepetoryItem {
     private Long lmsProductId;
 
     private Long lmsStationRepertoryId;
-
-    private LmsProduct lmsProduct;
-
-    private List<LmsStationRepetory> lmsStationRepetoryList;
 
     public Long getId() {
         return id;
@@ -101,21 +70,4 @@ public class LmsStationRepetoryItem {
     public void setLmsStationRepertoryId(Long lmsStationRepertoryId) {
         this.lmsStationRepertoryId = lmsStationRepertoryId;
     }
-
-    public LmsProduct getLmsProduct() {
-        return lmsProduct;
-    }
-
-    public void setLmsProduct(LmsProduct lmsProduct) {
-        this.lmsProduct = lmsProduct;
-    }
-
-    public List<LmsStationRepetory> getLmsStationRepetoryList() {
-        return lmsStationRepetoryList;
-    }
-
-    public void setLmsStationRepetoryList(List<LmsStationRepetory> lmsStationRepetoryList) {
-        this.lmsStationRepetoryList = lmsStationRepetoryList;
-    }
-
 }

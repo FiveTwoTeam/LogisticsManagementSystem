@@ -1,10 +1,9 @@
 package lms.mapper;
 
+import java.util.List;
 import lms.model.LmsTask;
 import lms.model.LmsTaskExample;
 import org.apache.ibatis.annotations.Param;
-
-import java.util.List;
 
 public interface LmsTaskMapper {
     int countByExample(LmsTaskExample example);
@@ -28,6 +27,4 @@ public interface LmsTaskMapper {
     int updateByPrimaryKeySelective(LmsTask record);
 
     int updateByPrimaryKey(LmsTask record);
-
-    List<LmsTask> findtaskMap();
 }

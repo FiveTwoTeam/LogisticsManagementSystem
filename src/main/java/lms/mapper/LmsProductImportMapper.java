@@ -1,11 +1,10 @@
 package lms.mapper;
 
+import java.math.BigDecimal;
+import java.util.List;
 import lms.model.LmsProductImport;
 import lms.model.LmsProductImportExample;
 import org.apache.ibatis.annotations.Param;
-
-import java.math.BigDecimal;
-import java.util.List;
 
 public interface LmsProductImportMapper {
     int countByExample(LmsProductImportExample example);
@@ -29,6 +28,4 @@ public interface LmsProductImportMapper {
     int updateByPrimaryKeySelective(LmsProductImport record);
 
     int updateByPrimaryKey(LmsProductImport record);
-
-    List<LmsProductImport> findproductImportResultMap();
 }

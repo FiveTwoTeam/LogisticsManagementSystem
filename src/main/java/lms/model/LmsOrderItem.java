@@ -107,28 +107,17 @@ public class LmsOrderItem {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("{");
-        sb.append("\"id\":")
-                .append(id);
-        sb.append(",\"lmsOrderId\":")
-                .append(lmsOrderId);
-        sb.append(",\"lmsProductId\":")
-                .append(lmsProductId);
-        sb.append(",\"count\":")
-                .append(count);
-        sb.append(",\"price\":")
-                .append(price);
-        sb.append(",\"discount\":")
-                .append(discount);
-        sb.append(",\"subprice\":")
-                .append(subprice);
-        sb.append(",\"productDescription\":\"")
-                .append(productDescription).append('\"');
-        sb.append(",\"lmsOrder\":")
-                .append(lmsOrder);
-        sb.append(",\"productList\":")
-                .append(productList);
-        sb.append('}');
-        return sb.toString();
+        return "LmsOrderItem{" +
+                "id=" + id +
+                ", lmsOrderId=" + lmsOrderId +
+                ", lmsProductId=" + lmsProductId +
+                ", count=" + count +
+                ", price=" + price +
+                ", discount=" + discount +
+                ", subprice=" + subprice +
+                ", productDescription='" + productDescription + '\'' +
+                ", lmsOrder=" + lmsOrder +
+                ", productList=" + productList +
+                '}';
     }
 }

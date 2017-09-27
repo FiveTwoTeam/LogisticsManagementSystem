@@ -66,7 +66,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    "id", "import_no", "datetime", "LMS_Supplier_id"
+    id, import_no, datetime, LMS_Supplier_id
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="lms.model.LmsProductImportExample" >
     select
@@ -86,11 +86,11 @@
     select 
     <include refid="Base_Column_List" />
     from LMS_PRODUCT_IMPORT
-    where "id" = #{id,jdbcType=DECIMAL}
+    where id = #{id,jdbcType=DECIMAL}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.math.BigDecimal" >
     delete from LMS_PRODUCT_IMPORT
-    where "id" = #{id,jdbcType=DECIMAL}
+    where id = #{id,jdbcType=DECIMAL}
   </delete>
   <delete id="deleteByExample" parameterType="lms.model.LmsProductImportExample" >
     delete from LMS_PRODUCT_IMPORT
@@ -99,8 +99,8 @@
     </if>
   </delete>
   <insert id="insert" parameterType="lms.model.LmsProductImport" >
-    insert into LMS_PRODUCT_IMPORT ("id", "import_no", "datetime",
-      "LMS_Supplier_id")
+    insert into LMS_PRODUCT_IMPORT (id, import_no, datetime, 
+      LMS_Supplier_id)
     values (#{id,jdbcType=DECIMAL}, #{importNo,jdbcType=DECIMAL}, #{datetime,jdbcType=DATE}, 
       #{lmsSupplierId,jdbcType=DECIMAL})
   </insert>
@@ -188,34 +188,9 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="lms.model.LmsProductImport" >
     update LMS_PRODUCT_IMPORT
-    set "import_no" = #{importNo,jdbcType=DECIMAL},
-      "datetime" = #{datetime,jdbcType=DATE},
-      "LMS_Supplier_id" = #{lmsSupplierId,jdbcType=DECIMAL}
-    where "id" = #{id,jdbcType=DECIMAL}
+    set import_no = #{importNo,jdbcType=DECIMAL},
+      datetime = #{datetime,jdbcType=DATE},
+      LMS_Supplier_id = #{lmsSupplierId,jdbcType=DECIMAL}
+    where id = #{id,jdbcType=DECIMAL}
   </update>
-
-
-  <resultMap id="productImportResultMap" type="lms.model.LmsProductImport" extends="BaseResultMap" >
-    <collection property="lmsSupplierList" ofType="lms.model.LmsSupplier">
-      <id column="id" property="id" jdbcType="DECIMAL" />
-      <result column="name" property="name" jdbcType="VARCHAR" />
-      <result column="address" property="address" jdbcType="VARCHAR" />
-      <result column="contact_man" property="contactMan" jdbcType="VARCHAR" />
-      <result column="phone" property="phone" jdbcType="DECIMAL" />
-      <result column="bank" property="bank" jdbcType="VARCHAR" />
-      <result column="bank_account" property="bankAccount" jdbcType="DECIMAL" />
-      <result column="fax" property="fax" jdbcType="VARCHAR" />
-      <result column="post_code" property="postCode" jdbcType="DECIMAL" />
-      <result column="legal_man" property="legalMan" jdbcType="VARCHAR" />
-      <result column="description" property="description" jdbcType="VARCHAR" />
-    </collection>
-  </resultMap>
-
-  <!--一对多映射-->
-  <select id="findproductImportResultMap" resultMap="productImportResultMap">
-    select
-    LMS_PRODUCT_IMPORT.*,LMS_SUPPLIER.*
-    from LMS_PRODUCT_IMPORT, LMS_SUPPLIER
-    where LMS_PRODUCT_IMPORT."LMS_Supplier_id" = LMS_SUPPLIER."id"
-  </select>
 </mapper>

@@ -28,6 +28,4 @@ public interface LmsRepertoryMapper {
     int updateByPrimaryKeySelective(LmsRepertory record);
 
     int updateByPrimaryKey(LmsRepertory record);
-
-    List<LmsRepertory> findadminAndRepertoryResultMap();
 }

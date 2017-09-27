@@ -70,7 +70,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    "id", "total_money", "gain_date", "miss_date", "gain_man", "miss_man", "order_number", "state"
+    id, total_money, gain_date, miss_date, gain_man, miss_man, order_number, state
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="lms.model.LmsReceiptExample" >
     select
@@ -90,11 +90,11 @@
     select 
     <include refid="Base_Column_List" />
     from LMS_RECEIPT
-    where "id" = #{id,jdbcType=DECIMAL}
+    where id = #{id,jdbcType=DECIMAL}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.math.BigDecimal" >
     delete from LMS_RECEIPT
-    where "id" = #{id,jdbcType=DECIMAL}
+    where id = #{id,jdbcType=DECIMAL}
   </delete>
   <delete id="deleteByExample" parameterType="lms.model.LmsReceiptExample" >
     delete from LMS_RECEIPT
@@ -103,9 +103,9 @@
     </if>
   </delete>
   <insert id="insert" parameterType="lms.model.LmsReceipt" >
-    insert into LMS_RECEIPT ("id", "total_money", "gain_date",
-      "miss_date", "gain_man", "miss_man",
-      "order_number", "state")
+    insert into LMS_RECEIPT (id, total_money, gain_date, 
+      miss_date, gain_man, miss_man, 
+      order_number, state)
     values (#{id,jdbcType=DECIMAL}, #{totalMoney,jdbcType=DECIMAL}, #{gainDate,jdbcType=DATE}, 
       #{missDate,jdbcType=DATE}, #{gainMan,jdbcType=VARCHAR}, #{missMan,jdbcType=VARCHAR}, 
       #{orderNumber,jdbcType=DECIMAL}, #{state,jdbcType=DECIMAL})
@@ -246,13 +246,13 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="lms.model.LmsReceipt" >
     update LMS_RECEIPT
-    set "total_money" = #{totalMoney,jdbcType=DECIMAL},
-      "gain_date" = #{gainDate,jdbcType=DATE},
-      "miss_date" = #{missDate,jdbcType=DATE},
-      "gain_man" = #{gainMan,jdbcType=VARCHAR},
-      "miss_man" = #{missMan,jdbcType=VARCHAR},
-      "order_number" = #{orderNumber,jdbcType=DECIMAL},
-      "state" = #{state,jdbcType=DECIMAL}
-    where "id" = #{id,jdbcType=DECIMAL}
+    set total_money = #{totalMoney,jdbcType=DECIMAL},
+      gain_date = #{gainDate,jdbcType=DATE},
+      miss_date = #{missDate,jdbcType=DATE},
+      gain_man = #{gainMan,jdbcType=VARCHAR},
+      miss_man = #{missMan,jdbcType=VARCHAR},
+      order_number = #{orderNumber,jdbcType=DECIMAL},
+      state = #{state,jdbcType=DECIMAL}
+    where id = #{id,jdbcType=DECIMAL}
   </update>
 </mapper>

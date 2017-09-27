@@ -383,7 +383,7 @@ public class LmsTaskExample {
         }
 
         public Criteria andLmsOrderIdEqualTo(Long value) {
-            addCriterion("\"LMS_Order_id\" =", value, "lmsOrderId");
+            addCriterion("LMS_Order_id =", value, "lmsOrderId");
             return (Criteria) this;
         }
 

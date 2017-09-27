@@ -100,25 +100,12 @@
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <!--<insert id="insert" parameterType="lms.model.LmsAdmin" >-->
-    <!--insert into LMS_ADMIN (ID, USERNAME, PASSWORD, -->
-      <!--MAIL, PHONE, RIGHT)-->
-    <!--values (#{id,jdbcType=DECIMAL}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, -->
-      <!--#{mail,jdbcType=VARCHAR}, #{phone,jdbcType=DECIMAL}, #{right,jdbcType=DECIMAL})-->
-  <!--</insert>-->
-
   <insert id="insert" parameterType="lms.model.LmsAdmin" >
-    insert into LMS_ADMIN (ID, USERNAME, PASSWORD,
-    MAIL, PHONE, RIGHT)
-    values (seq_addadmin_id.nextval, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR},
-    #{mail,jdbcType=VARCHAR}, #{phone,jdbcType=DECIMAL}, #{right,jdbcType=DECIMAL})
-
-    <selectKey keyProperty="id" order="AFTER" resultType="long">
-      select seq_addadmin_id.currval from dual
-    </selectKey>
+    insert into LMS_ADMIN (ID, USERNAME, PASSWORD, 
+      MAIL, PHONE, RIGHT)
+    values (#{id,jdbcType=DECIMAL}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
+      #{mail,jdbcType=VARCHAR}, #{phone,jdbcType=DECIMAL}, #{right,jdbcType=DECIMAL})
   </insert>
-
-
   <insert id="insertSelective" parameterType="lms.model.LmsAdmin" >
     insert into LMS_ADMIN
     <trim prefix="(" suffix=")" suffixOverrides="," >

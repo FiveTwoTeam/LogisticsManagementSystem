@@ -68,7 +68,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    "id", "reason", "datetime", "count", "LMS_Order_id", "LMS_Product_id"
+    id, reason, datetime, count, LMS_Order_id, LMS_Product_id
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="lms.model.LmsOrderProductBackExample" >
     select

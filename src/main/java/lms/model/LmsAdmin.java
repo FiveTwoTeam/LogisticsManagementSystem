@@ -65,20 +65,13 @@ public class LmsAdmin {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("{");
-        sb.append("\"id\":")
-                .append(id);
-        sb.append(",\"username\":\"")
-                .append(username).append('\"');
-        sb.append(",\"password\":\"")
-                .append(password).append('\"');
-        sb.append(",\"mail\":\"")
-                .append(mail).append('\"');
-        sb.append(",\"phone\":")
-                .append(phone);
-        sb.append(",\"right\":")
-                .append(right);
-        sb.append('}');
-        return sb.toString();
+        return "LmsAdmin{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", mail='" + mail + '\'' +
+                ", phone=" + phone +
+                ", right=" + right +
+                '}';
     }
 }

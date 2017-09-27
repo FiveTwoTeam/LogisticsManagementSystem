@@ -1,7 +1,6 @@
 package lms.model;
 
 import java.math.BigDecimal;
-import java.util.List;
 
 public class LmsProduct {
     private Long id;
@@ -29,45 +28,6 @@ public class LmsProduct {
     private BigDecimal ifExchange;
 
     private String description;
-
-    private LmsSecondCategory lmsSecondCategory;
-
-    private List<LmsSupplier> supplierList;
-
-    public LmsProduct() {
-    }
-
-    public LmsProduct(Long id, String name, BigDecimal price, String unit, BigDecimal lmsSecondCategoryId, BigDecimal discount, BigDecimal cost, String size, BigDecimal lmsSupplierId, String qualityPeriod, BigDecimal ifBack, BigDecimal ifExchange, String description) {
-        this.id = id;
-        this.name = name;
-        this.price = price;
-        this.unit = unit;
-        this.lmsSecondCategoryId = lmsSecondCategoryId;
-        this.discount = discount;
-        this.cost = cost;
-        this.size = size;
-        this.lmsSupplierId = lmsSupplierId;
-        this.qualityPeriod = qualityPeriod;
-        this.ifBack = ifBack;
-        this.ifExchange = ifExchange;
-        this.description = description;
-    }
-
-    public LmsSecondCategory getLmsSecondCategory() {
-        return lmsSecondCategory;
-    }
-
-    public void setLmsSecondCategory(LmsSecondCategory lmsSecondCategory) {
-        this.lmsSecondCategory = lmsSecondCategory;
-    }
-
-    public List<LmsSupplier> getSupplierList() {
-        return supplierList;
-    }
-
-    public void setSupplierList(List<LmsSupplier> supplierList) {
-        this.supplierList = supplierList;
-    }
 
     public Long getId() {
         return id;
@@ -173,41 +133,22 @@ public class LmsProduct {
         this.description = description == null ? null : description.trim();
     }
 
-
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("{");
-        sb.append("\"id\":")
-                .append(id);
-        sb.append(",\"name\":\"")
-                .append(name).append('\"');
-        sb.append(",\"price\":")
-                .append(price);
-        sb.append(",\"unit\":\"")
-                .append(unit).append('\"');
-        sb.append(",\"lmsSecondCategoryId\":")
-                .append(lmsSecondCategoryId);
-        sb.append(",\"discount\":")
-                .append(discount);
-        sb.append(",\"cost\":")
-                .append(cost);
-        sb.append(",\"size\":\"")
-                .append(size).append('\"');
-        sb.append(",\"lmsSupplierId\":")
-                .append(lmsSupplierId);
-        sb.append(",\"qualityPeriod\":\"")
-                .append(qualityPeriod).append('\"');
-        sb.append(",\"ifBack\":")
-                .append(ifBack);
-        sb.append(",\"ifExchange\":")
-                .append(ifExchange);
-        sb.append(",\"description\":\"")
-                .append(description).append('\"');
-        sb.append(",\"lmsSecondCategory\":")
-                .append(lmsSecondCategory);
-        sb.append(",\"supplierList\":")
-                .append(supplierList);
-        sb.append('}');
-        return sb.toString();
+        return "LmsProduct{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", unit='" + unit + '\'' +
+                ", lmsSecondCategoryId=" + lmsSecondCategoryId +
+                ", discount=" + discount +
+                ", cost=" + cost +
+                ", size='" + size + '\'' +
+                ", lmsSupplierId=" + lmsSupplierId +
+                ", qualityPeriod='" + qualityPeriod + '\'' +
+                ", ifBack=" + ifBack +
+                ", ifExchange=" + ifExchange +
+                ", description='" + description + '\'' +
+                '}';
     }
 }

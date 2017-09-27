@@ -157,38 +157,22 @@ public class LmsOrder {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("{");
-        sb.append("\"id\":")
-                .append(id);
-        sb.append(",\"totalPrice\":")
-                .append(totalPrice);
-        sb.append(",\"orderNumber\":")
-                .append(orderNumber);
-        sb.append(",\"description\":\"")
-                .append(description).append('\"');
-        sb.append(",\"type\":")
-                .append(type);
-        sb.append(",\"address\":\"")
-                .append(address).append('\"');
-        sb.append(",\"lmsCustomerId\":")
-                .append(lmsCustomerId);
-        sb.append(",\"payer\":\"")
-                .append(payer).append('\"');
-        sb.append(",\"payerAddress\":\"")
-                .append(payerAddress).append('\"');
-        sb.append(",\"payerPhone\":")
-                .append(payerPhone);
-        sb.append(",\"payerPostCode\":")
-                .append(payerPostCode);
-        sb.append(",\"datetime\":\"")
-                .append(datetime).append('\"');
-        sb.append(",\"lmsAdminId\":")
-                .append(lmsAdminId);
-        sb.append(",\"customer\":")
-                .append(customer);
-        sb.append(",\"admin\":")
-                .append(admin);
-        sb.append('}');
-        return sb.toString();
+        return "LmsOrder{" +
+                "id=" + id +
+                ", totalPrice=" + totalPrice +
+                ", orderNumber=" + orderNumber +
+                ", description='" + description + '\'' +
+                ", type=" + type +
+                ", address='" + address + '\'' +
+                ", lmsCustomerId=" + lmsCustomerId +
+                ", payer='" + payer + '\'' +
+                ", payerAddress='" + payerAddress + '\'' +
+                ", payerPhone=" + payerPhone +
+                ", payerPostCode=" + payerPostCode +
+                ", datetime=" + datetime +
+                ", lmsAdminId=" + lmsAdminId +
+                ", customer=" + customer +
+                ", admin=" + admin +
+                '}';
     }
 }

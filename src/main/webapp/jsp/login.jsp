@@ -1,97 +1,82 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
-String path = request.getContextPath();
-String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
+    String path = request.getContextPath();
+    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
-<jsp:include page="header.jsp"/>
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-    <body style="background-color: #393D49">
-        <div class="x-box">
-            <div class="x-top">
-                <i class="layui-icon x-login-close">
-                    &#x1007;
-                </i>
-                <ul class="x-login-right">
-                    <li style="background-color: #F1C85F;" color="#F1C85F">
-                    </li>
-                    <li style="background-color: #EA569A;" color="#EA569A">
-                    </li>
-                    <li style="background-color: #393D49;" color="#393D49">
-                    </li>
-                </ul>
-            </div>
-            <div class="x-mid">
-                <div class="x-avtar">
-                    <img src="${basePath}/images/logo.png" alt="">
+<head>
+    <base href="<%=basePath%>">
+
+    <title>用户登录</title>
+
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="This is my page">
+    <!--
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    -->
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+
+    <script type="text/javascript">
+        <%
+            String msg = request.getParameter("msg");
+            if("registerSuccess".equals(msg)){
+                out.print("alert('注册成功，系统将自动跳转登录页');");
+            }
+            if("loginError".equals(msg)){
+                out.print("alert('用户名密码错误，请重新登录');");
+            }
+            if("validateCodeError".equals(msg)){
+                out.print("alert('验证码错误，请重新输入');");
+            }
+        %>
+    </script>
+
+</head>
+
+<body>
+<div class="wrap">
+    <!-- main begin-->
+    <div class="main">
+        <div class="sidebarg">
+            <form action="${pageContext.request.contextPath}/login" method="post">
+                <div class="login">
+                    <dl>
+                        <dt class="blues">用户登陆</dt>
+                        <dd><label for="name">用户名：</label>
+                            <input type="text" name="username" class="inputh" value="${username}" id="name"/></dd>
+                        <dd><label for="password">密 码：</label>
+                            <input type="password" name="userpassword" class="inputh" value="${password}" id="password"/></dd>
+                        <dd>
+                            <%--<label class="lf" for="passwords">验证码：</label>--%>
+                            <%--<input type="text" name="inputCode" class="inputh inputs lf" value="" id="passwords"/>--%>
+                            <%--<span class="wordp lf"></span>--%>
+                            <span >${msg}</span>
+                        </dd>
+                        <dd class="buttom">
+                            <input name="" type="submit" value="登 录" />
+                            <input id="register" name="" type="button" value="注 册"  onclick="javascrtpt:window.location.href='${pageContext.request.contextPath}/register.jsp'" />
+                            <span class="blues  lf"><a href="" title="">忘记密码?</a></span>
+                            <div class="cl"></div>
+                        </dd>
+                    </dl>
                 </div>
-                <div class="input">
-                    <form class="layui-form">
-                        <div class="layui-form-item x-login-box">
-                            <label for="username" class="layui-form-label">
-                                <i class="layui-icon">&#xe612;</i>
-                            </label>
-                            <div class="layui-input-inline">
-                                <input type="text" id="username" name="username" required="" lay-verify="username"
-                                autocomplete="off" placeholder="username" class="layui-input">
-                            </div>
-                        </div>
-                        <div class="layui-form-item x-login-box">
-                            <label for="pass" class="layui-form-label">
-                                <i class="layui-icon">&#xe628;</i>
-                            </label>
-                            <div class="layui-input-inline">
-                                <input type="password" id="pass" name="pass" required="" lay-verify="pass"
-                                autocomplete="off" placeholder="******" class="layui-input">
-                            </div>
-                        </div>
-                        
-	                        <div class="layui-form-item" id="loginbtn">
-	                            <button  class="layui-btn" lay-filter="save" lay-submit="">
-	                     			 登 录
-	                            </button>
-	                        </div>
-	                        <div class="layui-form-item" id="registerbtn">
-	                            <a  class="layui-btn" lay-filter="save"  style="line-height: 67px;height: 67px;" href="${basePath}/jsp/register.jsp">
-	                     			  注册
-	                            </a>
-	                        </div>
-                        
-                    </form>
-                </div>
-            </div>
+            </form>
         </div>
-        <p style="color:#fff;text-align: center;">Copyright © 2017.Company name All rights X-admin </p>
-        <script src="${basePath}/lib/layui/layui.js" charset="utf-8">
-        </script>
-        <script>
-            layui.use(['form'],
-            function() {
-                $ = layui.jquery;
-                var form = layui.form(),
-                layer = layui.layer;
+        <div class="cl"></div>
+    </div>
+    <!-- main end-->
 
-                $('.x-login-right li').click(function(event) {
-                    color = $(this).attr('color');
-                    $('body').css('background-color', color);
-                });
-
-                //监听提交
-                form.on('submit(save)',
-                function(data) {
-                    console.log(data);
-                    layer.alert(JSON.stringify(data.field), {
-                      title: '最终的提交信息'
-                    },function  () {
-                        location.href = "${basePath}/index";
-                    })
-                    return false;
-                });
-
-            });
-
-        </script>
-    </body>
-
+    <!-- footer begin-->
+</div>
+<!--footer end-->
+</body>
 </html>

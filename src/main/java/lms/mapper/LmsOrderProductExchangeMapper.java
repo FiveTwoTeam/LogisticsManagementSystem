@@ -28,6 +28,4 @@ public interface LmsOrderProductExchangeMapper {
     int updateByPrimaryKeySelective(LmsOrderProductExchange record);
 
     int updateByPrimaryKey(LmsOrderProductExchange record);
-
-    List<LmsOrderProductExchange> findorderAndProductMap();
 }

@@ -73,8 +73,8 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    "id", "status", "datetime", "type", "LMS_Order_id", "LMS_Customer_id", "LMS_Station_id", "LMS_Station_Repetory_id",
-    "LMS_Delivery_Staff__id", "satisfy", "description"
+    id, status, datetime, type, LMS_Order_id, LMS_Customer_id, LMS_Station_id, LMS_Station_Repetory_id, 
+    LMS_Delivery_Staff__id, satisfy, description
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="lms.model.LmsTaskExample" >
     select
@@ -94,7 +94,7 @@
     select 
     <include refid="Base_Column_List" />
     from LMS_TASK
-    where "id" = #{id,jdbcType=DECIMAL}
+    where id = #{id,jdbcType=DECIMAL}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
     delete from LMS_TASK
@@ -199,37 +199,37 @@
     update LMS_TASK
     <set >
       <if test="record.id != null" >
-        "id" = #{record.id,jdbcType=DECIMAL},
+        id = #{record.id,jdbcType=DECIMAL},
       </if>
       <if test="record.status != null" >
-        "status" = #{record.status,jdbcType=DECIMAL},
+        status = #{record.status,jdbcType=DECIMAL},
       </if>
       <if test="record.datetime != null" >
-        "datetime" = #{record.datetime,jdbcType=DATE},
+        datetime = #{record.datetime,jdbcType=DATE},
       </if>
       <if test="record.type != null" >
-        "type" = #{record.type,jdbcType=DECIMAL},
+        type = #{record.type,jdbcType=DECIMAL},
       </if>
       <if test="record.lmsOrderId != null" >
-        "LMS_Order_id" = #{record.lmsOrderId,jdbcType=DECIMAL},
+        LMS_Order_id = #{record.lmsOrderId,jdbcType=DECIMAL},
       </if>
       <if test="record.lmsCustomerId != null" >
-        "LMS_Customer_id" = #{record.lmsCustomerId,jdbcType=DECIMAL},
+        LMS_Customer_id = #{record.lmsCustomerId,jdbcType=DECIMAL},
       </if>
       <if test="record.lmsStationId != null" >
-        "LMS_Station_id" = #{record.lmsStationId,jdbcType=DECIMAL},
+        LMS_Station_id = #{record.lmsStationId,jdbcType=DECIMAL},
       </if>
       <if test="record.lmsStationRepetoryId != null" >
-        "LMS_Station_Repetory_id" = #{record.lmsStationRepetoryId,jdbcType=DECIMAL},
+        LMS_Station_Repetory_id = #{record.lmsStationRepetoryId,jdbcType=DECIMAL},
       </if>
       <if test="record.lmsDeliveryStaffId != null" >
-        "LMS_Delivery_Staff__id" = #{record.lmsDeliveryStaffId,jdbcType=DECIMAL},
+        LMS_Delivery_Staff__id = #{record.lmsDeliveryStaffId,jdbcType=DECIMAL},
       </if>
       <if test="record.satisfy != null" >
-        "satisfy" = #{record.satisfy,jdbcType=VARCHAR},
+        satisfy = #{record.satisfy,jdbcType=VARCHAR},
       </if>
       <if test="record.description != null" >
-        "description" = #{record.description,jdbcType=VARCHAR},
+        description = #{record.description,jdbcType=VARCHAR},
       </if>
     </set>
     <if test="_parameter != null" >
@@ -238,17 +238,17 @@
   </update>
   <update id="updateByExample" parameterType="map" >
     update LMS_TASK
-    set "id" = #{record.id,jdbcType=DECIMAL},
-    "status" = #{record.status,jdbcType=DECIMAL},
-    "datetime" = #{record.datetime,jdbcType=DATE},
-    "type" = #{record.type,jdbcType=DECIMAL},
-    "LMS_Order_id" = #{record.lmsOrderId,jdbcType=DECIMAL},
-    "LMS_Customer_id" = #{record.lmsCustomerId,jdbcType=DECIMAL},
-    "LMS_Station_id" = #{record.lmsStationId,jdbcType=DECIMAL},
-    "LMS_Station_Repetory_id" = #{record.lmsStationRepetoryId,jdbcType=DECIMAL},
-    "LMS_Delivery_Staff__id" = #{record.lmsDeliveryStaffId,jdbcType=DECIMAL},
-    "satisfy" = #{record.satisfy,jdbcType=VARCHAR},
-    "description" = #{record.description,jdbcType=VARCHAR}
+    set id = #{record.id,jdbcType=DECIMAL},
+      status = #{record.status,jdbcType=DECIMAL},
+      datetime = #{record.datetime,jdbcType=DATE},
+      type = #{record.type,jdbcType=DECIMAL},
+      LMS_Order_id = #{record.lmsOrderId,jdbcType=DECIMAL},
+      LMS_Customer_id = #{record.lmsCustomerId,jdbcType=DECIMAL},
+      LMS_Station_id = #{record.lmsStationId,jdbcType=DECIMAL},
+      LMS_Station_Repetory_id = #{record.lmsStationRepetoryId,jdbcType=DECIMAL},
+      LMS_Delivery_Staff__id = #{record.lmsDeliveryStaffId,jdbcType=DECIMAL},
+      satisfy = #{record.satisfy,jdbcType=VARCHAR},
+      description = #{record.description,jdbcType=VARCHAR}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -290,87 +290,17 @@
     where id = #{id,jdbcType=DECIMAL}
   </update>
   <update id="updateByPrimaryKey" parameterType="lms.model.LmsTask" >
-   update LMS_TASK
-    set "status" = #{status,jdbcType=DECIMAL},
-      "datetime" = #{datetime,jdbcType=DATE},
-      "type" = #{type,jdbcType=DECIMAL},
-      "LMS_Order_id" = #{lmsOrderId,jdbcType=DECIMAL},
-      "LMS_Customer_id" = #{lmsCustomerId,jdbcType=DECIMAL},
-      "LMS_Station_id" = #{lmsStationId,jdbcType=DECIMAL},
-      "LMS_Station_Repetory_id" = #{lmsStationRepetoryId,jdbcType=DECIMAL},
-      "LMS_Delivery_Staff__id" = #{lmsDeliveryStaffId,jdbcType=DECIMAL},
-      "satisfy" = #{satisfy,jdbcType=VARCHAR},
-      "description" = #{description,jdbcType=VARCHAR}
-    where "id" = #{id,jdbcType=DECIMAL}
+    update LMS_TASK
+    set status = #{status,jdbcType=DECIMAL},
+      datetime = #{datetime,jdbcType=DATE},
+      type = #{type,jdbcType=DECIMAL},
+      LMS_Order_id = #{lmsOrderId,jdbcType=DECIMAL},
+      LMS_Customer_id = #{lmsCustomerId,jdbcType=DECIMAL},
+      LMS_Station_id = #{lmsStationId,jdbcType=DECIMAL},
+      LMS_Station_Repetory_id = #{lmsStationRepetoryId,jdbcType=DECIMAL},
+      LMS_Delivery_Staff__id = #{lmsDeliveryStaffId,jdbcType=DECIMAL},
+      satisfy = #{satisfy,jdbcType=VARCHAR},
+      description = #{description,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=DECIMAL}
   </update>
-
-  <!-- 新增的关系 -->
-  <resultMap id="taskResultMap" type="lms.model.LmsTask" extends="BaseResultMap" >
-    <association property="lmsCustomer" javaType="lms.model.LmsCustomer">
-      <id column="ID" property="id" jdbcType="DECIMAL" />
-      <result column="NAME" property="name" jdbcType="VARCHAR" />
-      <result column="IDENTITY_ID" property="identityId" jdbcType="VARCHAR" />
-      <result column="WORK_UNIT" property="workUnit" jdbcType="VARCHAR" />
-      <result column="PHONE_EXT" property="phoneExt" jdbcType="VARCHAR" />
-      <result column="MOBILE_PHONE" property="mobilePhone" jdbcType="VARCHAR" />
-      <result column="ADDRESS" property="address" jdbcType="VARCHAR" />
-      <result column="POST_CODE" property="postCode" jdbcType="DECIMAL" />
-      <result column="MAIL" property="mail" jdbcType="VARCHAR" />
-      <result column="STATUS" property="status" jdbcType="DECIMAL" />
-    </association>
-
-    <association property="lmsStation" javaType="lms.model.LmsStation">
-      <id column="id" property="id" jdbcType="DECIMAL" />
-      <result column="name" property="name" jdbcType="VARCHAR" />
-      <result column="address" property="address" jdbcType="VARCHAR" />
-      <result column="phone" property="phone" jdbcType="DECIMAL" />
-      <result column="LMS_Admin_id" property="lmsAdminId" jdbcType="DECIMAL" />
-    </association>
-
-    <association property="lmsDeliveryStaff" javaType="lms.model.LmsDeliveryStaff">
-      <id column="ID" property="id" jdbcType="DECIMAL" />
-      <result column="NAME" property="name" jdbcType="VARCHAR" />
-      <result column="PHONE" property="phone" jdbcType="DECIMAL" />
-      <result column="STATION_ID" property="stationId" jdbcType="DECIMAL" />
-    </association>
-
-    <collection property="lmsOrderList" ofType="lms.model.LmsOrder">
-      <result column="id" property="id" jdbcType="DECIMAL" />
-      <result column="total_price" property="totalPrice" jdbcType="DECIMAL" />
-      <result column="order_number" property="orderNumber" jdbcType="DECIMAL" />
-      <result column="description" property="description" jdbcType="VARCHAR" />
-      <result column="type" property="type" jdbcType="DECIMAL" />
-      <result column="address" property="address" jdbcType="VARCHAR" />
-      <result column="LMS_Customer_id" property="lmsCustomerId" jdbcType="DECIMAL" />
-      <result column="payer" property="payer" jdbcType="VARCHAR" />
-      <result column="payer_address" property="payerAddress" jdbcType="VARCHAR" />
-      <result column="payer_phone" property="payerPhone" jdbcType="DECIMAL" />
-      <result column="payer_post_code" property="payerPostCode" jdbcType="DECIMAL" />
-      <result column="datetime" property="datetime" jdbcType="DATE" />
-      <result column="LMS_Admin_id" property="lmsAdminId" jdbcType="DECIMAL" />
-    </collection>
-
-    <collection property="lmsStationRepetoryList" ofType="lms.model.LmsStationRepetory">
-      <id column="id" property="id" jdbcType="DECIMAL" />
-      <result column="name" property="name" jdbcType="VARCHAR" />
-      <result column="address" property="address" jdbcType="VARCHAR" />
-      <result column="phone" property="phone" jdbcType="DECIMAL" />
-      <result column="LMS_Admin_id" property="lmsAdminId" jdbcType="DECIMAL" />
-      <result column="LMS_Station_id" property="lmsStationId" jdbcType="DECIMAL" />
-    </collection>
-  </resultMap>
-
-  <!--一对多映射-->
-  <select id="findtaskMap" resultMap="taskResultMap">
-    select
-    LMS_TASK.*,LMS_ORDER.*,LMS_STATION_REPETORY.*,LMS_CUSTOMER.*,LMS_STATION.*,LMS_DELIVERY_STAFF.*
-    from LMS_TASK,LMS_ORDER, LMS_STATION_REPETORY, LMS_CUSTOMER,LMS_STATION,LMS_DELIVERY_STAFF
-    where LMS_TASK."LMS_Order_id" = LMS_ORDER."id"
-    and LMS_TASK."LMS_Station_Repetory_id" = LMS_STATION_REPETORY."id"
-    and LMS_TASK."LMS_Customer_id" = LMS_CUSTOMER."ID"
-    and LMS_TASK."LMS_Station_id" = LMS_STATION."id"
-    and LMS_TASK."LMS_Delivery_Staff__id" = LMS_DELIVERY_STAFF."ID"
-
-  </select>
-
 </mapper>

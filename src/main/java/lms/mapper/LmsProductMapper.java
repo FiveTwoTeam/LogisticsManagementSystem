@@ -27,6 +27,4 @@ public interface LmsProductMapper {
     int updateByPrimaryKeySelective(LmsProduct record);
 
     int updateByPrimaryKey(LmsProduct record);
-
-    List<LmsProduct> findSecondCategoryAndSupplierMap();
 }

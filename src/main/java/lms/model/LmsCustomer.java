@@ -103,28 +103,17 @@ public class LmsCustomer {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("{");
-        sb.append("\"id\":")
-                .append(id);
-        sb.append(",\"name\":\"")
-                .append(name).append('\"');
-        sb.append(",\"identityId\":\"")
-                .append(identityId).append('\"');
-        sb.append(",\"workUnit\":\"")
-                .append(workUnit).append('\"');
-        sb.append(",\"phoneExt\":\"")
-                .append(phoneExt).append('\"');
-        sb.append(",\"mobilePhone\":\"")
-                .append(mobilePhone).append('\"');
-        sb.append(",\"address\":\"")
-                .append(address).append('\"');
-        sb.append(",\"postCode\":")
-                .append(postCode);
-        sb.append(",\"mail\":\"")
-                .append(mail).append('\"');
-        sb.append(",\"status\":")
-                .append(status);
-        sb.append('}');
-        return sb.toString();
+        return "LmsCustomer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", identityId='" + identityId + '\'' +
+                ", workUnit='" + workUnit + '\'' +
+                ", phoneExt='" + phoneExt + '\'' +
+                ", mobilePhone='" + mobilePhone + '\'' +
+                ", address='" + address + '\'' +
+                ", postCode=" + postCode +
+                ", mail='" + mail + '\'' +
+                ", status=" + status +
+                '}';
     }
 }

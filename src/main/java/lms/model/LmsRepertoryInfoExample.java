@@ -404,66 +404,6 @@ public class LmsRepertoryInfoExample {
             addCriterion("LMS_Product_id not between", value1, value2, "lmsProductId");
             return (Criteria) this;
         }
-
-        public Criteria andCountIsNull() {
-            addCriterion("count is null");
-            return (Criteria) this;
-        }
-
-        public Criteria andCountIsNotNull() {
-            addCriterion("count is not null");
-            return (Criteria) this;
-        }
-
-        public Criteria andCountEqualTo(BigDecimal value) {
-            addCriterion("count =", value, "count");
-            return (Criteria) this;
-        }
-
-        public Criteria andCountNotEqualTo(BigDecimal value) {
-            addCriterion("count <>", value, "count");
-            return (Criteria) this;
-        }
-
-        public Criteria andCountGreaterThan(BigDecimal value) {
-            addCriterion("count >", value, "count");
-            return (Criteria) this;
-        }
-
-        public Criteria andCountGreaterThanOrEqualTo(BigDecimal value) {
-            addCriterion("count >=", value, "count");
-            return (Criteria) this;
-        }
-
-        public Criteria andCountLessThan(BigDecimal value) {
-            addCriterion("count <", value, "count");
-            return (Criteria) this;
-        }
-
-        public Criteria andCountLessThanOrEqualTo(BigDecimal value) {
-            addCriterion("count <=", value, "count");
-            return (Criteria) this;
-        }
-
-        public Criteria andCountIn(List<BigDecimal> values) {
-            addCriterion("count in", values, "count");
-            return (Criteria) this;
-        }
-
-        public Criteria andCountNotIn(List<BigDecimal> values) {
-            addCriterion("count not in", values, "count");
-            return (Criteria) this;
-        }
-
-        public Criteria andCountBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("count between", value1, value2, "count");
-            return (Criteria) this;
-        }
-
-        public Criteria andCountNotBetween(BigDecimal value1, BigDecimal value2) {
-            addCriterion("count not between", value1, value2, "count");
-            return (Criteria) this;
-        }
     }
 
     public static class Criteria extends GeneratedCriteria {

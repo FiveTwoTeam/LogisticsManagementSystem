@@ -56,18 +56,12 @@ public class LmsDeliveryStaff {
 
     @Override
     public String toString() {
-        final StringBuilder sb = new StringBuilder("{");
-        sb.append("\"id\":")
-                .append(id);
-        sb.append(",\"name\":\"")
-                .append(name).append('\"');
-        sb.append(",\"phone\":")
-                .append(phone);
-        sb.append(",\"stationId\":")
-                .append(stationId);
-        sb.append(",\"stationList\":")
-                .append(stationList);
-        sb.append('}');
-        return sb.toString();
+        return "LmsDeliveryStaff{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", phone=" + phone +
+                ", stationId=" + stationId +
+                ", stationList=" + stationList +
+                '}';
     }
 }

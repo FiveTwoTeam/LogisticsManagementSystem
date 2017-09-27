@@ -1,7 +1,6 @@
 package lms.model;
 
 import java.math.BigDecimal;
-import java.util.List;
 
 public class LmsStationRepetory {
     private Long id;
@@ -15,10 +14,6 @@ public class LmsStationRepetory {
     private Long lmsAdminId;
 
     private Long lmsStationId;
-
-    private List<LmsAdmin> lmsAdminList;
-
-    private LmsStation lmsStation;
 
     public Long getId() {
         return id;
@@ -66,44 +61,5 @@ public class LmsStationRepetory {
 
     public void setLmsStationId(Long lmsStationId) {
         this.lmsStationId = lmsStationId;
-    }
-
-    public List<LmsAdmin> getLmsAdminList() {
-        return lmsAdminList;
-    }
-
-    public void setLmsAdminList(List<LmsAdmin> lmsAdminList) {
-        this.lmsAdminList = lmsAdminList;
-    }
-
-    public LmsStation getLmsStation() {
-        return lmsStation;
-    }
-
-    public void setLmsStation(LmsStation lmsStation) {
-        this.lmsStation = lmsStation;
-    }
-
-    @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder("{");
-        sb.append("\"id\":")
-                .append(id);
-        sb.append(",\"name\":\"")
-                .append(name).append('\"');
-        sb.append(",\"address\":\"")
-                .append(address).append('\"');
-        sb.append(",\"phone\":")
-                .append(phone);
-        sb.append(",\"lmsAdminId\":")
-                .append(lmsAdminId);
-        sb.append(",\"lmsStationId\":")
-                .append(lmsStationId);
-        sb.append(",\"lmsAdminList\":")
-                .append(lmsAdminList);
-        sb.append(",\"lmsStation\":")
-                .append(lmsStation);
-        sb.append('}');
-        return sb.toString();
     }
 }
