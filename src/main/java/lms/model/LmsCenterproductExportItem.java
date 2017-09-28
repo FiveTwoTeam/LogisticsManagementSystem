@@ -67,19 +67,6 @@ public class LmsCenterproductExportItem {
         this.productExportList = productExportList;
     }
 
-    @Override
-    public String toString() {
-        return "LmsCenterproductExportItem{" +
-                "id=" + id +
-                ", count=" + count +
-                ", description='" + description + '\'' +
-                ", lmsProductExportId=" + lmsProductExportId +
-                ", lmsProductId=" + lmsProductId +
-                ", productExportList=" + productExportList +
-                ", productList=" + productList +
-                '}';
-    }
-
     public List<LmsProduct> getProductList() {
         return productList;
     }
@@ -87,4 +74,6 @@ public class LmsCenterproductExportItem {
     public void setProductList(List<LmsProduct> productList) {
         this.productList = productList;
     }
+
+
 }

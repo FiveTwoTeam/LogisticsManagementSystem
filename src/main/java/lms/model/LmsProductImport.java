@@ -2,6 +2,7 @@ package lms.model;
 
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 public class LmsProductImport {
     private BigDecimal id;
@@ -11,6 +12,36 @@ public class LmsProductImport {
     private Date datetime;
 
     private BigDecimal lmsSupplierId;
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"id\":")
+                .append(id);
+        sb.append(",\"importNo\":")
+                .append(importNo);
+        sb.append(",\"datetime\":\"")
+                .append(datetime).append('\"');
+        sb.append(",\"lmsSupplierId\":")
+                .append(lmsSupplierId);
+        sb.append(",\"lmsSupplierList\":")
+                .append(lmsSupplierList);
+        sb.append('}');
+        return sb.toString();
+    }
+
+    public LmsProductImport() {
+
+    }
+
+    public LmsProductImport(BigDecimal id, BigDecimal importNo, BigDecimal lmsSupplierId) {
+        this.id = id;
+        this.importNo = importNo;
+
+        this.lmsSupplierId = lmsSupplierId;
+    }
+
+    private List<LmsSupplier> lmsSupplierList;
 
     public BigDecimal getId() {
         return id;
@@ -43,4 +74,13 @@ public class LmsProductImport {
     public void setLmsSupplierId(BigDecimal lmsSupplierId) {
         this.lmsSupplierId = lmsSupplierId;
     }
+
+    public List<LmsSupplier> getLmsSupplierList() {
+        return lmsSupplierList;
+    }
+
+    public void setLmsSupplierList(List<LmsSupplier> lmsSupplierList) {
+        this.lmsSupplierList = lmsSupplierList;
+    }
+
 }

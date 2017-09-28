@@ -57,12 +57,18 @@ public class LmsCenterproductExport {
 
     @Override
     public String toString() {
-        return "LmsCenterproductExport{" +
-                "id=" + id +
-                ", exportNo=" + exportNo +
-                ", datetime=" + datetime +
-                ", lmsSupplierId=" + lmsSupplierId +
-                ", lmsSuppliers=" + lmsSuppliers +
-                '}';
+        final StringBuilder sb = new StringBuilder("{");
+        sb.append("\"id\":")
+                .append(id);
+        sb.append(",\"exportNo\":")
+                .append(exportNo);
+        sb.append(",\"datetime\":\"")
+                .append(datetime).append('\"');
+        sb.append(",\"lmsSupplierId\":")
+                .append(lmsSupplierId);
+        sb.append(",\"lmsSuppliers\":")
+                .append(lmsSuppliers);
+        sb.append('}');
+        return sb.toString();
     }
 }

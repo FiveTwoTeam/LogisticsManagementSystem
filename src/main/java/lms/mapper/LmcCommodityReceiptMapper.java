@@ -28,4 +28,6 @@ public interface LmcCommodityReceiptMapper {
     int updateByPrimaryKeySelective(LmcCommodityReceipt record);
 
     int updateByPrimaryKey(LmcCommodityReceipt record);
+
+    List<LmcCommodityReceipt> findAllResultMap();
 }

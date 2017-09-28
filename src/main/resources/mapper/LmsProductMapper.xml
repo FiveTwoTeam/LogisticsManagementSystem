@@ -75,8 +75,8 @@
     </where>
   </sql>
   <sql id="Base_Column_List" >
-    id, name, price, unit, LMS_Second_Category_id, discount, cost, size, LMS_Supplier_id, 
-    quality_period, if_back, if_exchange, description
+    "id", "name", "price", "unit", "LMS_Second_Category_id", "discount", "cost", "size", "LMS_Supplier_id",
+    "quality_period", "if_back", "if_exchange", "description"
   </sql>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="lms.model.LmsProductExample" >
     select
@@ -96,11 +96,11 @@
     select 
     <include refid="Base_Column_List" />
     from LMS_PRODUCT
-    where id = #{id,jdbcType=DECIMAL}
+    where "id" = #{id,jdbcType=DECIMAL}
   </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
     delete from LMS_PRODUCT
-    where id = #{id,jdbcType=DECIMAL}
+    where "id" = #{id,jdbcType=DECIMAL}
   </delete>
   <delete id="deleteByExample" parameterType="lms.model.LmsProductExample" >
     delete from LMS_PRODUCT
@@ -109,11 +109,11 @@
     </if>
   </delete>
   <insert id="insert" parameterType="lms.model.LmsProduct" >
-    insert into LMS_PRODUCT (id, name, price, 
-      unit, LMS_Second_Category_id, discount, 
-      cost, size, LMS_Supplier_id, 
-      quality_period, if_back, if_exchange, 
-      description)
+    insert into LMS_PRODUCT ("id", "name", "price",
+      "unit", "LMS_Second_Category_id", "discount",
+      "cost", "size", "LMS_Supplier_id",
+      "quality_period", "if_back", "if_exchange",
+      "description")
     values (#{id,jdbcType=DECIMAL}, #{name,jdbcType=VARCHAR}, #{price,jdbcType=DECIMAL}, 
       #{unit,jdbcType=VARCHAR}, #{lmsSecondCategoryId,jdbcType=DECIMAL}, #{discount,jdbcType=DECIMAL}, 
       #{cost,jdbcType=DECIMAL}, #{size,jdbcType=VARCHAR}, #{lmsSupplierId,jdbcType=DECIMAL}, 
@@ -260,19 +260,19 @@
   </update>
   <update id="updateByExample" parameterType="map" >
     update LMS_PRODUCT
-    set id = #{record.id,jdbcType=DECIMAL},
-      name = #{record.name,jdbcType=VARCHAR},
-      price = #{record.price,jdbcType=DECIMAL},
-      unit = #{record.unit,jdbcType=VARCHAR},
-      LMS_Second_Category_id = #{record.lmsSecondCategoryId,jdbcType=DECIMAL},
-      discount = #{record.discount,jdbcType=DECIMAL},
-      cost = #{record.cost,jdbcType=DECIMAL},
-      size = #{record.size,jdbcType=VARCHAR},
-      LMS_Supplier_id = #{record.lmsSupplierId,jdbcType=DECIMAL},
-      quality_period = #{record.qualityPeriod,jdbcType=VARCHAR},
-      if_back = #{record.ifBack,jdbcType=DECIMAL},
-      if_exchange = #{record.ifExchange,jdbcType=DECIMAL},
-      description = #{record.description,jdbcType=VARCHAR}
+    set "id" = #{record.id,jdbcType=DECIMAL},
+      "name" = #{record.name,jdbcType=VARCHAR},
+      "price" = #{record.price,jdbcType=DECIMAL},
+      "unit" = #{record.unit,jdbcType=VARCHAR},
+      "LMS_Second_Category_id" = #{record.lmsSecondCategoryId,jdbcType=DECIMAL},
+      "discount" = #{record.discount,jdbcType=DECIMAL},
+      "cost" = #{record.cost,jdbcType=DECIMAL},
+      "size" = #{record.size,jdbcType=VARCHAR},
+      "LMS_Supplier_id" = #{record.lmsSupplierId,jdbcType=DECIMAL},
+      "quality_period" = #{record.qualityPeriod,jdbcType=VARCHAR},
+      "if_back" = #{record.ifBack,jdbcType=DECIMAL},
+      "if_exchange" = #{record.ifExchange,jdbcType=DECIMAL},
+      "description" = #{record.description,jdbcType=VARCHAR}
     <if test="_parameter != null" >
       <include refid="Update_By_Example_Where_Clause" />
     </if>
@@ -321,18 +321,52 @@
   </update>
   <update id="updateByPrimaryKey" parameterType="lms.model.LmsProduct" >
     update LMS_PRODUCT
-    set name = #{name,jdbcType=VARCHAR},
-      price = #{price,jdbcType=DECIMAL},
-      unit = #{unit,jdbcType=VARCHAR},
-      LMS_Second_Category_id = #{lmsSecondCategoryId,jdbcType=DECIMAL},
-      discount = #{discount,jdbcType=DECIMAL},
-      cost = #{cost,jdbcType=DECIMAL},
-      size = #{size,jdbcType=VARCHAR},
-      LMS_Supplier_id = #{lmsSupplierId,jdbcType=DECIMAL},
-      quality_period = #{qualityPeriod,jdbcType=VARCHAR},
-      if_back = #{ifBack,jdbcType=DECIMAL},
-      if_exchange = #{ifExchange,jdbcType=DECIMAL},
-      description = #{description,jdbcType=VARCHAR}
-    where id = #{id,jdbcType=DECIMAL}
+    set "name" = #{name,jdbcType=VARCHAR},
+      "price" = #{price,jdbcType=DECIMAL},
+      "unit" = #{unit,jdbcType=VARCHAR},
+      "LMS_Second_Category_id" = #{lmsSecondCategoryId,jdbcType=DECIMAL},
+      "discount" = #{discount,jdbcType=DECIMAL},
+      "cost" = #{cost,jdbcType=DECIMAL},
+      "size" = #{size,jdbcType=VARCHAR},
+      "LMS_Supplier_id" = #{lmsSupplierId,jdbcType=DECIMAL},
+      "quality_period" = #{qualityPeriod,jdbcType=VARCHAR},
+      "if_back" = #{ifBack,jdbcType=DECIMAL},
+      "if_exchange" = #{ifExchange,jdbcType=DECIMAL},
+      "description" = #{description,jdbcType=VARCHAR}
+    where "id" = #{id,jdbcType=DECIMAL}
   </update>
+
+
+  <resultMap id="secondCategoryAndSupplierMap" type="lms.model.LmsProduct" extends="BaseResultMap" >
+    <association property="lmsSecondCategory" javaType="lms.model.LmsSecondCategory">
+      <id column="id" property="id" jdbcType="DECIMAL" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+      <result column="LMS_First_Category_id" property="lmsFirstCategoryId" jdbcType="DECIMAL" />
+      <result column="description" property="description" jdbcType="VARCHAR" />
+    </association>
+
+    <collection property="supplierList" ofType="lms.model.LmsSupplier">
+      <id column="id" property="id" jdbcType="DECIMAL" />
+      <result column="name" property="name" jdbcType="VARCHAR" />
+      <result column="address" property="address" jdbcType="VARCHAR" />
+      <result column="contact_man" property="contactMan" jdbcType="VARCHAR" />
+      <result column="phone" property="phone" jdbcType="DECIMAL" />
+      <result column="bank" property="bank" jdbcType="VARCHAR" />
+      <result column="bank_account" property="bankAccount" jdbcType="DECIMAL" />
+      <result column="fax" property="fax" jdbcType="VARCHAR" />
+      <result column="post_code" property="postCode" jdbcType="DECIMAL" />
+      <result column="legal_man" property="legalMan" jdbcType="VARCHAR" />
+      <result column="description" property="description" jdbcType="VARCHAR" />
+    </collection>
+  </resultMap>
+
+  <!--一对多映射-->
+  <select id="findSecondCategoryAndSupplierMap" resultMap="secondCategoryAndSupplierMap">
+    select
+    LMS_PRODUCT.*,LMS_SUPPLIER.*,LMS_SECOND_CATEGORY.*
+    from LMS_PRODUCT, LMS_SUPPLIER, LMS_SECOND_CATEGORY
+    where LMS_PRODUCT."LMS_Supplier_id" = LMS_SUPPLIER."id"
+    and LMS_PRODUCT."LMS_Second_Category_id" = LMS_SECOND_CATEGORY."id"
+  </select>
+
 </mapper>
