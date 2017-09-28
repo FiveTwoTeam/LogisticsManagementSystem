@@ -59,6 +59,13 @@ public class AdminController {
         return "redirect:/queryAdmin";
     }
 
+    @RequestMapping("/login")
+    public ModelAndView login() {
+        ModelAndView mv = new ModelAndView();
+
+        mv.setViewName("index");
+        return mv;
+        }
 
 
 //

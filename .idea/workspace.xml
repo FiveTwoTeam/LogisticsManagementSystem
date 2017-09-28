@@ -7,78 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65374a5e-d037-45ec-bf98-b0290a12408c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/otherFile/数据库表结构修改过，两个表缺少主键v3.0.sql" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LogisticsManagementSystem.iml" afterPath="$PROJECT_DIR$/LogisticsManagementSystem.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmcCommodityReceiptMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmcCommodityReceiptMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsFirstCategoryMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsFirstCategoryMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderBackMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderBackMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderItemMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderItemMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderProductBackMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderProductBackMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderProductExchangeMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsOrderProductExchangeMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsProductExportItemMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsProductExportItemMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsProductImportItemMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsProductImportItemMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsProductImportMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsProductImportMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsProductMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsProductMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsRepertoryInfoMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsRepertoryInfoMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsRepertoryMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsRepertoryMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsSecondCategoryMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsSecondCategoryMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsStationMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsStationMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsStationRepetoryItemMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsStationRepetoryItemMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsStationRepetoryMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsStationRepetoryMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsTaskMapper.java" afterPath="$PROJECT_DIR$/src/main/java/lms/mapper/LmsTaskMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmcCommodityReceipt.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmcCommodityReceipt.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsAdmin.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsAdmin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsCenterproductExport.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsCenterproductExport.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsCenterproductExportItem.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsCenterproductExportItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsCommodityReceipt.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsCommodityReceipt.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsCommodityReceiptItem.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsCommodityReceiptItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsCustomer.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsCustomer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsDeliveryStaff.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsDeliveryStaff.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsFirstCategory.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsFirstCategory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsOrder.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsOrder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsOrderBack.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsOrderBack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsOrderItem.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsOrderItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsOrderProductBack.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsOrderProductBack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsOrderProductExchange.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsOrderProductExchange.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsProduct.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsProduct.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsProductExport.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsProductExport.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsProductExportItem.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsProductExportItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsProductImport.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsProductImport.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsProductImportItem.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsProductImportItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsReceipt.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsReceipt.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsRepertory.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsRepertory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsRepertoryInfo.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsRepertoryInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsRepertoryInfoExample.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsRepertoryInfoExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsSecondCategory.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsSecondCategory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsStation.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsStation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsStationRepetory.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsStationRepetory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsStationRepetoryItem.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsStationRepetoryItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsSupplier.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsSupplier.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsTask.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsTask.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/model/LmsTaskExample.java" afterPath="$PROJECT_DIR$/src/main/java/lms/model/LmsTaskExample.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/service/AdminService.java" afterPath="$PROJECT_DIR$/src/main/java/lms/service/AdminService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/service/impl/AdminServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/lms/service/impl/AdminServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/lms/web/AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/lms/web/AdminController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsAdminMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsAdminMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsCustomerMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsCustomerMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsOrderMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsOrderMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsOrderProductBackMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsOrderProductBackMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsOrderProductExchangeMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsOrderProductExchangeMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsProductExportItemMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsProductExportItemMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsProductExportMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsProductExportMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsProductImportMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsProductImportMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsProductMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsProductMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsReceiptMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsReceiptMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsRepertoryMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsRepertoryMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsStationMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsStationMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/LmsTaskMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/LmsTaskMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/admin_add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin_add.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/admin_edit.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin_edit.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestCustomer.java" afterPath="$PROJECT_DIR$/src/test/java/TestCustomer.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -104,91 +39,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="product_import_list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/product_import_list.jsp">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-567">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="541">
+              <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="receipt_list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/receipt_list.jsp">
+      <file leaf-file-name="admin_add.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin_add.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-357">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="242">
+              <caret line="107" column="23" lean-forward="false" selection-start-line="107" selection-start-column="23" selection-end-line="107" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="repertory_info_list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/repertory_info_list.jsp">
+      <file leaf-file-name="LmsAdminMapper.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsAdminMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-273">
-              <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-              <folding />
+            <state relative-caret-position="903">
+              <caret line="112" column="27" lean-forward="false" selection-start-line="112" selection-start-column="12" selection-end-line="112" selection-end-column="27" />
+              <folding>
+                <marker date="1506395672000" expanded="true" signature="3581:3686" ph="select from LMS_ADMIN" />
+                <marker date="1506395672000" expanded="true" signature="3770:3829" ph="delete from " />
+                <marker date="1506395672000" expanded="true" signature="3921:3942" ph="delete from " />
+                <marker date="1506395672000" expanded="true" signature="4486:4737" ph="insert into LMS_ADMIN... " />
+                <marker date="1506395672000" expanded="true" signature="4810:4850" ph="select seq_a... dual" />
+                <marker date="1506395672000" expanded="true" signature="6084:6114" ph="select count... LMS_ADMIN" />
+                <marker date="1506395672000" expanded="true" signature="7115:7424" ph="update LMS_A... " />
+                <marker date="1506395672000" expanded="true" signature="7624:8155" ph="update LMS_A... " />
+                <marker date="1506395672000" expanded="true" signature="8243:8513" ph="update LMS_A... " />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="repertory_list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/repertory_list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="service_order_list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/service_order_list.jsp">
+      <file leaf-file-name="LmsAdmin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsAdmin.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="273">
-              <caret line="55" column="33" lean-forward="false" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
+              <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="station_list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/station_list.jsp">
+      <file leaf-file-name="admin.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="322">
+              <caret line="124" column="41" lean-forward="true" selection-start-line="124" selection-start-column="41" selection-end-line="124" selection-end-column="41" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="station_repetory_list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/station_repetory_list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="product_list.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="product_list.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/product_list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+            <state relative-caret-position="3051">
+              <caret line="161" column="4" lean-forward="false" selection-start-line="161" selection-start-column="4" selection-end-line="161" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="task_list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/task_list.jsp">
+      <file leaf-file-name="jdbc.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="63">
+              <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="394">
+              <caret line="86" column="58" lean-forward="false" selection-start-line="86" selection-start-column="58" selection-end-line="86" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/lms/web/AdminController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -291,15 +236,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/product_import_add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/product_export_add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/station_edit.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/station_repetory_edit.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/station_repetory_item.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/receipt_list.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/receipt_edit.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/task_edit.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin_add.jsp" />
         <option value="$USER_HOME$/AppData/Local/Temp/ဂ.url" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/LmsCustomerMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/custom_add.jsp" />
@@ -342,6 +283,10 @@
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/task_list.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/center_product_import_list.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/product_list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/lms/web/AdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin_add.jsp" />
       </list>
     </option>
   </component>
@@ -365,9 +310,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="141" />
-    <option name="y" value="98" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="146" />
+    <option name="y" value="27" />
     <option name="width" value="1258" />
     <option name="height" value="920" />
   </component>
@@ -437,7 +382,48 @@
               <item name="LogisticsManagementSystem" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LogisticsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LogisticsManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LogisticsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LogisticsManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lms" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LogisticsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LogisticsManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lms" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LogisticsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LogisticsManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LogisticsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LogisticsManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LogisticsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
@@ -453,6 +439,14 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LogisticsManagementSystem" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LogisticsManagementSystem" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -484,19 +478,19 @@
     <property name="SearchEverywhereHistoryKey" value="cONT&#9;FILE&#9;file://C:/Users/admin/Desktop/LogisticsManagementSystem/src/main/java/lms/web/AdminController.java&#10;AdminController&#9;FILE&#9;file://C:/Users/admin/Desktop/LogisticsManagementSystem/src/main/java/lms/web/AdminController.java&#10;admin&#9;FILE&#9;file://C:/Users/admin/Desktop/LogisticsManagementSystem/src/main/webapp/jsp/admin.jsp" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\admin\Desktop\a\LogisticsManagementSystem\src\main\webapp\jsp" />
+      <recent name="C:\Users\Administrator\Desktop\LogisticsManagementSystem\src\main\resources\mapper" />
+      <recent name="C:\Users\Administrator\Desktop\LogisticsManagementSystem\src\main\webapp\jsp" />
+      <recent name="C:\Users\Administrator\Desktop\LogisticsManagementSystem\src\main\java\lms\web" />
+      <recent name="C:\Users\Administrator\Desktop\LogisticsManagementSystem\src\main\java\lms\service" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\Desktop\LogisticsManagementSystem\src\main\webapp\images" />
       <recent name="C:\Users\admin\Desktop\LogisticsManagementSystem\src\main\webapp\jsp" />
       <recent name="C:\Users\Administrator\Desktop\LogisticsManagementSystem\src\main\webapp" />
       <recent name="C:\Users\admin\Desktop\LogisticsManagementSystem\src\main\webapp" />
       <recent name="C:\Users\admin\Desktop\LogisticsManagementSystem\src\main\webapp\js" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\LogisticsManagementSystem\src\main\resources\mapper" />
-      <recent name="C:\Users\Administrator\Desktop\LogisticsManagementSystem\src\main\webapp\jsp" />
-      <recent name="C:\Users\Administrator\Desktop\LogisticsManagementSystem\src\main\java\lms\web" />
-      <recent name="C:\Users\Administrator\Desktop\LogisticsManagementSystem\src\main\java\lms\service" />
-      <recent name="C:\Users\Administrator\Desktop\LogisticsManagementSystem\src\main\java\lms\service\impl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1202,7 +1196,7 @@
       <workItem from="1506502714360" duration="16124000" />
       <workItem from="1506522147211" duration="7910000" />
       <workItem from="1506559882641" duration="5000" />
-      <workItem from="1506560451116" duration="2159000" />
+      <workItem from="1506560451116" duration="5995000" />
     </task>
     <servers />
   </component>
@@ -1239,7 +1233,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="235087000" />
+    <option name="totallyTimeSpent" value="238923000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1251,7 +1245,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="141" y="98" width="1258" height="920" extended-state="1" />
+    <frame x="146" y="27" width="1258" height="920" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1266,13 +1260,13 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22814208" sideWeight="0.38653556" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22692308" sideWeight="0.38653556" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3442623" sideWeight="0.65128595" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34183672" sideWeight="0.65128595" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22036728" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1341,37 +1335,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/lms/service/ProductExportService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsTaskMapper.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/lms/web/StationManage.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin_edit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="93" column="39" lean-forward="false" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/center_product_import_add.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/lms/web/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="31" column="40" lean-forward="false" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/lms/web/ServiceController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/task_add.jsp">
       <provider selected="true" editor-type-id="text-editor">
@@ -1474,22 +1438,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="8" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/order_edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1509,14 +1457,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/product_edit.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-315">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -1684,9 +1624,91 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/product_list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state relative-caret-position="3051">
+          <caret line="161" column="4" lean-forward="false" selection-start-line="161" selection-start-column="4" selection-end-line="161" selection-end-column="4" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="86" column="58" lean-forward="false" selection-start-line="86" selection-start-column="58" selection-end-line="86" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="541">
+          <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin_edit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="93" column="39" lean-forward="false" selection-start-line="93" selection-start-column="39" selection-end-line="93" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/web/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="33" column="5" lean-forward="true" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/lms/model/LmsAdmin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="124" column="41" lean-forward="true" selection-start-line="124" selection-start-column="41" selection-end-line="124" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin_add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="107" column="23" lean-forward="false" selection-start-line="107" selection-start-column="23" selection-end-line="107" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/LmsAdminMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="903">
+          <caret line="112" column="27" lean-forward="false" selection-start-line="112" selection-start-column="12" selection-end-line="112" selection-end-column="27" />
+          <folding>
+            <marker date="1506395672000" expanded="true" signature="3581:3686" ph="select from LMS_ADMIN" />
+            <marker date="1506395672000" expanded="true" signature="3770:3829" ph="delete from " />
+            <marker date="1506395672000" expanded="true" signature="3921:3942" ph="delete from " />
+            <marker date="1506395672000" expanded="true" signature="4486:4737" ph="insert into LMS_ADMIN... " />
+            <marker date="1506395672000" expanded="true" signature="4810:4850" ph="select seq_a... dual" />
+            <marker date="1506395672000" expanded="true" signature="6084:6114" ph="select count... LMS_ADMIN" />
+            <marker date="1506395672000" expanded="true" signature="7115:7424" ph="update LMS_A... " />
+            <marker date="1506395672000" expanded="true" signature="7624:8155" ph="update LMS_A... " />
+            <marker date="1506395672000" expanded="true" signature="8243:8513" ph="update LMS_A... " />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -26,7 +26,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
                         密码
                     </label>
                     <div class="layui-input-inline">
-                        <input type="text" id="password" name="password"
+                        <input type="password" id="password" name="password"
                       class="layui-input">
                     </div>
                     <div class="layui-form-mid layui-word-aux">
@@ -73,13 +73,13 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
                     <div class="layui-input-inline">
                       <select  name="right" id="right" title="right">
                         <option value="">请选择角色</option>
-                        <option value="编辑人员">客服</option>
-                        <option value="问题维护">调度中心管理员</option>
-                        <option value="问题维护">分站管理员</option>
-                        <option value="问题维护">中心库房管理员</option>
-                        <option value="问题维护">分站库房管理员</option>
-                        <option value="问题维护">配送中心管理员</option>
-                        <option value="问题维护">财务中心管理员</option>
+                        <option value="0">客服</option>
+                        <option value="1">调度中心管理员</option>
+                        <option value="2">分站管理员</option>
+                        <option value="3">中心库房管理员</option>
+                        <option value="4">分站库房管理员</option>
+                        <option value="5">配送中心管理员</option>
+                        <option value="6">财务中心管理员</option>
                       </select>
                     </div>
                 </div>

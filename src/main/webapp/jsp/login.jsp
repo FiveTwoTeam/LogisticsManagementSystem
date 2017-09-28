@@ -84,7 +84,7 @@ String basePath = request.getScheme() + "://" + request.getServerName() + ":" + 
                     layer.alert(JSON.stringify(data.field), {
                       title: '最终的提交信息'
                     },function  () {
-                        location.href = "${basePath}/index";
+                        location.href = "${basePath}/login";
                     })
                     return false;
                 });
